@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * ApplicationSummaryModelResource Class Doc Comment
@@ -59,7 +59,7 @@ class ApplicationSummaryModelResource implements ModelInterface, ArrayAccess, \J
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'attributes' => '\criteo\api\marketingsolutions\preview\Model\ApplicationSummaryModel'
+        'attributes' => '\Criteo\Api\MarketingSolutions\Model\ApplicationSummaryModel'
     ];
 
     /**
@@ -327,7 +327,7 @@ class ApplicationSummaryModelResource implements ModelInterface, ArrayAccess, \J
     /**
      * Gets attributes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ApplicationSummaryModel|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ApplicationSummaryModel|null
      */
     public function getAttributes()
     {
@@ -337,7 +337,7 @@ class ApplicationSummaryModelResource implements ModelInterface, ArrayAccess, \J
     /**
      * Sets attributes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ApplicationSummaryModel|null $attributes attributes
+     * @param \Criteo\Api\MarketingSolutions\Model\ApplicationSummaryModel|null $attributes attributes
      *
      * @return self
      */

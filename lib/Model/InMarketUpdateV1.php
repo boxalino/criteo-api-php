@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * InMarketUpdateV1 Class Doc Comment
@@ -60,7 +60,7 @@ class InMarketUpdateV1 implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'country' => 'string',
         'buying_power' => 'string[]',
-        'gender' => '\criteo\api\marketingsolutions\preview\Model\NillableGenderV1',
+        'gender' => '\Criteo\Api\MarketingSolutions\Model\NillableGenderV1',
         'interest_ids' => 'string[]',
         'brand_ids' => 'string[]',
         'price_range' => 'string[]'
@@ -429,7 +429,7 @@ class InMarketUpdateV1 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets gender
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\NillableGenderV1|null
+     * @return \Criteo\Api\MarketingSolutions\Model\NillableGenderV1|null
      */
     public function getGender()
     {
@@ -439,7 +439,7 @@ class InMarketUpdateV1 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets gender
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\NillableGenderV1|null $gender gender
+     * @param \Criteo\Api\MarketingSolutions\Model\NillableGenderV1|null $gender gender
      *
      * @return self
      */

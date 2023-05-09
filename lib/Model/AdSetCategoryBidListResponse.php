@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * AdSetCategoryBidListResponse Class Doc Comment
@@ -58,9 +58,9 @@ class AdSetCategoryBidListResponse implements ModelInterface, ArrayAccess, \Json
       * @var string[]
       */
     protected static $openAPITypes = [
-        'data' => '\criteo\api\marketingsolutions\preview\Model\AdSetCategoryBidResource[]',
-        'warnings' => '\criteo\api\marketingsolutions\preview\Model\ProblemDetails[]',
-        'errors' => '\criteo\api\marketingsolutions\preview\Model\ProblemDetails[]'
+        'data' => '\Criteo\Api\MarketingSolutions\Model\AdSetCategoryBidResource[]',
+        'warnings' => '\Criteo\Api\MarketingSolutions\Model\ProblemDetails[]',
+        'errors' => '\Criteo\Api\MarketingSolutions\Model\ProblemDetails[]'
     ];
 
     /**
@@ -307,7 +307,7 @@ class AdSetCategoryBidListResponse implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets data
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\AdSetCategoryBidResource[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\AdSetCategoryBidResource[]|null
      */
     public function getData()
     {
@@ -317,7 +317,7 @@ class AdSetCategoryBidListResponse implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets data
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\AdSetCategoryBidResource[]|null $data data
+     * @param \Criteo\Api\MarketingSolutions\Model\AdSetCategoryBidResource[]|null $data data
      *
      * @return self
      */
@@ -336,7 +336,7 @@ class AdSetCategoryBidListResponse implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets warnings
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ProblemDetails[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ProblemDetails[]|null
      */
     public function getWarnings()
     {
@@ -346,7 +346,7 @@ class AdSetCategoryBidListResponse implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets warnings
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ProblemDetails[]|null $warnings warnings
+     * @param \Criteo\Api\MarketingSolutions\Model\ProblemDetails[]|null $warnings warnings
      *
      * @return self
      */
@@ -365,7 +365,7 @@ class AdSetCategoryBidListResponse implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets errors
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ProblemDetails[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ProblemDetails[]|null
      */
     public function getErrors()
     {
@@ -375,7 +375,7 @@ class AdSetCategoryBidListResponse implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets errors
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ProblemDetails[]|null $errors errors
+     * @param \Criteo\Api\MarketingSolutions\Model\ProblemDetails[]|null $errors errors
      *
      * @return self
      */

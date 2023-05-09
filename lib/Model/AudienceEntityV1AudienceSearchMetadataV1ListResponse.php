@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * AudienceEntityV1AudienceSearchMetadataV1ListResponse Class Doc Comment
@@ -58,10 +58,10 @@ class AudienceEntityV1AudienceSearchMetadataV1ListResponse implements ModelInter
       * @var string[]
       */
     protected static $openAPITypes = [
-        'meta' => '\criteo\api\marketingsolutions\preview\Model\AudienceSearchMetadataV1',
-        'data' => '\criteo\api\marketingsolutions\preview\Model\AudienceEntityV1Resource[]',
-        'warnings' => '\criteo\api\marketingsolutions\preview\Model\CommonProblem[]',
-        'errors' => '\criteo\api\marketingsolutions\preview\Model\CommonProblem[]'
+        'meta' => '\Criteo\Api\MarketingSolutions\Model\AudienceSearchMetadataV1',
+        'data' => '\Criteo\Api\MarketingSolutions\Model\AudienceEntityV1Resource[]',
+        'warnings' => '\Criteo\Api\MarketingSolutions\Model\CommonProblem[]',
+        'errors' => '\Criteo\Api\MarketingSolutions\Model\CommonProblem[]'
     ];
 
     /**
@@ -314,7 +314,7 @@ class AudienceEntityV1AudienceSearchMetadataV1ListResponse implements ModelInter
     /**
      * Gets meta
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\AudienceSearchMetadataV1|null
+     * @return \Criteo\Api\MarketingSolutions\Model\AudienceSearchMetadataV1|null
      */
     public function getMeta()
     {
@@ -324,7 +324,7 @@ class AudienceEntityV1AudienceSearchMetadataV1ListResponse implements ModelInter
     /**
      * Sets meta
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\AudienceSearchMetadataV1|null $meta meta
+     * @param \Criteo\Api\MarketingSolutions\Model\AudienceSearchMetadataV1|null $meta meta
      *
      * @return self
      */
@@ -341,7 +341,7 @@ class AudienceEntityV1AudienceSearchMetadataV1ListResponse implements ModelInter
     /**
      * Gets data
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\AudienceEntityV1Resource[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\AudienceEntityV1Resource[]|null
      */
     public function getData()
     {
@@ -351,7 +351,7 @@ class AudienceEntityV1AudienceSearchMetadataV1ListResponse implements ModelInter
     /**
      * Sets data
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\AudienceEntityV1Resource[]|null $data data
+     * @param \Criteo\Api\MarketingSolutions\Model\AudienceEntityV1Resource[]|null $data data
      *
      * @return self
      */
@@ -370,7 +370,7 @@ class AudienceEntityV1AudienceSearchMetadataV1ListResponse implements ModelInter
     /**
      * Gets warnings
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\CommonProblem[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\CommonProblem[]|null
      */
     public function getWarnings()
     {
@@ -380,7 +380,7 @@ class AudienceEntityV1AudienceSearchMetadataV1ListResponse implements ModelInter
     /**
      * Sets warnings
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\CommonProblem[]|null $warnings warnings
+     * @param \Criteo\Api\MarketingSolutions\Model\CommonProblem[]|null $warnings warnings
      *
      * @return self
      */
@@ -399,7 +399,7 @@ class AudienceEntityV1AudienceSearchMetadataV1ListResponse implements ModelInter
     /**
      * Gets errors
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\CommonProblem[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\CommonProblem[]|null
      */
     public function getErrors()
     {
@@ -409,7 +409,7 @@ class AudienceEntityV1AudienceSearchMetadataV1ListResponse implements ModelInter
     /**
      * Sets errors
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\CommonProblem[]|null $errors errors
+     * @param \Criteo\Api\MarketingSolutions\Model\CommonProblem[]|null $errors errors
      *
      * @return self
      */

@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * StatisticsOkResponse Class Doc Comment
@@ -58,9 +58,9 @@ class StatisticsOkResponse implements ModelInterface, ArrayAccess, \JsonSerializ
       * @var string[]
       */
     protected static $openAPITypes = [
-        'data' => '\criteo\api\marketingsolutions\preview\Model\StatisticsRecordList',
-        'errors' => '\criteo\api\marketingsolutions\preview\Model\ProductImporterError[]',
-        'warnings' => '\criteo\api\marketingsolutions\preview\Model\ProductImporterWarning[]'
+        'data' => '\Criteo\Api\MarketingSolutions\Model\StatisticsRecordList',
+        'errors' => '\Criteo\Api\MarketingSolutions\Model\ProductImporterError[]',
+        'warnings' => '\Criteo\Api\MarketingSolutions\Model\ProductImporterWarning[]'
     ];
 
     /**
@@ -307,7 +307,7 @@ class StatisticsOkResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets data
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\StatisticsRecordList|null
+     * @return \Criteo\Api\MarketingSolutions\Model\StatisticsRecordList|null
      */
     public function getData()
     {
@@ -317,7 +317,7 @@ class StatisticsOkResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets data
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\StatisticsRecordList|null $data data
+     * @param \Criteo\Api\MarketingSolutions\Model\StatisticsRecordList|null $data data
      *
      * @return self
      */
@@ -334,7 +334,7 @@ class StatisticsOkResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets errors
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ProductImporterError[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ProductImporterError[]|null
      */
     public function getErrors()
     {
@@ -344,7 +344,7 @@ class StatisticsOkResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets errors
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ProductImporterError[]|null $errors errors
+     * @param \Criteo\Api\MarketingSolutions\Model\ProductImporterError[]|null $errors errors
      *
      * @return self
      */
@@ -361,7 +361,7 @@ class StatisticsOkResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets warnings
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ProductImporterWarning[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ProductImporterWarning[]|null
      */
     public function getWarnings()
     {
@@ -371,7 +371,7 @@ class StatisticsOkResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets warnings
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ProductImporterWarning[]|null $warnings warnings
+     * @param \Criteo\Api\MarketingSolutions\Model\ProductImporterWarning[]|null $warnings warnings
      *
      * @return self
      */

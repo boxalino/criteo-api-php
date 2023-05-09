@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * ReadAdSet Class Doc Comment
@@ -63,10 +63,10 @@ class ReadAdSet implements ModelInterface, ArrayAccess, \JsonSerializable
         'dataset_id' => 'string',
         'campaign_id' => 'string',
         'destination_environment' => 'string',
-        'schedule' => '\criteo\api\marketingsolutions\preview\Model\ReadAdSetSchedule',
-        'bidding' => '\criteo\api\marketingsolutions\preview\Model\ReadAdSetBidding',
-        'targeting' => '\criteo\api\marketingsolutions\preview\Model\AdSetTargeting',
-        'budget' => '\criteo\api\marketingsolutions\preview\Model\ReadAdSetBudget',
+        'schedule' => '\Criteo\Api\MarketingSolutions\Model\ReadAdSetSchedule',
+        'bidding' => '\Criteo\Api\MarketingSolutions\Model\ReadAdSetBidding',
+        'targeting' => '\Criteo\Api\MarketingSolutions\Model\AdSetTargeting',
+        'budget' => '\Criteo\Api\MarketingSolutions\Model\ReadAdSetBudget',
         'media_type' => 'string'
     ];
 
@@ -551,7 +551,7 @@ class ReadAdSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets schedule
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ReadAdSetSchedule|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ReadAdSetSchedule|null
      */
     public function getSchedule()
     {
@@ -561,7 +561,7 @@ class ReadAdSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets schedule
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ReadAdSetSchedule|null $schedule schedule
+     * @param \Criteo\Api\MarketingSolutions\Model\ReadAdSetSchedule|null $schedule schedule
      *
      * @return self
      */
@@ -578,7 +578,7 @@ class ReadAdSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets bidding
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ReadAdSetBidding|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ReadAdSetBidding|null
      */
     public function getBidding()
     {
@@ -588,7 +588,7 @@ class ReadAdSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets bidding
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ReadAdSetBidding|null $bidding bidding
+     * @param \Criteo\Api\MarketingSolutions\Model\ReadAdSetBidding|null $bidding bidding
      *
      * @return self
      */
@@ -605,7 +605,7 @@ class ReadAdSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets targeting
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\AdSetTargeting|null
+     * @return \Criteo\Api\MarketingSolutions\Model\AdSetTargeting|null
      */
     public function getTargeting()
     {
@@ -615,7 +615,7 @@ class ReadAdSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets targeting
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\AdSetTargeting|null $targeting targeting
+     * @param \Criteo\Api\MarketingSolutions\Model\AdSetTargeting|null $targeting targeting
      *
      * @return self
      */
@@ -632,7 +632,7 @@ class ReadAdSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets budget
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ReadAdSetBudget|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ReadAdSetBudget|null
      */
     public function getBudget()
     {
@@ -642,7 +642,7 @@ class ReadAdSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets budget
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ReadAdSetBudget|null $budget budget
+     * @param \Criteo\Api\MarketingSolutions\Model\ReadAdSetBudget|null $budget budget
      *
      * @return self
      */

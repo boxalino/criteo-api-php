@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * ProductSetPreview Class Doc Comment
@@ -59,7 +59,7 @@ class ProductSetPreview implements ModelInterface, ArrayAccess, \JsonSerializabl
       */
     protected static $openAPITypes = [
         'partner_id' => 'int',
-        'rules' => '\criteo\api\marketingsolutions\preview\Model\Rules[]'
+        'rules' => '\Criteo\Api\MarketingSolutions\Model\Rules[]'
     ];
 
     /**
@@ -333,7 +333,7 @@ class ProductSetPreview implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets rules
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\Rules[]
+     * @return \Criteo\Api\MarketingSolutions\Model\Rules[]
      */
     public function getRules()
     {
@@ -343,7 +343,7 @@ class ProductSetPreview implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets rules
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\Rules[] $rules ProductSet rules
+     * @param \Criteo\Api\MarketingSolutions\Model\Rules[] $rules ProductSet rules
      *
      * @return self
      */

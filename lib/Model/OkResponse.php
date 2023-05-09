@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * OkResponse Class Doc Comment
@@ -58,8 +58,8 @@ class OkResponse implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'data' => '\criteo\api\marketingsolutions\preview\Model\ProductSetStatistics',
-        'warnings' => '\criteo\api\marketingsolutions\preview\Model\PreviewWarning[]'
+        'data' => '\Criteo\Api\MarketingSolutions\Model\ProductSetStatistics',
+        'warnings' => '\Criteo\Api\MarketingSolutions\Model\PreviewWarning[]'
     ];
 
     /**
@@ -306,7 +306,7 @@ class OkResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets data
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ProductSetStatistics
+     * @return \Criteo\Api\MarketingSolutions\Model\ProductSetStatistics
      */
     public function getData()
     {
@@ -316,7 +316,7 @@ class OkResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets data
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ProductSetStatistics $data data
+     * @param \Criteo\Api\MarketingSolutions\Model\ProductSetStatistics $data data
      *
      * @return self
      */
@@ -333,7 +333,7 @@ class OkResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets warnings
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\PreviewWarning[]
+     * @return \Criteo\Api\MarketingSolutions\Model\PreviewWarning[]
      */
     public function getWarnings()
     {
@@ -343,7 +343,7 @@ class OkResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets warnings
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\PreviewWarning[] $warnings List of warnings
+     * @param \Criteo\Api\MarketingSolutions\Model\PreviewWarning[] $warnings List of warnings
      *
      * @return self
      */

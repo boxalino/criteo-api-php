@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * GenerateCategoriesReportRequest Class Doc Comment
@@ -58,7 +58,7 @@ class GenerateCategoriesReportRequest implements ModelInterface, ArrayAccess, \J
       * @var string[]
       */
     protected static $openAPITypes = [
-        'data' => '\criteo\api\marketingsolutions\preview\Model\GenerateCategoriesReportRequestData'
+        'data' => '\Criteo\Api\MarketingSolutions\Model\GenerateCategoriesReportRequestData'
     ];
 
     /**
@@ -296,7 +296,7 @@ class GenerateCategoriesReportRequest implements ModelInterface, ArrayAccess, \J
     /**
      * Gets data
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\GenerateCategoriesReportRequestData
+     * @return \Criteo\Api\MarketingSolutions\Model\GenerateCategoriesReportRequestData
      */
     public function getData()
     {
@@ -306,7 +306,7 @@ class GenerateCategoriesReportRequest implements ModelInterface, ArrayAccess, \J
     /**
      * Sets data
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\GenerateCategoriesReportRequestData $data data
+     * @param \Criteo\Api\MarketingSolutions\Model\GenerateCategoriesReportRequestData $data data
      *
      * @return self
      */

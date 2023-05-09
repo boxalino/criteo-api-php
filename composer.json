@@ -39,9 +39,9 @@
         "jchook/phpunit-assert-throws": "^1.0"
     },
     "autoload": {
-        "psr-4": { "criteo\\api\\marketingsolutions\\preview\\" : "lib/" }
+        "psr-4": { "Criteo\\Api\\MarketingSolutions\\" : "lib/" }
     },
     "autoload-dev": {
-        "psr-4": { "criteo\\api\\marketingsolutions\\preview\\" : "test/" }
+        "psr-4": { "Criteo\\Api\\MarketingSolutions\\" : "test/" }
     }
 }

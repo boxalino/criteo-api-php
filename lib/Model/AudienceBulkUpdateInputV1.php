@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * AudienceBulkUpdateInputV1 Class Doc Comment
@@ -58,7 +58,7 @@ class AudienceBulkUpdateInputV1 implements ModelInterface, ArrayAccess, \JsonSer
       * @var string[]
       */
     protected static $openAPITypes = [
-        'data' => '\criteo\api\marketingsolutions\preview\Model\AudienceUpdateEntityV1Resource[]'
+        'data' => '\Criteo\Api\MarketingSolutions\Model\AudienceUpdateEntityV1Resource[]'
     ];
 
     /**
@@ -293,7 +293,7 @@ class AudienceBulkUpdateInputV1 implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets data
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\AudienceUpdateEntityV1Resource[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\AudienceUpdateEntityV1Resource[]|null
      */
     public function getData()
     {
@@ -303,7 +303,7 @@ class AudienceBulkUpdateInputV1 implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets data
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\AudienceUpdateEntityV1Resource[]|null $data data
+     * @param \Criteo\Api\MarketingSolutions\Model\AudienceUpdateEntityV1Resource[]|null $data data
      *
      * @return self
      */

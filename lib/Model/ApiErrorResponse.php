@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * ApiErrorResponse Class Doc Comment
@@ -58,7 +58,7 @@ class ApiErrorResponse implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'errors' => '\criteo\api\marketingsolutions\preview\Model\ErrorDescription[]'
+        'errors' => '\Criteo\Api\MarketingSolutions\Model\ErrorDescription[]'
     ];
 
     /**
@@ -293,7 +293,7 @@ class ApiErrorResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets errors
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ErrorDescription[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ErrorDescription[]|null
      */
     public function getErrors()
     {
@@ -303,7 +303,7 @@ class ApiErrorResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets errors
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ErrorDescription[]|null $errors errors
+     * @param \Criteo\Api\MarketingSolutions\Model\ErrorDescription[]|null $errors errors
      *
      * @return self
      */

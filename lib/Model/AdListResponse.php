@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * AdListResponse Class Doc Comment
@@ -58,9 +58,9 @@ class AdListResponse implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'data' => '\criteo\api\marketingsolutions\preview\Model\AdResource[]',
-        'warnings' => '\criteo\api\marketingsolutions\preview\Model\CommonProblem[]',
-        'errors' => '\criteo\api\marketingsolutions\preview\Model\CommonProblem[]'
+        'data' => '\Criteo\Api\MarketingSolutions\Model\AdResource[]',
+        'warnings' => '\Criteo\Api\MarketingSolutions\Model\CommonProblem[]',
+        'errors' => '\Criteo\Api\MarketingSolutions\Model\CommonProblem[]'
     ];
 
     /**
@@ -307,7 +307,7 @@ class AdListResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets data
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\AdResource[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\AdResource[]|null
      */
     public function getData()
     {
@@ -317,7 +317,7 @@ class AdListResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets data
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\AdResource[]|null $data data
+     * @param \Criteo\Api\MarketingSolutions\Model\AdResource[]|null $data data
      *
      * @return self
      */
@@ -336,7 +336,7 @@ class AdListResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets warnings
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\CommonProblem[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\CommonProblem[]|null
      */
     public function getWarnings()
     {
@@ -346,7 +346,7 @@ class AdListResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets warnings
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\CommonProblem[]|null $warnings warnings
+     * @param \Criteo\Api\MarketingSolutions\Model\CommonProblem[]|null $warnings warnings
      *
      * @return self
      */
@@ -365,7 +365,7 @@ class AdListResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets errors
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\CommonProblem[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\CommonProblem[]|null
      */
     public function getErrors()
     {
@@ -375,7 +375,7 @@ class AdListResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets errors
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\CommonProblem[]|null $errors errors
+     * @param \Criteo\Api\MarketingSolutions\Model\CommonProblem[]|null $errors errors
      *
      * @return self
      */

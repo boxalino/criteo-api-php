@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * OciTargetingRule Class Doc Comment
@@ -58,8 +58,8 @@ class OciTargetingRule implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'target' => '\criteo\api\marketingsolutions\preview\Model\Target',
-        'rule' => '\criteo\api\marketingsolutions\preview\Model\OciTargetingNode'
+        'target' => '\Criteo\Api\MarketingSolutions\Model\Target',
+        'rule' => '\Criteo\Api\MarketingSolutions\Model\OciTargetingNode'
     ];
 
     /**
@@ -300,7 +300,7 @@ class OciTargetingRule implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets target
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\Target|null
+     * @return \Criteo\Api\MarketingSolutions\Model\Target|null
      */
     public function getTarget()
     {
@@ -310,7 +310,7 @@ class OciTargetingRule implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets target
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\Target|null $target target
+     * @param \Criteo\Api\MarketingSolutions\Model\Target|null $target target
      *
      * @return self
      */
@@ -327,7 +327,7 @@ class OciTargetingRule implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets rule
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\OciTargetingNode|null
+     * @return \Criteo\Api\MarketingSolutions\Model\OciTargetingNode|null
      */
     public function getRule()
     {
@@ -337,7 +337,7 @@ class OciTargetingRule implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets rule
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\OciTargetingNode|null $rule rule
+     * @param \Criteo\Api\MarketingSolutions\Model\OciTargetingNode|null $rule rule
      *
      * @return self
      */

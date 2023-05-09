@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * SetUserProfileModel Class Doc Comment
@@ -60,8 +60,8 @@ class SetUserProfileModel implements ModelInterface, ArrayAccess, \JsonSerializa
     protected static $openAPITypes = [
         'user_profile_id' => 'string',
         'user_profile_list_id' => 'string',
-        'user_profile_identifiers' => '\criteo\api\marketingsolutions\preview\Model\UserProfileIdentifierModel[]',
-        'user_profile_attributes' => '\criteo\api\marketingsolutions\preview\Model\UserProfileAttributeModel[]'
+        'user_profile_identifiers' => '\Criteo\Api\MarketingSolutions\Model\UserProfileIdentifierModel[]',
+        'user_profile_attributes' => '\Criteo\Api\MarketingSolutions\Model\UserProfileAttributeModel[]'
     ];
 
     /**
@@ -371,7 +371,7 @@ class SetUserProfileModel implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets user_profile_identifiers
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\UserProfileIdentifierModel[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\UserProfileIdentifierModel[]|null
      */
     public function getUserProfileIdentifiers()
     {
@@ -381,7 +381,7 @@ class SetUserProfileModel implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets user_profile_identifiers
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\UserProfileIdentifierModel[]|null $user_profile_identifiers user_profile_identifiers
+     * @param \Criteo\Api\MarketingSolutions\Model\UserProfileIdentifierModel[]|null $user_profile_identifiers user_profile_identifiers
      *
      * @return self
      */
@@ -400,7 +400,7 @@ class SetUserProfileModel implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets user_profile_attributes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\UserProfileAttributeModel[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\UserProfileAttributeModel[]|null
      */
     public function getUserProfileAttributes()
     {
@@ -410,7 +410,7 @@ class SetUserProfileModel implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets user_profile_attributes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\UserProfileAttributeModel[]|null $user_profile_attributes user_profile_attributes
+     * @param \Criteo\Api\MarketingSolutions\Model\UserProfileAttributeModel[]|null $user_profile_attributes user_profile_attributes
      *
      * @return self
      */

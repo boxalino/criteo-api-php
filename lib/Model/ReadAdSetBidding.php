@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * ReadAdSetBidding Class Doc Comment
@@ -58,7 +58,7 @@ class ReadAdSetBidding implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'bid_amount' => '\criteo\api\marketingsolutions\preview\Model\NillableDecimal',
+        'bid_amount' => '\Criteo\Api\MarketingSolutions\Model\NillableDecimal',
         'bid_strategy' => 'string',
         'cost_controller' => 'string'
     ];
@@ -385,7 +385,7 @@ class ReadAdSetBidding implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets bid_amount
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\NillableDecimal|null
+     * @return \Criteo\Api\MarketingSolutions\Model\NillableDecimal|null
      */
     public function getBidAmount()
     {
@@ -395,7 +395,7 @@ class ReadAdSetBidding implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets bid_amount
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\NillableDecimal|null $bid_amount bid_amount
+     * @param \Criteo\Api\MarketingSolutions\Model\NillableDecimal|null $bid_amount bid_amount
      *
      * @return self
      */

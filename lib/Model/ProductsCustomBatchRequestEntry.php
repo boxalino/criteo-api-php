@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * ProductsCustomBatchRequestEntry Class Doc Comment
@@ -63,7 +63,7 @@ class ProductsCustomBatchRequestEntry implements ModelInterface, ArrayAccess, \J
         'method' => 'string',
         'product_id' => 'string',
         'item_group_id' => 'string',
-        'product' => '\criteo\api\marketingsolutions\preview\Model\Product',
+        'product' => '\Criteo\Api\MarketingSolutions\Model\Product',
         'feed_id' => 'string'
     ];
 
@@ -510,7 +510,7 @@ class ProductsCustomBatchRequestEntry implements ModelInterface, ArrayAccess, \J
     /**
      * Gets product
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\Product|null
+     * @return \Criteo\Api\MarketingSolutions\Model\Product|null
      */
     public function getProduct()
     {
@@ -520,7 +520,7 @@ class ProductsCustomBatchRequestEntry implements ModelInterface, ArrayAccess, \J
     /**
      * Sets product
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\Product|null $product product
+     * @param \Criteo\Api\MarketingSolutions\Model\Product|null $product product
      *
      * @return self
      */

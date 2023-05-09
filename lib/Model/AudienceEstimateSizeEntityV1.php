@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * AudienceEstimateSizeEntityV1 Class Doc Comment
@@ -59,7 +59,7 @@ class AudienceEstimateSizeEntityV1 implements ModelInterface, ArrayAccess, \Json
       */
     protected static $openAPITypes = [
         'advertiser_id' => 'string',
-        'algebra' => '\criteo\api\marketingsolutions\preview\Model\AlgebraNodeV1'
+        'algebra' => '\Criteo\Api\MarketingSolutions\Model\AlgebraNodeV1'
     ];
 
     /**
@@ -327,7 +327,7 @@ class AudienceEstimateSizeEntityV1 implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets algebra
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\AlgebraNodeV1|null
+     * @return \Criteo\Api\MarketingSolutions\Model\AlgebraNodeV1|null
      */
     public function getAlgebra()
     {
@@ -337,7 +337,7 @@ class AudienceEstimateSizeEntityV1 implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets algebra
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\AlgebraNodeV1|null $algebra algebra
+     * @param \Criteo\Api\MarketingSolutions\Model\AlgebraNodeV1|null $algebra algebra
      *
      * @return self
      */

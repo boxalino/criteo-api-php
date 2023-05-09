@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * AdSetGeoLocationV23Q1 Class Doc Comment
@@ -58,9 +58,9 @@ class AdSetGeoLocationV23Q1 implements ModelInterface, ArrayAccess, \JsonSeriali
       * @var string[]
       */
     protected static $openAPITypes = [
-        'countries' => '\criteo\api\marketingsolutions\preview\Model\NillableAdSetTargetingRuleV23Q1',
-        'subdivisions' => '\criteo\api\marketingsolutions\preview\Model\NillableAdSetTargetingRuleV23Q1',
-        'zip_codes' => '\criteo\api\marketingsolutions\preview\Model\NillableAdSetTargetingRuleV23Q1'
+        'countries' => '\Criteo\Api\MarketingSolutions\Model\NillableAdSetTargetingRuleV23Q1',
+        'subdivisions' => '\Criteo\Api\MarketingSolutions\Model\NillableAdSetTargetingRuleV23Q1',
+        'zip_codes' => '\Criteo\Api\MarketingSolutions\Model\NillableAdSetTargetingRuleV23Q1'
     ];
 
     /**
@@ -307,7 +307,7 @@ class AdSetGeoLocationV23Q1 implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets countries
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\NillableAdSetTargetingRuleV23Q1|null
+     * @return \Criteo\Api\MarketingSolutions\Model\NillableAdSetTargetingRuleV23Q1|null
      */
     public function getCountries()
     {
@@ -317,7 +317,7 @@ class AdSetGeoLocationV23Q1 implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets countries
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\NillableAdSetTargetingRuleV23Q1|null $countries countries
+     * @param \Criteo\Api\MarketingSolutions\Model\NillableAdSetTargetingRuleV23Q1|null $countries countries
      *
      * @return self
      */
@@ -334,7 +334,7 @@ class AdSetGeoLocationV23Q1 implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets subdivisions
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\NillableAdSetTargetingRuleV23Q1|null
+     * @return \Criteo\Api\MarketingSolutions\Model\NillableAdSetTargetingRuleV23Q1|null
      */
     public function getSubdivisions()
     {
@@ -344,7 +344,7 @@ class AdSetGeoLocationV23Q1 implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets subdivisions
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\NillableAdSetTargetingRuleV23Q1|null $subdivisions subdivisions
+     * @param \Criteo\Api\MarketingSolutions\Model\NillableAdSetTargetingRuleV23Q1|null $subdivisions subdivisions
      *
      * @return self
      */
@@ -361,7 +361,7 @@ class AdSetGeoLocationV23Q1 implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets zip_codes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\NillableAdSetTargetingRuleV23Q1|null
+     * @return \Criteo\Api\MarketingSolutions\Model\NillableAdSetTargetingRuleV23Q1|null
      */
     public function getZipCodes()
     {
@@ -371,7 +371,7 @@ class AdSetGeoLocationV23Q1 implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets zip_codes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\NillableAdSetTargetingRuleV23Q1|null $zip_codes zip_codes
+     * @param \Criteo\Api\MarketingSolutions\Model\NillableAdSetTargetingRuleV23Q1|null $zip_codes zip_codes
      *
      * @return self
      */

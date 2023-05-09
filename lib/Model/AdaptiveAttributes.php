@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * AdaptiveAttributes Class Doc Comment
@@ -59,16 +59,16 @@ class AdaptiveAttributes implements ModelInterface, ArrayAccess, \JsonSerializab
       */
     protected static $openAPITypes = [
         'layouts' => 'string[]',
-        'logos' => '\criteo\api\marketingsolutions\preview\Model\ImageShape[]',
+        'logos' => '\Criteo\Api\MarketingSolutions\Model\ImageShape[]',
         'headline_text' => 'string',
         'headline_font' => 'string',
         'description_text' => 'string',
         'description_font' => 'string',
         'calls_to_action' => 'string[]',
-        'colors' => '\criteo\api\marketingsolutions\preview\Model\AdaptiveColors',
-        'image_sets' => '\criteo\api\marketingsolutions\preview\Model\ImageSet[]',
+        'colors' => '\Criteo\Api\MarketingSolutions\Model\AdaptiveColors',
+        'image_sets' => '\Criteo\Api\MarketingSolutions\Model\ImageSet[]',
         'image_display' => 'string',
-        'videos' => '\criteo\api\marketingsolutions\preview\Model\VideoDetail[]',
+        'videos' => '\Criteo\Api\MarketingSolutions\Model\VideoDetail[]',
         'landing_page_url' => 'string'
     ];
 
@@ -476,7 +476,7 @@ class AdaptiveAttributes implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets logos
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ImageShape[]
+     * @return \Criteo\Api\MarketingSolutions\Model\ImageShape[]
      */
     public function getLogos()
     {
@@ -486,7 +486,7 @@ class AdaptiveAttributes implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets logos
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ImageShape[] $logos Logo images uploaded on demostatic.criteo.com when deploying and then static.criteo.net
+     * @param \Criteo\Api\MarketingSolutions\Model\ImageShape[] $logos Logo images uploaded on demostatic.criteo.com when deploying and then static.criteo.net
      *
      * @return self
      */
@@ -642,7 +642,7 @@ class AdaptiveAttributes implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets colors
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\AdaptiveColors
+     * @return \Criteo\Api\MarketingSolutions\Model\AdaptiveColors
      */
     public function getColors()
     {
@@ -652,7 +652,7 @@ class AdaptiveAttributes implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets colors
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\AdaptiveColors $colors colors
+     * @param \Criteo\Api\MarketingSolutions\Model\AdaptiveColors $colors colors
      *
      * @return self
      */
@@ -669,7 +669,7 @@ class AdaptiveAttributes implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets image_sets
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ImageSet[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ImageSet[]|null
      */
     public function getImageSets()
     {
@@ -679,7 +679,7 @@ class AdaptiveAttributes implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets image_sets
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ImageSet[]|null $image_sets Multiple image sets, each image set consists of multiple images and a headline text.
+     * @param \Criteo\Api\MarketingSolutions\Model\ImageSet[]|null $image_sets Multiple image sets, each image set consists of multiple images and a headline text.
      *
      * @return self
      */
@@ -735,7 +735,7 @@ class AdaptiveAttributes implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets videos
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\VideoDetail[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\VideoDetail[]|null
      */
     public function getVideos()
     {
@@ -745,7 +745,7 @@ class AdaptiveAttributes implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets videos
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\VideoDetail[]|null $videos Multiple videos potentially in different shapes.
+     * @param \Criteo\Api\MarketingSolutions\Model\VideoDetail[]|null $videos Multiple videos potentially in different shapes.
      *
      * @return self
      */

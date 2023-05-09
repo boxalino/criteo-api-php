@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * UpdateCouponRequest Class Doc Comment
@@ -58,7 +58,7 @@ class UpdateCouponRequest implements ModelInterface, ArrayAccess, \JsonSerializa
       * @var string[]
       */
     protected static $openAPITypes = [
-        'data' => '\criteo\api\marketingsolutions\preview\Model\UpdateCouponResource'
+        'data' => '\Criteo\Api\MarketingSolutions\Model\UpdateCouponResource'
     ];
 
     /**
@@ -293,7 +293,7 @@ class UpdateCouponRequest implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets data
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\UpdateCouponResource|null
+     * @return \Criteo\Api\MarketingSolutions\Model\UpdateCouponResource|null
      */
     public function getData()
     {
@@ -303,7 +303,7 @@ class UpdateCouponRequest implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets data
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\UpdateCouponResource|null $data data
+     * @param \Criteo\Api\MarketingSolutions\Model\UpdateCouponResource|null $data data
      *
      * @return self
      */

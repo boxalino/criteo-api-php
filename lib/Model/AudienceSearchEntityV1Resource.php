@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * AudienceSearchEntityV1Resource Class Doc Comment
@@ -59,7 +59,7 @@ class AudienceSearchEntityV1Resource implements ModelInterface, ArrayAccess, \Js
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'attributes' => '\criteo\api\marketingsolutions\preview\Model\AudienceSearchEntityV1'
+        'attributes' => '\Criteo\Api\MarketingSolutions\Model\AudienceSearchEntityV1'
     ];
 
     /**
@@ -327,7 +327,7 @@ class AudienceSearchEntityV1Resource implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets attributes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\AudienceSearchEntityV1|null
+     * @return \Criteo\Api\MarketingSolutions\Model\AudienceSearchEntityV1|null
      */
     public function getAttributes()
     {
@@ -337,7 +337,7 @@ class AudienceSearchEntityV1Resource implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets attributes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\AudienceSearchEntityV1|null $attributes attributes
+     * @param \Criteo\Api\MarketingSolutions\Model\AudienceSearchEntityV1|null $attributes attributes
      *
      * @return self
      */

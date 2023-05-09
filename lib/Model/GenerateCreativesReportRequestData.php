@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * GenerateCreativesReportRequestData Class Doc Comment
@@ -59,7 +59,7 @@ class GenerateCreativesReportRequestData implements ModelInterface, ArrayAccess,
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'attributes' => '\criteo\api\marketingsolutions\preview\Model\GenerateCreativesReportRequestAttributes'
+        'attributes' => '\Criteo\Api\MarketingSolutions\Model\GenerateCreativesReportRequestAttributes'
     ];
 
     /**
@@ -333,7 +333,7 @@ class GenerateCreativesReportRequestData implements ModelInterface, ArrayAccess,
     /**
      * Gets attributes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\GenerateCreativesReportRequestAttributes
+     * @return \Criteo\Api\MarketingSolutions\Model\GenerateCreativesReportRequestAttributes
      */
     public function getAttributes()
     {
@@ -343,7 +343,7 @@ class GenerateCreativesReportRequestData implements ModelInterface, ArrayAccess,
     /**
      * Sets attributes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\GenerateCreativesReportRequestAttributes $attributes attributes
+     * @param \Criteo\Api\MarketingSolutions\Model\GenerateCreativesReportRequestAttributes $attributes attributes
      *
      * @return self
      */

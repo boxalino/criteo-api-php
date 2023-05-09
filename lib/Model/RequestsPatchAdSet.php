@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * RequestsPatchAdSet Class Doc Comment
@@ -58,7 +58,7 @@ class RequestsPatchAdSet implements ModelInterface, ArrayAccess, \JsonSerializab
       * @var string[]
       */
     protected static $openAPITypes = [
-        'data' => '\criteo\api\marketingsolutions\preview\Model\WriteModelPatchAdSet[]'
+        'data' => '\Criteo\Api\MarketingSolutions\Model\WriteModelPatchAdSet[]'
     ];
 
     /**
@@ -293,7 +293,7 @@ class RequestsPatchAdSet implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets data
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\WriteModelPatchAdSet[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\WriteModelPatchAdSet[]|null
      */
     public function getData()
     {
@@ -303,7 +303,7 @@ class RequestsPatchAdSet implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets data
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\WriteModelPatchAdSet[]|null $data data
+     * @param \Criteo\Api\MarketingSolutions\Model\WriteModelPatchAdSet[]|null $data data
      *
      * @return self
      */

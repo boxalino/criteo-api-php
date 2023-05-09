@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Api;
+namespace Criteo\Api\MarketingSolutions\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,10 +34,10 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use criteo\api\marketingsolutions\preview\ApiException;
-use criteo\api\marketingsolutions\preview\Configuration;
-use criteo\api\marketingsolutions\preview\HeaderSelector;
-use criteo\api\marketingsolutions\preview\ObjectSerializer;
+use Criteo\Api\MarketingSolutions\ApiException;
+use Criteo\Api\MarketingSolutions\Configuration;
+use Criteo\Api\MarketingSolutions\HeaderSelector;
+use Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * OnSiteRecommendationApi Class Doc Comment
@@ -128,12 +128,12 @@ class OnSiteRecommendationApi
     /**
      * Operation apiV1RecoPost
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\OnSiteRecoRequest $on_site_reco_request on_site_reco_request (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\OnSiteRecoRequest $on_site_reco_request on_site_reco_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['apiV1RecoPost'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return |\criteo\api\marketingsolutions\preview\Model\OnSiteRecoResponse
+     * @return |\Criteo\Api\MarketingSolutions\Model\OnSiteRecoResponse
      */
     public function apiV1RecoPost($on_site_reco_request = null, string $contentType = self::contentTypes['apiV1RecoPost'][0])
     {
@@ -144,12 +144,12 @@ class OnSiteRecommendationApi
     /**
      * Operation apiV1RecoPostWithHttpInfo
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\OnSiteRecoRequest $on_site_reco_request (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\OnSiteRecoRequest $on_site_reco_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['apiV1RecoPost'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of |\criteo\api\marketingsolutions\preview\Model\OnSiteRecoResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of |\Criteo\Api\MarketingSolutions\Model\OnSiteRecoResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function apiV1RecoPostWithHttpInfo($on_site_reco_request = null, string $contentType = self::contentTypes['apiV1RecoPost'][0])
     {
@@ -192,23 +192,23 @@ class OnSiteRecommendationApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\criteo\api\marketingsolutions\preview\Model\OnSiteRecoResponse' === '\SplFileObject') {
+                    if ('\Criteo\Api\MarketingSolutions\Model\OnSiteRecoResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\criteo\api\marketingsolutions\preview\Model\OnSiteRecoResponse' !== 'string') {
+                        if ('\Criteo\Api\MarketingSolutions\Model\OnSiteRecoResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\criteo\api\marketingsolutions\preview\Model\OnSiteRecoResponse', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Api\MarketingSolutions\Model\OnSiteRecoResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\criteo\api\marketingsolutions\preview\Model\OnSiteRecoResponse';
+            $returnType = '\Criteo\Api\MarketingSolutions\Model\OnSiteRecoResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -229,7 +229,7 @@ class OnSiteRecommendationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\criteo\api\marketingsolutions\preview\Model\OnSiteRecoResponse',
+                        '\Criteo\Api\MarketingSolutions\Model\OnSiteRecoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -242,7 +242,7 @@ class OnSiteRecommendationApi
     /**
      * Operation apiV1RecoPostAsync
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\OnSiteRecoRequest $on_site_reco_request (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\OnSiteRecoRequest $on_site_reco_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['apiV1RecoPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -261,7 +261,7 @@ class OnSiteRecommendationApi
     /**
      * Operation apiV1RecoPostAsyncWithHttpInfo
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\OnSiteRecoRequest $on_site_reco_request (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\OnSiteRecoRequest $on_site_reco_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['apiV1RecoPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -269,7 +269,7 @@ class OnSiteRecommendationApi
      */
     public function apiV1RecoPostAsyncWithHttpInfo($on_site_reco_request = null, string $contentType = self::contentTypes['apiV1RecoPost'][0])
     {
-        $returnType = '\criteo\api\marketingsolutions\preview\Model\OnSiteRecoResponse';
+        $returnType = '\Criteo\Api\MarketingSolutions\Model\OnSiteRecoResponse';
         $request = $this->apiV1RecoPostRequest($on_site_reco_request, $contentType);
 
         return $this->client
@@ -311,7 +311,7 @@ class OnSiteRecommendationApi
     /**
      * Create request for operation 'apiV1RecoPost'
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\OnSiteRecoRequest $on_site_reco_request (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\OnSiteRecoRequest $on_site_reco_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['apiV1RecoPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

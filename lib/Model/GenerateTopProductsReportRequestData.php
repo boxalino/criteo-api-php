@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * GenerateTopProductsReportRequestData Class Doc Comment
@@ -59,7 +59,7 @@ class GenerateTopProductsReportRequestData implements ModelInterface, ArrayAcces
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'attributes' => '\criteo\api\marketingsolutions\preview\Model\GenerateTopProductsReportRequestAttributes'
+        'attributes' => '\Criteo\Api\MarketingSolutions\Model\GenerateTopProductsReportRequestAttributes'
     ];
 
     /**
@@ -333,7 +333,7 @@ class GenerateTopProductsReportRequestData implements ModelInterface, ArrayAcces
     /**
      * Gets attributes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\GenerateTopProductsReportRequestAttributes
+     * @return \Criteo\Api\MarketingSolutions\Model\GenerateTopProductsReportRequestAttributes
      */
     public function getAttributes()
     {
@@ -343,7 +343,7 @@ class GenerateTopProductsReportRequestData implements ModelInterface, ArrayAcces
     /**
      * Sets attributes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\GenerateTopProductsReportRequestAttributes $attributes attributes
+     * @param \Criteo\Api\MarketingSolutions\Model\GenerateTopProductsReportRequestAttributes $attributes attributes
      *
      * @return self
      */

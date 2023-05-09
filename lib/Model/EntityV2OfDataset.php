@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * EntityV2OfDataset Class Doc Comment
@@ -60,7 +60,7 @@ class EntityV2OfDataset implements ModelInterface, ArrayAccess, \JsonSerializabl
     protected static $openAPITypes = [
         'type' => 'string',
         'id' => 'string',
-        'attributes' => '\criteo\api\marketingsolutions\preview\Model\Dataset'
+        'attributes' => '\Criteo\Api\MarketingSolutions\Model\Dataset'
     ];
 
     /**
@@ -429,7 +429,7 @@ class EntityV2OfDataset implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets attributes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\Dataset|null
+     * @return \Criteo\Api\MarketingSolutions\Model\Dataset|null
      */
     public function getAttributes()
     {
@@ -439,7 +439,7 @@ class EntityV2OfDataset implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets attributes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\Dataset|null $attributes attributes
+     * @param \Criteo\Api\MarketingSolutions\Model\Dataset|null $attributes attributes
      *
      * @return self
      */

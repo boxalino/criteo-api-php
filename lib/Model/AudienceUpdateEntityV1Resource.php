@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * AudienceUpdateEntityV1Resource Class Doc Comment
@@ -58,7 +58,7 @@ class AudienceUpdateEntityV1Resource implements ModelInterface, ArrayAccess, \Js
       * @var string[]
       */
     protected static $openAPITypes = [
-        'attributes' => '\criteo\api\marketingsolutions\preview\Model\AudienceUpdateEntityV1',
+        'attributes' => '\Criteo\Api\MarketingSolutions\Model\AudienceUpdateEntityV1',
         'id' => 'string',
         'type' => 'string'
     ];
@@ -307,7 +307,7 @@ class AudienceUpdateEntityV1Resource implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets attributes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\AudienceUpdateEntityV1|null
+     * @return \Criteo\Api\MarketingSolutions\Model\AudienceUpdateEntityV1|null
      */
     public function getAttributes()
     {
@@ -317,7 +317,7 @@ class AudienceUpdateEntityV1Resource implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets attributes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\AudienceUpdateEntityV1|null $attributes attributes
+     * @param \Criteo\Api\MarketingSolutions\Model\AudienceUpdateEntityV1|null $attributes attributes
      *
      * @return self
      */

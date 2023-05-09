@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * GetPortfolioResponse Class Doc Comment
@@ -58,9 +58,9 @@ class GetPortfolioResponse implements ModelInterface, ArrayAccess, \JsonSerializ
       * @var string[]
       */
     protected static $openAPITypes = [
-        'data' => '\criteo\api\marketingsolutions\preview\Model\EntityOfPortfolioMessage[]',
-        'errors' => '\criteo\api\marketingsolutions\preview\Model\CriteoApiError[]',
-        'warnings' => '\criteo\api\marketingsolutions\preview\Model\CriteoApiWarning[]'
+        'data' => '\Criteo\Api\MarketingSolutions\Model\EntityOfPortfolioMessage[]',
+        'errors' => '\Criteo\Api\MarketingSolutions\Model\CriteoApiError[]',
+        'warnings' => '\Criteo\Api\MarketingSolutions\Model\CriteoApiWarning[]'
     ];
 
     /**
@@ -307,7 +307,7 @@ class GetPortfolioResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets data
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\EntityOfPortfolioMessage[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\EntityOfPortfolioMessage[]|null
      */
     public function getData()
     {
@@ -317,7 +317,7 @@ class GetPortfolioResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets data
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\EntityOfPortfolioMessage[]|null $data The response�s primary data
+     * @param \Criteo\Api\MarketingSolutions\Model\EntityOfPortfolioMessage[]|null $data The response�s primary data
      *
      * @return self
      */
@@ -336,7 +336,7 @@ class GetPortfolioResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets errors
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\CriteoApiError[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\CriteoApiError[]|null
      */
     public function getErrors()
     {
@@ -346,7 +346,7 @@ class GetPortfolioResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets errors
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\CriteoApiError[]|null $errors Error list returned by the Criteo API  For successful requests it is empty
+     * @param \Criteo\Api\MarketingSolutions\Model\CriteoApiError[]|null $errors Error list returned by the Criteo API  For successful requests it is empty
      *
      * @return self
      */
@@ -365,7 +365,7 @@ class GetPortfolioResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets warnings
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\CriteoApiWarning[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\CriteoApiWarning[]|null
      */
     public function getWarnings()
     {
@@ -375,7 +375,7 @@ class GetPortfolioResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets warnings
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\CriteoApiWarning[]|null $warnings Warnings list returned by the Criteo API  In some situations the operations are successful but it may be useful to issue warnings to the API consumer.  For example the endpoint, entity or field is deprecated. Warnings are like compiler warnings, they indicate that problems may occur in the future.
+     * @param \Criteo\Api\MarketingSolutions\Model\CriteoApiWarning[]|null $warnings Warnings list returned by the Criteo API  In some situations the operations are successful but it may be useful to issue warnings to the API consumer.  For example the endpoint, entity or field is deprecated. Warnings are like compiler warnings, they indicate that problems may occur in the future.
      *
      * @return self
      */

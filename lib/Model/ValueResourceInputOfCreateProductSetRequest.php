@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * ValueResourceInputOfCreateProductSetRequest Class Doc Comment
@@ -58,7 +58,7 @@ class ValueResourceInputOfCreateProductSetRequest implements ModelInterface, Arr
       * @var string[]
       */
     protected static $openAPITypes = [
-        'data' => '\criteo\api\marketingsolutions\preview\Model\ValueResourceOfCreateProductSetRequest'
+        'data' => '\Criteo\Api\MarketingSolutions\Model\ValueResourceOfCreateProductSetRequest'
     ];
 
     /**
@@ -293,7 +293,7 @@ class ValueResourceInputOfCreateProductSetRequest implements ModelInterface, Arr
     /**
      * Gets data
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ValueResourceOfCreateProductSetRequest|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ValueResourceOfCreateProductSetRequest|null
      */
     public function getData()
     {
@@ -303,7 +303,7 @@ class ValueResourceInputOfCreateProductSetRequest implements ModelInterface, Arr
     /**
      * Sets data
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ValueResourceOfCreateProductSetRequest|null $data data
+     * @param \Criteo\Api\MarketingSolutions\Model\ValueResourceOfCreateProductSetRequest|null $data data
      *
      * @return self
      */

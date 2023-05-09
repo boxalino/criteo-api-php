@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * ContactlistAmendmentRequest Class Doc Comment
@@ -58,7 +58,7 @@ class ContactlistAmendmentRequest implements ModelInterface, ArrayAccess, \JsonS
       * @var string[]
       */
     protected static $openAPITypes = [
-        'data' => '\criteo\api\marketingsolutions\preview\Model\ContactlistAmendment'
+        'data' => '\Criteo\Api\MarketingSolutions\Model\ContactlistAmendment'
     ];
 
     /**
@@ -296,7 +296,7 @@ class ContactlistAmendmentRequest implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets data
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ContactlistAmendment
+     * @return \Criteo\Api\MarketingSolutions\Model\ContactlistAmendment
      */
     public function getData()
     {
@@ -306,7 +306,7 @@ class ContactlistAmendmentRequest implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets data
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ContactlistAmendment $data data
+     * @param \Criteo\Api\MarketingSolutions\Model\ContactlistAmendment $data data
      *
      * @return self
      */

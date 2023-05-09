@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * ReadAdSetV23Q1 Class Doc Comment
@@ -64,10 +64,10 @@ class ReadAdSetV23Q1 implements ModelInterface, ArrayAccess, \JsonSerializable
         'campaign_id' => 'string',
         'destination_environment' => 'string',
         'objective' => 'string',
-        'schedule' => '\criteo\api\marketingsolutions\preview\Model\ReadAdSetScheduleV23Q1',
-        'bidding' => '\criteo\api\marketingsolutions\preview\Model\ReadAdSetBiddingV23Q1',
-        'targeting' => '\criteo\api\marketingsolutions\preview\Model\AdSetTargetingV23Q1',
-        'budget' => '\criteo\api\marketingsolutions\preview\Model\ReadAdSetBudgetV23Q1',
+        'schedule' => '\Criteo\Api\MarketingSolutions\Model\ReadAdSetScheduleV23Q1',
+        'bidding' => '\Criteo\Api\MarketingSolutions\Model\ReadAdSetBiddingV23Q1',
+        'targeting' => '\Criteo\Api\MarketingSolutions\Model\AdSetTargetingV23Q1',
+        'budget' => '\Criteo\Api\MarketingSolutions\Model\ReadAdSetBudgetV23Q1',
         'media_type' => 'string'
     ];
 
@@ -637,7 +637,7 @@ class ReadAdSetV23Q1 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets schedule
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ReadAdSetScheduleV23Q1|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ReadAdSetScheduleV23Q1|null
      */
     public function getSchedule()
     {
@@ -647,7 +647,7 @@ class ReadAdSetV23Q1 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets schedule
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ReadAdSetScheduleV23Q1|null $schedule schedule
+     * @param \Criteo\Api\MarketingSolutions\Model\ReadAdSetScheduleV23Q1|null $schedule schedule
      *
      * @return self
      */
@@ -664,7 +664,7 @@ class ReadAdSetV23Q1 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets bidding
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ReadAdSetBiddingV23Q1|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ReadAdSetBiddingV23Q1|null
      */
     public function getBidding()
     {
@@ -674,7 +674,7 @@ class ReadAdSetV23Q1 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets bidding
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ReadAdSetBiddingV23Q1|null $bidding bidding
+     * @param \Criteo\Api\MarketingSolutions\Model\ReadAdSetBiddingV23Q1|null $bidding bidding
      *
      * @return self
      */
@@ -691,7 +691,7 @@ class ReadAdSetV23Q1 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets targeting
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\AdSetTargetingV23Q1|null
+     * @return \Criteo\Api\MarketingSolutions\Model\AdSetTargetingV23Q1|null
      */
     public function getTargeting()
     {
@@ -701,7 +701,7 @@ class ReadAdSetV23Q1 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets targeting
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\AdSetTargetingV23Q1|null $targeting targeting
+     * @param \Criteo\Api\MarketingSolutions\Model\AdSetTargetingV23Q1|null $targeting targeting
      *
      * @return self
      */
@@ -718,7 +718,7 @@ class ReadAdSetV23Q1 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets budget
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ReadAdSetBudgetV23Q1|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ReadAdSetBudgetV23Q1|null
      */
     public function getBudget()
     {
@@ -728,7 +728,7 @@ class ReadAdSetV23Q1 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets budget
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ReadAdSetBudgetV23Q1|null $budget budget
+     * @param \Criteo\Api\MarketingSolutions\Model\ReadAdSetBudgetV23Q1|null $budget budget
      *
      * @return self
      */

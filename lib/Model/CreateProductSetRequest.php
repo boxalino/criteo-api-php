@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * CreateProductSetRequest Class Doc Comment
@@ -61,7 +61,7 @@ class CreateProductSetRequest implements ModelInterface, ArrayAccess, \JsonSeria
         'dataset_id' => 'string',
         'name' => 'string',
         'is_draft' => 'bool',
-        'rules' => '\criteo\api\marketingsolutions\preview\Model\ProductSetRule[]'
+        'rules' => '\Criteo\Api\MarketingSolutions\Model\ProductSetRule[]'
     ];
 
     /**
@@ -395,7 +395,7 @@ class CreateProductSetRequest implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets rules
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ProductSetRule[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ProductSetRule[]|null
      */
     public function getRules()
     {
@@ -405,7 +405,7 @@ class CreateProductSetRequest implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets rules
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ProductSetRule[]|null $rules rules
+     * @param \Criteo\Api\MarketingSolutions\Model\ProductSetRule[]|null $rules rules
      *
      * @return self
      */

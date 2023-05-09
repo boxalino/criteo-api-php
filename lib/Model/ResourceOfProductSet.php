@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * ResourceOfProductSet Class Doc Comment
@@ -58,7 +58,7 @@ class ResourceOfProductSet implements ModelInterface, ArrayAccess, \JsonSerializ
       * @var string[]
       */
     protected static $openAPITypes = [
-        'attributes' => '\criteo\api\marketingsolutions\preview\Model\ProductSet',
+        'attributes' => '\Criteo\Api\MarketingSolutions\Model\ProductSet',
         'id' => 'string',
         'type' => 'string'
     ];
@@ -307,7 +307,7 @@ class ResourceOfProductSet implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets attributes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ProductSet|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ProductSet|null
      */
     public function getAttributes()
     {
@@ -317,7 +317,7 @@ class ResourceOfProductSet implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets attributes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ProductSet|null $attributes attributes
+     * @param \Criteo\Api\MarketingSolutions\Model\ProductSet|null $attributes attributes
      *
      * @return self
      */

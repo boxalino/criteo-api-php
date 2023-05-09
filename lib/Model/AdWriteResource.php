@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * AdWriteResource Class Doc Comment
@@ -58,7 +58,7 @@ class AdWriteResource implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'attributes' => '\criteo\api\marketingsolutions\preview\Model\AdWrite',
+        'attributes' => '\Criteo\Api\MarketingSolutions\Model\AdWrite',
         'id' => 'string',
         'type' => 'string'
     ];
@@ -307,7 +307,7 @@ class AdWriteResource implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets attributes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\AdWrite|null
+     * @return \Criteo\Api\MarketingSolutions\Model\AdWrite|null
      */
     public function getAttributes()
     {
@@ -317,7 +317,7 @@ class AdWriteResource implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets attributes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\AdWrite|null $attributes attributes
+     * @param \Criteo\Api\MarketingSolutions\Model\AdWrite|null $attributes attributes
      *
      * @return self
      */

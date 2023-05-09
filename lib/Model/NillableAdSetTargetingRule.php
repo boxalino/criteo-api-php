@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * NillableAdSetTargetingRule Class Doc Comment
@@ -58,7 +58,7 @@ class NillableAdSetTargetingRule implements ModelInterface, ArrayAccess, \JsonSe
       * @var string[]
       */
     protected static $openAPITypes = [
-        'value' => '\criteo\api\marketingsolutions\preview\Model\NillableAdSetTargetingRuleValue'
+        'value' => '\Criteo\Api\MarketingSolutions\Model\NillableAdSetTargetingRuleValue'
     ];
 
     /**
@@ -296,7 +296,7 @@ class NillableAdSetTargetingRule implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets value
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\NillableAdSetTargetingRuleValue
+     * @return \Criteo\Api\MarketingSolutions\Model\NillableAdSetTargetingRuleValue
      */
     public function getValue()
     {
@@ -306,7 +306,7 @@ class NillableAdSetTargetingRule implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets value
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\NillableAdSetTargetingRuleValue $value value
+     * @param \Criteo\Api\MarketingSolutions\Model\NillableAdSetTargetingRuleValue $value value
      *
      * @return self
      */

@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * SetAdSetTargetingDealIdsRequest Class Doc Comment
@@ -58,7 +58,7 @@ class SetAdSetTargetingDealIdsRequest implements ModelInterface, ArrayAccess, \J
       * @var string[]
       */
     protected static $openAPITypes = [
-        'data' => '\criteo\api\marketingsolutions\preview\Model\SetAdSetTargetingDealIdsResource'
+        'data' => '\Criteo\Api\MarketingSolutions\Model\SetAdSetTargetingDealIdsResource'
     ];
 
     /**
@@ -293,7 +293,7 @@ class SetAdSetTargetingDealIdsRequest implements ModelInterface, ArrayAccess, \J
     /**
      * Gets data
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\SetAdSetTargetingDealIdsResource|null
+     * @return \Criteo\Api\MarketingSolutions\Model\SetAdSetTargetingDealIdsResource|null
      */
     public function getData()
     {
@@ -303,7 +303,7 @@ class SetAdSetTargetingDealIdsRequest implements ModelInterface, ArrayAccess, \J
     /**
      * Sets data
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\SetAdSetTargetingDealIdsResource|null $data data
+     * @param \Criteo\Api\MarketingSolutions\Model\SetAdSetTargetingDealIdsResource|null $data data
      *
      * @return self
      */

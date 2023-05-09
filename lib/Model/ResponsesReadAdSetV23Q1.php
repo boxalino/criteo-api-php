@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * ResponsesReadAdSetV23Q1 Class Doc Comment
@@ -58,9 +58,9 @@ class ResponsesReadAdSetV23Q1 implements ModelInterface, ArrayAccess, \JsonSeria
       * @var string[]
       */
     protected static $openAPITypes = [
-        'data' => '\criteo\api\marketingsolutions\preview\Model\ReadModelReadAdSetV23Q1[]',
-        'warnings' => '\criteo\api\marketingsolutions\preview\Model\ProblemDetails[]',
-        'errors' => '\criteo\api\marketingsolutions\preview\Model\ProblemDetails[]'
+        'data' => '\Criteo\Api\MarketingSolutions\Model\ReadModelReadAdSetV23Q1[]',
+        'warnings' => '\Criteo\Api\MarketingSolutions\Model\ProblemDetails[]',
+        'errors' => '\Criteo\Api\MarketingSolutions\Model\ProblemDetails[]'
     ];
 
     /**
@@ -307,7 +307,7 @@ class ResponsesReadAdSetV23Q1 implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets data
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ReadModelReadAdSetV23Q1[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ReadModelReadAdSetV23Q1[]|null
      */
     public function getData()
     {
@@ -317,7 +317,7 @@ class ResponsesReadAdSetV23Q1 implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets data
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ReadModelReadAdSetV23Q1[]|null $data data
+     * @param \Criteo\Api\MarketingSolutions\Model\ReadModelReadAdSetV23Q1[]|null $data data
      *
      * @return self
      */
@@ -336,7 +336,7 @@ class ResponsesReadAdSetV23Q1 implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets warnings
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ProblemDetails[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ProblemDetails[]|null
      */
     public function getWarnings()
     {
@@ -346,7 +346,7 @@ class ResponsesReadAdSetV23Q1 implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets warnings
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ProblemDetails[]|null $warnings warnings
+     * @param \Criteo\Api\MarketingSolutions\Model\ProblemDetails[]|null $warnings warnings
      *
      * @return self
      */
@@ -365,7 +365,7 @@ class ResponsesReadAdSetV23Q1 implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets errors
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ProblemDetails[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ProblemDetails[]|null
      */
     public function getErrors()
     {
@@ -375,7 +375,7 @@ class ResponsesReadAdSetV23Q1 implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets errors
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ProblemDetails[]|null $errors errors
+     * @param \Criteo\Api\MarketingSolutions\Model\ProblemDetails[]|null $errors errors
      *
      * @return self
      */

@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * OnSiteRecoResponse Class Doc Comment
@@ -58,7 +58,7 @@ class OnSiteRecoResponse implements ModelInterface, ArrayAccess, \JsonSerializab
       * @var string[]
       */
     protected static $openAPITypes = [
-        'products' => '\criteo\api\marketingsolutions\preview\Model\RecommendedProduct[]',
+        'products' => '\Criteo\Api\MarketingSolutions\Model\RecommendedProduct[]',
         'extra_infos' => 'int[]'
     ];
 
@@ -300,7 +300,7 @@ class OnSiteRecoResponse implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets products
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\RecommendedProduct[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\RecommendedProduct[]|null
      */
     public function getProducts()
     {
@@ -310,7 +310,7 @@ class OnSiteRecoResponse implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets products
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\RecommendedProduct[]|null $products Recommended products
+     * @param \Criteo\Api\MarketingSolutions\Model\RecommendedProduct[]|null $products Recommended products
      *
      * @return self
      */

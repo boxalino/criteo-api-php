@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * SupplyVendorResource Class Doc Comment
@@ -58,7 +58,7 @@ class SupplyVendorResource implements ModelInterface, ArrayAccess, \JsonSerializ
       * @var string[]
       */
     protected static $openAPITypes = [
-        'attributes' => '\criteo\api\marketingsolutions\preview\Model\SupplyVendor',
+        'attributes' => '\Criteo\Api\MarketingSolutions\Model\SupplyVendor',
         'id' => 'string',
         'type' => 'string'
     ];
@@ -307,7 +307,7 @@ class SupplyVendorResource implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets attributes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\SupplyVendor|null
+     * @return \Criteo\Api\MarketingSolutions\Model\SupplyVendor|null
      */
     public function getAttributes()
     {
@@ -317,7 +317,7 @@ class SupplyVendorResource implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets attributes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\SupplyVendor|null $attributes attributes
+     * @param \Criteo\Api\MarketingSolutions\Model\SupplyVendor|null $attributes attributes
      *
      * @return self
      */

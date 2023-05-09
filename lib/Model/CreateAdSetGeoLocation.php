@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * CreateAdSetGeoLocation Class Doc Comment
@@ -58,9 +58,9 @@ class CreateAdSetGeoLocation implements ModelInterface, ArrayAccess, \JsonSerial
       * @var string[]
       */
     protected static $openAPITypes = [
-        'countries' => '\criteo\api\marketingsolutions\preview\Model\AdSetTargetingRule',
-        'subdivisions' => '\criteo\api\marketingsolutions\preview\Model\AdSetTargetingRule',
-        'zip_codes' => '\criteo\api\marketingsolutions\preview\Model\AdSetTargetingRule'
+        'countries' => '\Criteo\Api\MarketingSolutions\Model\AdSetTargetingRule',
+        'subdivisions' => '\Criteo\Api\MarketingSolutions\Model\AdSetTargetingRule',
+        'zip_codes' => '\Criteo\Api\MarketingSolutions\Model\AdSetTargetingRule'
     ];
 
     /**
@@ -307,7 +307,7 @@ class CreateAdSetGeoLocation implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets countries
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\AdSetTargetingRule|null
+     * @return \Criteo\Api\MarketingSolutions\Model\AdSetTargetingRule|null
      */
     public function getCountries()
     {
@@ -317,7 +317,7 @@ class CreateAdSetGeoLocation implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets countries
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\AdSetTargetingRule|null $countries countries
+     * @param \Criteo\Api\MarketingSolutions\Model\AdSetTargetingRule|null $countries countries
      *
      * @return self
      */
@@ -334,7 +334,7 @@ class CreateAdSetGeoLocation implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets subdivisions
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\AdSetTargetingRule|null
+     * @return \Criteo\Api\MarketingSolutions\Model\AdSetTargetingRule|null
      */
     public function getSubdivisions()
     {
@@ -344,7 +344,7 @@ class CreateAdSetGeoLocation implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets subdivisions
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\AdSetTargetingRule|null $subdivisions subdivisions
+     * @param \Criteo\Api\MarketingSolutions\Model\AdSetTargetingRule|null $subdivisions subdivisions
      *
      * @return self
      */
@@ -361,7 +361,7 @@ class CreateAdSetGeoLocation implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets zip_codes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\AdSetTargetingRule|null
+     * @return \Criteo\Api\MarketingSolutions\Model\AdSetTargetingRule|null
      */
     public function getZipCodes()
     {
@@ -371,7 +371,7 @@ class CreateAdSetGeoLocation implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets zip_codes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\AdSetTargetingRule|null $zip_codes zip_codes
+     * @param \Criteo\Api\MarketingSolutions\Model\AdSetTargetingRule|null $zip_codes zip_codes
      *
      * @return self
      */

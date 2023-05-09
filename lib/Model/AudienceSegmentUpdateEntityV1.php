@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * AudienceSegmentUpdateEntityV1 Class Doc Comment
@@ -59,11 +59,11 @@ class AudienceSegmentUpdateEntityV1 implements ModelInterface, ArrayAccess, \Jso
       */
     protected static $openAPITypes = [
         'name' => 'string',
-        'description' => '\criteo\api\marketingsolutions\preview\Model\NillableString',
-        'in_market' => '\criteo\api\marketingsolutions\preview\Model\InMarketUpdateV1',
-        'location' => '\criteo\api\marketingsolutions\preview\Model\LocationUpdateV1',
-        'retargeting' => '\criteo\api\marketingsolutions\preview\Model\RetargetingUpdateV1',
-        'lookalike' => '\criteo\api\marketingsolutions\preview\Model\LookalikeUpdateV1'
+        'description' => '\Criteo\Api\MarketingSolutions\Model\NillableString',
+        'in_market' => '\Criteo\Api\MarketingSolutions\Model\InMarketUpdateV1',
+        'location' => '\Criteo\Api\MarketingSolutions\Model\LocationUpdateV1',
+        'retargeting' => '\Criteo\Api\MarketingSolutions\Model\RetargetingUpdateV1',
+        'lookalike' => '\Criteo\Api\MarketingSolutions\Model\LookalikeUpdateV1'
     ];
 
     /**
@@ -355,7 +355,7 @@ class AudienceSegmentUpdateEntityV1 implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets description
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\NillableString|null
+     * @return \Criteo\Api\MarketingSolutions\Model\NillableString|null
      */
     public function getDescription()
     {
@@ -365,7 +365,7 @@ class AudienceSegmentUpdateEntityV1 implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets description
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\NillableString|null $description description
+     * @param \Criteo\Api\MarketingSolutions\Model\NillableString|null $description description
      *
      * @return self
      */
@@ -382,7 +382,7 @@ class AudienceSegmentUpdateEntityV1 implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets in_market
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\InMarketUpdateV1|null
+     * @return \Criteo\Api\MarketingSolutions\Model\InMarketUpdateV1|null
      */
     public function getInMarket()
     {
@@ -392,7 +392,7 @@ class AudienceSegmentUpdateEntityV1 implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets in_market
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\InMarketUpdateV1|null $in_market in_market
+     * @param \Criteo\Api\MarketingSolutions\Model\InMarketUpdateV1|null $in_market in_market
      *
      * @return self
      */
@@ -409,7 +409,7 @@ class AudienceSegmentUpdateEntityV1 implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets location
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\LocationUpdateV1|null
+     * @return \Criteo\Api\MarketingSolutions\Model\LocationUpdateV1|null
      */
     public function getLocation()
     {
@@ -419,7 +419,7 @@ class AudienceSegmentUpdateEntityV1 implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets location
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\LocationUpdateV1|null $location location
+     * @param \Criteo\Api\MarketingSolutions\Model\LocationUpdateV1|null $location location
      *
      * @return self
      */
@@ -436,7 +436,7 @@ class AudienceSegmentUpdateEntityV1 implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets retargeting
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\RetargetingUpdateV1|null
+     * @return \Criteo\Api\MarketingSolutions\Model\RetargetingUpdateV1|null
      */
     public function getRetargeting()
     {
@@ -446,7 +446,7 @@ class AudienceSegmentUpdateEntityV1 implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets retargeting
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\RetargetingUpdateV1|null $retargeting retargeting
+     * @param \Criteo\Api\MarketingSolutions\Model\RetargetingUpdateV1|null $retargeting retargeting
      *
      * @return self
      */
@@ -463,7 +463,7 @@ class AudienceSegmentUpdateEntityV1 implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets lookalike
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\LookalikeUpdateV1|null
+     * @return \Criteo\Api\MarketingSolutions\Model\LookalikeUpdateV1|null
      */
     public function getLookalike()
     {
@@ -473,7 +473,7 @@ class AudienceSegmentUpdateEntityV1 implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets lookalike
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\LookalikeUpdateV1|null $lookalike lookalike
+     * @param \Criteo\Api\MarketingSolutions\Model\LookalikeUpdateV1|null $lookalike lookalike
      *
      * @return self
      */

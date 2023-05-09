@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * ReadAdSetScheduleV23Q1 Class Doc Comment
@@ -58,8 +58,8 @@ class ReadAdSetScheduleV23Q1 implements ModelInterface, ArrayAccess, \JsonSerial
       * @var string[]
       */
     protected static $openAPITypes = [
-        'start_date' => '\criteo\api\marketingsolutions\preview\Model\NillableDateTime',
-        'end_date' => '\criteo\api\marketingsolutions\preview\Model\NillableDateTime',
+        'start_date' => '\Criteo\Api\MarketingSolutions\Model\NillableDateTime',
+        'end_date' => '\Criteo\Api\MarketingSolutions\Model\NillableDateTime',
         'activation_status' => 'string',
         'delivery_status' => 'string'
     ];
@@ -378,7 +378,7 @@ class ReadAdSetScheduleV23Q1 implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets start_date
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\NillableDateTime|null
+     * @return \Criteo\Api\MarketingSolutions\Model\NillableDateTime|null
      */
     public function getStartDate()
     {
@@ -388,7 +388,7 @@ class ReadAdSetScheduleV23Q1 implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets start_date
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\NillableDateTime|null $start_date start_date
+     * @param \Criteo\Api\MarketingSolutions\Model\NillableDateTime|null $start_date start_date
      *
      * @return self
      */
@@ -405,7 +405,7 @@ class ReadAdSetScheduleV23Q1 implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets end_date
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\NillableDateTime|null
+     * @return \Criteo\Api\MarketingSolutions\Model\NillableDateTime|null
      */
     public function getEndDate()
     {
@@ -415,7 +415,7 @@ class ReadAdSetScheduleV23Q1 implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets end_date
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\NillableDateTime|null $end_date end_date
+     * @param \Criteo\Api\MarketingSolutions\Model\NillableDateTime|null $end_date end_date
      *
      * @return self
      */

@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * ResponseReadAdSet Class Doc Comment
@@ -58,9 +58,9 @@ class ResponseReadAdSet implements ModelInterface, ArrayAccess, \JsonSerializabl
       * @var string[]
       */
     protected static $openAPITypes = [
-        'data' => '\criteo\api\marketingsolutions\preview\Model\ReadModelReadAdSet',
-        'warnings' => '\criteo\api\marketingsolutions\preview\Model\ProblemDetails[]',
-        'errors' => '\criteo\api\marketingsolutions\preview\Model\ProblemDetails[]'
+        'data' => '\Criteo\Api\MarketingSolutions\Model\ReadModelReadAdSet',
+        'warnings' => '\Criteo\Api\MarketingSolutions\Model\ProblemDetails[]',
+        'errors' => '\Criteo\Api\MarketingSolutions\Model\ProblemDetails[]'
     ];
 
     /**
@@ -307,7 +307,7 @@ class ResponseReadAdSet implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets data
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ReadModelReadAdSet|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ReadModelReadAdSet|null
      */
     public function getData()
     {
@@ -317,7 +317,7 @@ class ResponseReadAdSet implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets data
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ReadModelReadAdSet|null $data data
+     * @param \Criteo\Api\MarketingSolutions\Model\ReadModelReadAdSet|null $data data
      *
      * @return self
      */
@@ -334,7 +334,7 @@ class ResponseReadAdSet implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets warnings
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ProblemDetails[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ProblemDetails[]|null
      */
     public function getWarnings()
     {
@@ -344,7 +344,7 @@ class ResponseReadAdSet implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets warnings
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ProblemDetails[]|null $warnings warnings
+     * @param \Criteo\Api\MarketingSolutions\Model\ProblemDetails[]|null $warnings warnings
      *
      * @return self
      */
@@ -363,7 +363,7 @@ class ResponseReadAdSet implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets errors
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ProblemDetails[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ProblemDetails[]|null
      */
     public function getErrors()
     {
@@ -373,7 +373,7 @@ class ResponseReadAdSet implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets errors
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ProblemDetails[]|null $errors errors
+     * @param \Criteo\Api\MarketingSolutions\Model\ProblemDetails[]|null $errors errors
      *
      * @return self
      */

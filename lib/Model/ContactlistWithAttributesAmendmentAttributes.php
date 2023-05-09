@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * ContactlistWithAttributesAmendmentAttributes Class Doc Comment
@@ -60,7 +60,7 @@ class ContactlistWithAttributesAmendmentAttributes implements ModelInterface, Ar
     protected static $openAPITypes = [
         'operation' => 'string',
         'identifier_type' => 'string',
-        'identifiers' => '\criteo\api\marketingsolutions\preview\Model\UserDef[]',
+        'identifiers' => '\Criteo\Api\MarketingSolutions\Model\UserDef[]',
         'gum_caller_id' => 'object',
         'internal_identifiers' => 'bool'
     ];
@@ -456,7 +456,7 @@ class ContactlistWithAttributesAmendmentAttributes implements ModelInterface, Ar
     /**
      * Gets identifiers
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\UserDef[]
+     * @return \Criteo\Api\MarketingSolutions\Model\UserDef[]
      */
     public function getIdentifiers()
     {
@@ -466,7 +466,7 @@ class ContactlistWithAttributesAmendmentAttributes implements ModelInterface, Ar
     /**
      * Sets identifiers
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\UserDef[] $identifiers The users to add or remove, each in the schema specified, defined with attributes
+     * @param \Criteo\Api\MarketingSolutions\Model\UserDef[] $identifiers The users to add or remove, each in the schema specified, defined with attributes
      *
      * @return self
      */

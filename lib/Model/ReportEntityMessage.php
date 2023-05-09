@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * ReportEntityMessage Class Doc Comment
@@ -59,7 +59,7 @@ class ReportEntityMessage implements ModelInterface, ArrayAccess, \JsonSerializa
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'attributes' => '\criteo\api\marketingsolutions\preview\Model\JsonReportRows'
+        'attributes' => '\Criteo\Api\MarketingSolutions\Model\JsonReportRows'
     ];
 
     /**
@@ -333,7 +333,7 @@ class ReportEntityMessage implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets attributes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\JsonReportRows
+     * @return \Criteo\Api\MarketingSolutions\Model\JsonReportRows
      */
     public function getAttributes()
     {
@@ -343,7 +343,7 @@ class ReportEntityMessage implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets attributes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\JsonReportRows $attributes attributes
+     * @param \Criteo\Api\MarketingSolutions\Model\JsonReportRows $attributes attributes
      *
      * @return self
      */

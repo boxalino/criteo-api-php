@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * Tag Class Doc Comment
@@ -59,7 +59,7 @@ class Tag implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'html_tag' => 'string',
-        'size' => '\criteo\api\marketingsolutions\preview\Model\Size'
+        'size' => '\Criteo\Api\MarketingSolutions\Model\Size'
     ];
 
     /**
@@ -327,7 +327,7 @@ class Tag implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets size
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\Size|null
+     * @return \Criteo\Api\MarketingSolutions\Model\Size|null
      */
     public function getSize()
     {
@@ -337,7 +337,7 @@ class Tag implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets size
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\Size|null $size size
+     * @param \Criteo\Api\MarketingSolutions\Model\Size|null $size size
      *
      * @return self
      */

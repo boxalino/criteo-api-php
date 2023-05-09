@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * AudienceEstimateSizeInputV1 Class Doc Comment
@@ -58,7 +58,7 @@ class AudienceEstimateSizeInputV1 implements ModelInterface, ArrayAccess, \JsonS
       * @var string[]
       */
     protected static $openAPITypes = [
-        'data' => '\criteo\api\marketingsolutions\preview\Model\AudienceEstimateSizeEntityV1Resource'
+        'data' => '\Criteo\Api\MarketingSolutions\Model\AudienceEstimateSizeEntityV1Resource'
     ];
 
     /**
@@ -293,7 +293,7 @@ class AudienceEstimateSizeInputV1 implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets data
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\AudienceEstimateSizeEntityV1Resource|null
+     * @return \Criteo\Api\MarketingSolutions\Model\AudienceEstimateSizeEntityV1Resource|null
      */
     public function getData()
     {
@@ -303,7 +303,7 @@ class AudienceEstimateSizeInputV1 implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets data
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\AudienceEstimateSizeEntityV1Resource|null $data data
+     * @param \Criteo\Api\MarketingSolutions\Model\AudienceEstimateSizeEntityV1Resource|null $data data
      *
      * @return self
      */

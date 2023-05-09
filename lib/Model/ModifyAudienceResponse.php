@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * ModifyAudienceResponse Class Doc Comment
@@ -58,9 +58,9 @@ class ModifyAudienceResponse implements ModelInterface, ArrayAccess, \JsonSerial
       * @var string[]
       */
     protected static $openAPITypes = [
-        'data' => '\criteo\api\marketingsolutions\preview\Model\ContactlistOperation',
-        'errors' => '\criteo\api\marketingsolutions\preview\Model\AudienceError[]',
-        'warnings' => '\criteo\api\marketingsolutions\preview\Model\AudienceWarning[]'
+        'data' => '\Criteo\Api\MarketingSolutions\Model\ContactlistOperation',
+        'errors' => '\Criteo\Api\MarketingSolutions\Model\AudienceError[]',
+        'warnings' => '\Criteo\Api\MarketingSolutions\Model\AudienceWarning[]'
     ];
 
     /**
@@ -316,7 +316,7 @@ class ModifyAudienceResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets data
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ContactlistOperation
+     * @return \Criteo\Api\MarketingSolutions\Model\ContactlistOperation
      */
     public function getData()
     {
@@ -326,7 +326,7 @@ class ModifyAudienceResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets data
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ContactlistOperation $data data
+     * @param \Criteo\Api\MarketingSolutions\Model\ContactlistOperation $data data
      *
      * @return self
      */
@@ -343,7 +343,7 @@ class ModifyAudienceResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets errors
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\AudienceError[]
+     * @return \Criteo\Api\MarketingSolutions\Model\AudienceError[]
      */
     public function getErrors()
     {
@@ -353,7 +353,7 @@ class ModifyAudienceResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets errors
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\AudienceError[] $errors errors
+     * @param \Criteo\Api\MarketingSolutions\Model\AudienceError[] $errors errors
      *
      * @return self
      */
@@ -370,7 +370,7 @@ class ModifyAudienceResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets warnings
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\AudienceWarning[]
+     * @return \Criteo\Api\MarketingSolutions\Model\AudienceWarning[]
      */
     public function getWarnings()
     {
@@ -380,7 +380,7 @@ class ModifyAudienceResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets warnings
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\AudienceWarning[] $warnings warnings
+     * @param \Criteo\Api\MarketingSolutions\Model\AudienceWarning[] $warnings warnings
      *
      * @return self
      */

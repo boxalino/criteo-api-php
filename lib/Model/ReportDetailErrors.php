@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * ReportDetailErrors Class Doc Comment
@@ -59,7 +59,7 @@ class ReportDetailErrors implements ModelInterface, ArrayAccess, \JsonSerializab
       */
     protected static $openAPITypes = [
         'product_id' => 'string',
-        'errors' => '\criteo\api\marketingsolutions\preview\Model\ReportDetailError[]'
+        'errors' => '\Criteo\Api\MarketingSolutions\Model\ReportDetailError[]'
     ];
 
     /**
@@ -333,7 +333,7 @@ class ReportDetailErrors implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets errors
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ReportDetailError[]
+     * @return \Criteo\Api\MarketingSolutions\Model\ReportDetailError[]
      */
     public function getErrors()
     {
@@ -343,7 +343,7 @@ class ReportDetailErrors implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets errors
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ReportDetailError[] $errors errors
+     * @param \Criteo\Api\MarketingSolutions\Model\ReportDetailError[] $errors errors
      *
      * @return self
      */

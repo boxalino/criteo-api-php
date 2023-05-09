@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * CouponSupportedSizesResource Class Doc Comment
@@ -58,7 +58,7 @@ class CouponSupportedSizesResource implements ModelInterface, ArrayAccess, \Json
       * @var string[]
       */
     protected static $openAPITypes = [
-        'attributes' => '\criteo\api\marketingsolutions\preview\Model\CouponSupportedSizes',
+        'attributes' => '\Criteo\Api\MarketingSolutions\Model\CouponSupportedSizes',
         'id' => 'string',
         'type' => 'string'
     ];
@@ -307,7 +307,7 @@ class CouponSupportedSizesResource implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets attributes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\CouponSupportedSizes|null
+     * @return \Criteo\Api\MarketingSolutions\Model\CouponSupportedSizes|null
      */
     public function getAttributes()
     {
@@ -317,7 +317,7 @@ class CouponSupportedSizesResource implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets attributes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\CouponSupportedSizes|null $attributes attributes
+     * @param \Criteo\Api\MarketingSolutions\Model\CouponSupportedSizes|null $attributes attributes
      *
      * @return self
      */

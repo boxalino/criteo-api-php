@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * Installment Class Doc Comment
@@ -59,7 +59,7 @@ class Installment implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'months' => 'int',
-        'amount' => '\criteo\api\marketingsolutions\preview\Model\Price'
+        'amount' => '\Criteo\Api\MarketingSolutions\Model\Price'
     ];
 
     /**
@@ -327,7 +327,7 @@ class Installment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets amount
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\Price|null
+     * @return \Criteo\Api\MarketingSolutions\Model\Price|null
      */
     public function getAmount()
     {
@@ -337,7 +337,7 @@ class Installment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets amount
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\Price|null $amount amount
+     * @param \Criteo\Api\MarketingSolutions\Model\Price|null $amount amount
      *
      * @return self
      */

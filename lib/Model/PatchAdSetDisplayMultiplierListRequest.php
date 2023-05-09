@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * PatchAdSetDisplayMultiplierListRequest Class Doc Comment
@@ -58,7 +58,7 @@ class PatchAdSetDisplayMultiplierListRequest implements ModelInterface, ArrayAcc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'data' => '\criteo\api\marketingsolutions\preview\Model\PatchAdSetDisplayMultiplierResource[]'
+        'data' => '\Criteo\Api\MarketingSolutions\Model\PatchAdSetDisplayMultiplierResource[]'
     ];
 
     /**
@@ -293,7 +293,7 @@ class PatchAdSetDisplayMultiplierListRequest implements ModelInterface, ArrayAcc
     /**
      * Gets data
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\PatchAdSetDisplayMultiplierResource[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\PatchAdSetDisplayMultiplierResource[]|null
      */
     public function getData()
     {
@@ -303,7 +303,7 @@ class PatchAdSetDisplayMultiplierListRequest implements ModelInterface, ArrayAcc
     /**
      * Sets data
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\PatchAdSetDisplayMultiplierResource[]|null $data data
+     * @param \Criteo\Api\MarketingSolutions\Model\PatchAdSetDisplayMultiplierResource[]|null $data data
      *
      * @return self
      */

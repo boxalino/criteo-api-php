@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * TransactionsReportQueryEntityMessage Class Doc Comment
@@ -59,7 +59,7 @@ class TransactionsReportQueryEntityMessage implements ModelInterface, ArrayAcces
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'attributes' => '\criteo\api\marketingsolutions\preview\Model\TransactionsReportQueryMessage'
+        'attributes' => '\Criteo\Api\MarketingSolutions\Model\TransactionsReportQueryMessage'
     ];
 
     /**
@@ -333,7 +333,7 @@ class TransactionsReportQueryEntityMessage implements ModelInterface, ArrayAcces
     /**
      * Gets attributes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\TransactionsReportQueryMessage
+     * @return \Criteo\Api\MarketingSolutions\Model\TransactionsReportQueryMessage
      */
     public function getAttributes()
     {
@@ -343,7 +343,7 @@ class TransactionsReportQueryEntityMessage implements ModelInterface, ArrayAcces
     /**
      * Sets attributes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\TransactionsReportQueryMessage $attributes attributes
+     * @param \Criteo\Api\MarketingSolutions\Model\TransactionsReportQueryMessage $attributes attributes
      *
      * @return self
      */

@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * UserDef Class Doc Comment
@@ -59,7 +59,7 @@ class UserDef implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'identifier' => 'string',
-        'attributes' => '\criteo\api\marketingsolutions\preview\Model\Attribute[]'
+        'attributes' => '\Criteo\Api\MarketingSolutions\Model\Attribute[]'
     ];
 
     /**
@@ -333,7 +333,7 @@ class UserDef implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets attributes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\Attribute[]
+     * @return \Criteo\Api\MarketingSolutions\Model\Attribute[]
      */
     public function getAttributes()
     {
@@ -343,7 +343,7 @@ class UserDef implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets attributes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\Attribute[] $attributes attributes
+     * @param \Criteo\Api\MarketingSolutions\Model\Attribute[] $attributes attributes
      *
      * @return self
      */

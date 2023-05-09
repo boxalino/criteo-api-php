@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * PatchAdSetScheduling Class Doc Comment
@@ -58,8 +58,8 @@ class PatchAdSetScheduling implements ModelInterface, ArrayAccess, \JsonSerializ
       * @var string[]
       */
     protected static $openAPITypes = [
-        'start_date' => '\criteo\api\marketingsolutions\preview\Model\NillableDateTime',
-        'end_date' => '\criteo\api\marketingsolutions\preview\Model\NillableDateTime'
+        'start_date' => '\Criteo\Api\MarketingSolutions\Model\NillableDateTime',
+        'end_date' => '\Criteo\Api\MarketingSolutions\Model\NillableDateTime'
     ];
 
     /**
@@ -300,7 +300,7 @@ class PatchAdSetScheduling implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets start_date
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\NillableDateTime|null
+     * @return \Criteo\Api\MarketingSolutions\Model\NillableDateTime|null
      */
     public function getStartDate()
     {
@@ -310,7 +310,7 @@ class PatchAdSetScheduling implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets start_date
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\NillableDateTime|null $start_date start_date
+     * @param \Criteo\Api\MarketingSolutions\Model\NillableDateTime|null $start_date start_date
      *
      * @return self
      */
@@ -327,7 +327,7 @@ class PatchAdSetScheduling implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets end_date
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\NillableDateTime|null
+     * @return \Criteo\Api\MarketingSolutions\Model\NillableDateTime|null
      */
     public function getEndDate()
     {
@@ -337,7 +337,7 @@ class PatchAdSetScheduling implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets end_date
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\NillableDateTime|null $end_date end_date
+     * @param \Criteo\Api\MarketingSolutions\Model\NillableDateTime|null $end_date end_date
      *
      * @return self
      */

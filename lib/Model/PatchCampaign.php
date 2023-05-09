@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * PatchCampaign Class Doc Comment
@@ -58,7 +58,7 @@ class PatchCampaign implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'spend_limit' => '\criteo\api\marketingsolutions\preview\Model\PatchCampaignSpendLimit'
+        'spend_limit' => '\Criteo\Api\MarketingSolutions\Model\PatchCampaignSpendLimit'
     ];
 
     /**
@@ -293,7 +293,7 @@ class PatchCampaign implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets spend_limit
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\PatchCampaignSpendLimit|null
+     * @return \Criteo\Api\MarketingSolutions\Model\PatchCampaignSpendLimit|null
      */
     public function getSpendLimit()
     {
@@ -303,7 +303,7 @@ class PatchCampaign implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets spend_limit
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\PatchCampaignSpendLimit|null $spend_limit spend_limit
+     * @param \Criteo\Api\MarketingSolutions\Model\PatchCampaignSpendLimit|null $spend_limit spend_limit
      *
      * @return self
      */

@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * StatisticsRecordList Class Doc Comment
@@ -58,7 +58,7 @@ class StatisticsRecordList implements ModelInterface, ArrayAccess, \JsonSerializ
       * @var string[]
       */
     protected static $openAPITypes = [
-        'statistics_record_list' => '\criteo\api\marketingsolutions\preview\Model\StatisticsRecord[]'
+        'statistics_record_list' => '\Criteo\Api\MarketingSolutions\Model\StatisticsRecord[]'
     ];
 
     /**
@@ -296,7 +296,7 @@ class StatisticsRecordList implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets statistics_record_list
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\StatisticsRecord[]
+     * @return \Criteo\Api\MarketingSolutions\Model\StatisticsRecord[]
      */
     public function getStatisticsRecordList()
     {
@@ -306,7 +306,7 @@ class StatisticsRecordList implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets statistics_record_list
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\StatisticsRecord[] $statistics_record_list statistics_record_list
+     * @param \Criteo\Api\MarketingSolutions\Model\StatisticsRecord[] $statistics_record_list statistics_record_list
      *
      * @return self
      */

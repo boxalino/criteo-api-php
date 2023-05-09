@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * AdSetTargetingDealIdsResponse Class Doc Comment
@@ -58,9 +58,9 @@ class AdSetTargetingDealIdsResponse implements ModelInterface, ArrayAccess, \Jso
       * @var string[]
       */
     protected static $openAPITypes = [
-        'data' => '\criteo\api\marketingsolutions\preview\Model\AdSetTargetingDealIdsResource',
-        'warnings' => '\criteo\api\marketingsolutions\preview\Model\CommonProblem[]',
-        'errors' => '\criteo\api\marketingsolutions\preview\Model\CommonProblem[]'
+        'data' => '\Criteo\Api\MarketingSolutions\Model\AdSetTargetingDealIdsResource',
+        'warnings' => '\Criteo\Api\MarketingSolutions\Model\CommonProblem[]',
+        'errors' => '\Criteo\Api\MarketingSolutions\Model\CommonProblem[]'
     ];
 
     /**
@@ -307,7 +307,7 @@ class AdSetTargetingDealIdsResponse implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets data
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\AdSetTargetingDealIdsResource|null
+     * @return \Criteo\Api\MarketingSolutions\Model\AdSetTargetingDealIdsResource|null
      */
     public function getData()
     {
@@ -317,7 +317,7 @@ class AdSetTargetingDealIdsResponse implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets data
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\AdSetTargetingDealIdsResource|null $data data
+     * @param \Criteo\Api\MarketingSolutions\Model\AdSetTargetingDealIdsResource|null $data data
      *
      * @return self
      */
@@ -334,7 +334,7 @@ class AdSetTargetingDealIdsResponse implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets warnings
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\CommonProblem[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\CommonProblem[]|null
      */
     public function getWarnings()
     {
@@ -344,7 +344,7 @@ class AdSetTargetingDealIdsResponse implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets warnings
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\CommonProblem[]|null $warnings warnings
+     * @param \Criteo\Api\MarketingSolutions\Model\CommonProblem[]|null $warnings warnings
      *
      * @return self
      */
@@ -363,7 +363,7 @@ class AdSetTargetingDealIdsResponse implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets errors
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\CommonProblem[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\CommonProblem[]|null
      */
     public function getErrors()
     {
@@ -373,7 +373,7 @@ class AdSetTargetingDealIdsResponse implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets errors
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\CommonProblem[]|null $errors errors
+     * @param \Criteo\Api\MarketingSolutions\Model\CommonProblem[]|null $errors errors
      *
      * @return self
      */

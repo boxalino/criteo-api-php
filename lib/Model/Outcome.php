@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * Outcome Class Doc Comment
@@ -58,8 +58,8 @@ class Outcome implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'warnings' => '\criteo\api\marketingsolutions\preview\Model\ProblemDetails[]',
-        'errors' => '\criteo\api\marketingsolutions\preview\Model\ProblemDetails[]'
+        'warnings' => '\Criteo\Api\MarketingSolutions\Model\ProblemDetails[]',
+        'errors' => '\Criteo\Api\MarketingSolutions\Model\ProblemDetails[]'
     ];
 
     /**
@@ -300,7 +300,7 @@ class Outcome implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets warnings
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ProblemDetails[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ProblemDetails[]|null
      */
     public function getWarnings()
     {
@@ -310,7 +310,7 @@ class Outcome implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets warnings
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ProblemDetails[]|null $warnings warnings
+     * @param \Criteo\Api\MarketingSolutions\Model\ProblemDetails[]|null $warnings warnings
      *
      * @return self
      */
@@ -329,7 +329,7 @@ class Outcome implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets errors
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ProblemDetails[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ProblemDetails[]|null
      */
     public function getErrors()
     {
@@ -339,7 +339,7 @@ class Outcome implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets errors
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ProblemDetails[]|null $errors errors
+     * @param \Criteo\Api\MarketingSolutions\Model\ProblemDetails[]|null $errors errors
      *
      * @return self
      */

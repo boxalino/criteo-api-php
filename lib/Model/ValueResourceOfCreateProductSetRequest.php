@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * ValueResourceOfCreateProductSetRequest Class Doc Comment
@@ -59,7 +59,7 @@ class ValueResourceOfCreateProductSetRequest implements ModelInterface, ArrayAcc
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'attributes' => '\criteo\api\marketingsolutions\preview\Model\CreateProductSetRequest'
+        'attributes' => '\Criteo\Api\MarketingSolutions\Model\CreateProductSetRequest'
     ];
 
     /**
@@ -327,7 +327,7 @@ class ValueResourceOfCreateProductSetRequest implements ModelInterface, ArrayAcc
     /**
      * Gets attributes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\CreateProductSetRequest|null
+     * @return \Criteo\Api\MarketingSolutions\Model\CreateProductSetRequest|null
      */
     public function getAttributes()
     {
@@ -337,7 +337,7 @@ class ValueResourceOfCreateProductSetRequest implements ModelInterface, ArrayAcc
     /**
      * Sets attributes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\CreateProductSetRequest|null $attributes attributes
+     * @param \Criteo\Api\MarketingSolutions\Model\CreateProductSetRequest|null $attributes attributes
      *
      * @return self
      */

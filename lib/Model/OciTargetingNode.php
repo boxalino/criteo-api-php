@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * OciTargetingNode Class Doc Comment
@@ -58,9 +58,9 @@ class OciTargetingNode implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'operator' => '\criteo\api\marketingsolutions\preview\Model\TargetingOperator',
+        'operator' => '\Criteo\Api\MarketingSolutions\Model\TargetingOperator',
         'value' => 'string',
-        'children' => '\criteo\api\marketingsolutions\preview\Model\OciTargetingNode[]'
+        'children' => '\Criteo\Api\MarketingSolutions\Model\OciTargetingNode[]'
     ];
 
     /**
@@ -307,7 +307,7 @@ class OciTargetingNode implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets operator
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\TargetingOperator|null
+     * @return \Criteo\Api\MarketingSolutions\Model\TargetingOperator|null
      */
     public function getOperator()
     {
@@ -317,7 +317,7 @@ class OciTargetingNode implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets operator
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\TargetingOperator|null $operator operator
+     * @param \Criteo\Api\MarketingSolutions\Model\TargetingOperator|null $operator operator
      *
      * @return self
      */
@@ -361,7 +361,7 @@ class OciTargetingNode implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets children
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\OciTargetingNode[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\OciTargetingNode[]|null
      */
     public function getChildren()
     {
@@ -371,7 +371,7 @@ class OciTargetingNode implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets children
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\OciTargetingNode[]|null $children children
+     * @param \Criteo\Api\MarketingSolutions\Model\OciTargetingNode[]|null $children children
      *
      * @return self
      */

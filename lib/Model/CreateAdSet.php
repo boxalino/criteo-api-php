@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * CreateAdSet Class Doc Comment
@@ -62,10 +62,10 @@ class CreateAdSet implements ModelInterface, ArrayAccess, \JsonSerializable
         'dataset_id' => 'string',
         'campaign_id' => 'string',
         'objective' => 'string',
-        'schedule' => '\criteo\api\marketingsolutions\preview\Model\CreateAdSetSchedule',
-        'bidding' => '\criteo\api\marketingsolutions\preview\Model\CreateAdSetBidding',
-        'targeting' => '\criteo\api\marketingsolutions\preview\Model\CreateAdSetTargeting',
-        'budget' => '\criteo\api\marketingsolutions\preview\Model\CreateAdSetBudget',
+        'schedule' => '\Criteo\Api\MarketingSolutions\Model\CreateAdSetSchedule',
+        'bidding' => '\Criteo\Api\MarketingSolutions\Model\CreateAdSetBidding',
+        'targeting' => '\Criteo\Api\MarketingSolutions\Model\CreateAdSetTargeting',
+        'budget' => '\Criteo\Api\MarketingSolutions\Model\CreateAdSetBudget',
         'tracking_code' => 'string',
         'media_type' => 'string'
     ];
@@ -540,7 +540,7 @@ class CreateAdSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets schedule
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\CreateAdSetSchedule|null
+     * @return \Criteo\Api\MarketingSolutions\Model\CreateAdSetSchedule|null
      */
     public function getSchedule()
     {
@@ -550,7 +550,7 @@ class CreateAdSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets schedule
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\CreateAdSetSchedule|null $schedule schedule
+     * @param \Criteo\Api\MarketingSolutions\Model\CreateAdSetSchedule|null $schedule schedule
      *
      * @return self
      */
@@ -567,7 +567,7 @@ class CreateAdSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets bidding
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\CreateAdSetBidding|null
+     * @return \Criteo\Api\MarketingSolutions\Model\CreateAdSetBidding|null
      */
     public function getBidding()
     {
@@ -577,7 +577,7 @@ class CreateAdSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets bidding
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\CreateAdSetBidding|null $bidding bidding
+     * @param \Criteo\Api\MarketingSolutions\Model\CreateAdSetBidding|null $bidding bidding
      *
      * @return self
      */
@@ -594,7 +594,7 @@ class CreateAdSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets targeting
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\CreateAdSetTargeting|null
+     * @return \Criteo\Api\MarketingSolutions\Model\CreateAdSetTargeting|null
      */
     public function getTargeting()
     {
@@ -604,7 +604,7 @@ class CreateAdSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets targeting
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\CreateAdSetTargeting|null $targeting targeting
+     * @param \Criteo\Api\MarketingSolutions\Model\CreateAdSetTargeting|null $targeting targeting
      *
      * @return self
      */
@@ -621,7 +621,7 @@ class CreateAdSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets budget
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\CreateAdSetBudget|null
+     * @return \Criteo\Api\MarketingSolutions\Model\CreateAdSetBudget|null
      */
     public function getBudget()
     {
@@ -631,7 +631,7 @@ class CreateAdSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets budget
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\CreateAdSetBudget|null $budget budget
+     * @param \Criteo\Api\MarketingSolutions\Model\CreateAdSetBudget|null $budget budget
      *
      * @return self
      */

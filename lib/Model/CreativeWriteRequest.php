@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * CreativeWriteRequest Class Doc Comment
@@ -58,7 +58,7 @@ class CreativeWriteRequest implements ModelInterface, ArrayAccess, \JsonSerializ
       * @var string[]
       */
     protected static $openAPITypes = [
-        'data' => '\criteo\api\marketingsolutions\preview\Model\CreativeWriteResource'
+        'data' => '\Criteo\Api\MarketingSolutions\Model\CreativeWriteResource'
     ];
 
     /**
@@ -293,7 +293,7 @@ class CreativeWriteRequest implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets data
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\CreativeWriteResource|null
+     * @return \Criteo\Api\MarketingSolutions\Model\CreativeWriteResource|null
      */
     public function getData()
     {
@@ -303,7 +303,7 @@ class CreativeWriteRequest implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets data
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\CreativeWriteResource|null $data data
+     * @param \Criteo\Api\MarketingSolutions\Model\CreativeWriteResource|null $data data
      *
      * @return self
      */

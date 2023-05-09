@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * OciBrandSafetyRule Class Doc Comment
@@ -58,8 +58,8 @@ class OciBrandSafetyRule implements ModelInterface, ArrayAccess, \JsonSerializab
       * @var string[]
       */
     protected static $openAPITypes = [
-        'target' => '\criteo\api\marketingsolutions\preview\Model\Target',
-        'blacklisted' => '\criteo\api\marketingsolutions\preview\Model\OciBrandSafetySegment[]'
+        'target' => '\Criteo\Api\MarketingSolutions\Model\Target',
+        'blacklisted' => '\Criteo\Api\MarketingSolutions\Model\OciBrandSafetySegment[]'
     ];
 
     /**
@@ -300,7 +300,7 @@ class OciBrandSafetyRule implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets target
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\Target|null
+     * @return \Criteo\Api\MarketingSolutions\Model\Target|null
      */
     public function getTarget()
     {
@@ -310,7 +310,7 @@ class OciBrandSafetyRule implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets target
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\Target|null $target target
+     * @param \Criteo\Api\MarketingSolutions\Model\Target|null $target target
      *
      * @return self
      */
@@ -327,7 +327,7 @@ class OciBrandSafetyRule implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets blacklisted
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\OciBrandSafetySegment[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\OciBrandSafetySegment[]|null
      */
     public function getBlacklisted()
     {
@@ -337,7 +337,7 @@ class OciBrandSafetyRule implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets blacklisted
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\OciBrandSafetySegment[]|null $blacklisted blacklisted
+     * @param \Criteo\Api\MarketingSolutions\Model\OciBrandSafetySegment[]|null $blacklisted blacklisted
      *
      * @return self
      */

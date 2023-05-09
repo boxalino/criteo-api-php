@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * SetAdSetTargetingDealIds Class Doc Comment
@@ -58,7 +58,7 @@ class SetAdSetTargetingDealIds implements ModelInterface, ArrayAccess, \JsonSeri
       * @var string[]
       */
     protected static $openAPITypes = [
-        'deal_ids' => '\criteo\api\marketingsolutions\preview\Model\DealId[]'
+        'deal_ids' => '\Criteo\Api\MarketingSolutions\Model\DealId[]'
     ];
 
     /**
@@ -293,7 +293,7 @@ class SetAdSetTargetingDealIds implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets deal_ids
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\DealId[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\DealId[]|null
      */
     public function getDealIds()
     {
@@ -303,7 +303,7 @@ class SetAdSetTargetingDealIds implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets deal_ids
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\DealId[]|null $deal_ids deal_ids
+     * @param \Criteo\Api\MarketingSolutions\Model\DealId[]|null $deal_ids deal_ids
      *
      * @return self
      */

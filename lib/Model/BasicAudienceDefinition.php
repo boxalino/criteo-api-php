@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * BasicAudienceDefinition Class Doc Comment
@@ -60,7 +60,7 @@ class BasicAudienceDefinition implements ModelInterface, ArrayAccess, \JsonSeria
     protected static $openAPITypes = [
         'id' => 'string',
         'type' => 'string',
-        'attributes' => '\criteo\api\marketingsolutions\preview\Model\AudienceNameDescription'
+        'attributes' => '\Criteo\Api\MarketingSolutions\Model\AudienceNameDescription'
     ];
 
     /**
@@ -367,7 +367,7 @@ class BasicAudienceDefinition implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets attributes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\AudienceNameDescription|null
+     * @return \Criteo\Api\MarketingSolutions\Model\AudienceNameDescription|null
      */
     public function getAttributes()
     {
@@ -377,7 +377,7 @@ class BasicAudienceDefinition implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets attributes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\AudienceNameDescription|null $attributes attributes
+     * @param \Criteo\Api\MarketingSolutions\Model\AudienceNameDescription|null $attributes attributes
      *
      * @return self
      */

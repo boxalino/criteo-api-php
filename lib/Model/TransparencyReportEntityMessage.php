@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * TransparencyReportEntityMessage Class Doc Comment
@@ -59,7 +59,7 @@ class TransparencyReportEntityMessage implements ModelInterface, ArrayAccess, \J
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'attributes' => '\criteo\api\marketingsolutions\preview\Model\TransparencyReportAttributes'
+        'attributes' => '\Criteo\Api\MarketingSolutions\Model\TransparencyReportAttributes'
     ];
 
     /**
@@ -333,7 +333,7 @@ class TransparencyReportEntityMessage implements ModelInterface, ArrayAccess, \J
     /**
      * Gets attributes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\TransparencyReportAttributes
+     * @return \Criteo\Api\MarketingSolutions\Model\TransparencyReportAttributes
      */
     public function getAttributes()
     {
@@ -343,7 +343,7 @@ class TransparencyReportEntityMessage implements ModelInterface, ArrayAccess, \J
     /**
      * Sets attributes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\TransparencyReportAttributes $attributes attributes
+     * @param \Criteo\Api\MarketingSolutions\Model\TransparencyReportAttributes $attributes attributes
      *
      * @return self
      */

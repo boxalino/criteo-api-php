@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * Coupon Class Doc Comment
@@ -68,7 +68,7 @@ class Coupon implements ModelInterface, ArrayAccess, \JsonSerializable
         'end_date' => 'string',
         'format' => 'string',
         'status' => 'string',
-        'images' => '\criteo\api\marketingsolutions\preview\Model\ImageSlide[]',
+        'images' => '\Criteo\Api\MarketingSolutions\Model\ImageSlide[]',
         'show_every' => 'int',
         'show_duration' => 'int',
         'rotations_number' => 'int'
@@ -654,7 +654,7 @@ class Coupon implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets images
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ImageSlide[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ImageSlide[]|null
      */
     public function getImages()
     {
@@ -664,7 +664,7 @@ class Coupon implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets images
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ImageSlide[]|null $images List of slides containing the image URLs
+     * @param \Criteo\Api\MarketingSolutions\Model\ImageSlide[]|null $images List of slides containing the image URLs
      *
      * @return self
      */

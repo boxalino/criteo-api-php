@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * AdaptiveWriteAttributes Class Doc Comment
@@ -65,8 +65,8 @@ class AdaptiveWriteAttributes implements ModelInterface, ArrayAccess, \JsonSeria
         'description_text' => 'string',
         'description_font' => 'string',
         'calls_to_action' => 'string[]',
-        'colors' => '\criteo\api\marketingsolutions\preview\Model\AdaptiveColors',
-        'image_sets_base64' => '\criteo\api\marketingsolutions\preview\Model\ImageSetBase64[]',
+        'colors' => '\Criteo\Api\MarketingSolutions\Model\AdaptiveColors',
+        'image_sets_base64' => '\Criteo\Api\MarketingSolutions\Model\ImageSetBase64[]',
         'image_display' => 'string',
         'video_base64_strings' => 'string[]',
         'landing_page_url' => 'string'
@@ -590,7 +590,7 @@ class AdaptiveWriteAttributes implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets colors
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\AdaptiveColors
+     * @return \Criteo\Api\MarketingSolutions\Model\AdaptiveColors
      */
     public function getColors()
     {
@@ -600,7 +600,7 @@ class AdaptiveWriteAttributes implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets colors
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\AdaptiveColors $colors colors
+     * @param \Criteo\Api\MarketingSolutions\Model\AdaptiveColors $colors colors
      *
      * @return self
      */
@@ -617,7 +617,7 @@ class AdaptiveWriteAttributes implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets image_sets_base64
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ImageSetBase64[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ImageSetBase64[]|null
      */
     public function getImageSetsBase64()
     {
@@ -627,7 +627,7 @@ class AdaptiveWriteAttributes implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets image_sets_base64
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ImageSetBase64[]|null $image_sets_base64 Multiple image sets, each image set consists of multiple images as a base-64 encoded string and a headline text.
+     * @param \Criteo\Api\MarketingSolutions\Model\ImageSetBase64[]|null $image_sets_base64 Multiple image sets, each image set consists of multiple images as a base-64 encoded string and a headline text.
      *
      * @return self
      */

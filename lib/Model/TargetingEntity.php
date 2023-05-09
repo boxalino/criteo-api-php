@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * TargetingEntity Class Doc Comment
@@ -60,7 +60,7 @@ class TargetingEntity implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'type' => 'string',
         'mode' => 'string',
-        'data' => '\criteo\api\marketingsolutions\preview\Model\EntityFilter[]'
+        'data' => '\Criteo\Api\MarketingSolutions\Model\EntityFilter[]'
     ];
 
     /**
@@ -361,7 +361,7 @@ class TargetingEntity implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets data
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\EntityFilter[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\EntityFilter[]|null
      */
     public function getData()
     {
@@ -371,7 +371,7 @@ class TargetingEntity implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets data
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\EntityFilter[]|null $data data
+     * @param \Criteo\Api\MarketingSolutions\Model\EntityFilter[]|null $data data
      *
      * @return self
      */

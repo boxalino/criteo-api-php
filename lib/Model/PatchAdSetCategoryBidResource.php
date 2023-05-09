@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * PatchAdSetCategoryBidResource Class Doc Comment
@@ -58,7 +58,7 @@ class PatchAdSetCategoryBidResource implements ModelInterface, ArrayAccess, \Jso
       * @var string[]
       */
     protected static $openAPITypes = [
-        'attributes' => '\criteo\api\marketingsolutions\preview\Model\PatchAdSetCategoryBid',
+        'attributes' => '\Criteo\Api\MarketingSolutions\Model\PatchAdSetCategoryBid',
         'id' => 'string',
         'type' => 'string'
     ];
@@ -307,7 +307,7 @@ class PatchAdSetCategoryBidResource implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets attributes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\PatchAdSetCategoryBid|null
+     * @return \Criteo\Api\MarketingSolutions\Model\PatchAdSetCategoryBid|null
      */
     public function getAttributes()
     {
@@ -317,7 +317,7 @@ class PatchAdSetCategoryBidResource implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets attributes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\PatchAdSetCategoryBid|null $attributes attributes
+     * @param \Criteo\Api\MarketingSolutions\Model\PatchAdSetCategoryBid|null $attributes attributes
      *
      * @return self
      */

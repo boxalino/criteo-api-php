@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Api;
+namespace Criteo\Api\MarketingSolutions\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,10 +34,10 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use criteo\api\marketingsolutions\preview\ApiException;
-use criteo\api\marketingsolutions\preview\Configuration;
-use criteo\api\marketingsolutions\preview\HeaderSelector;
-use criteo\api\marketingsolutions\preview\ObjectSerializer;
+use Criteo\Api\MarketingSolutions\ApiException;
+use Criteo\Api\MarketingSolutions\Configuration;
+use Criteo\Api\MarketingSolutions\HeaderSelector;
+use Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * RecoApi Class Doc Comment
@@ -140,12 +140,12 @@ class RecoApi
     /**
      * Operation createProductSet
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\ValueResourceInputOfCreateProductSetRequest $value_resource_input_of_create_product_set_request value_resource_input_of_create_product_set_request (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\ValueResourceInputOfCreateProductSetRequest $value_resource_input_of_create_product_set_request value_resource_input_of_create_product_set_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createProductSet'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \criteo\api\marketingsolutions\preview\Model\ResourceOutcomeOfProductSet|\criteo\api\marketingsolutions\preview\Model\Outcome|\criteo\api\marketingsolutions\preview\Model\Outcome|\criteo\api\marketingsolutions\preview\Model\Outcome|\criteo\api\marketingsolutions\preview\Model\Outcome
+     * @return \Criteo\Api\MarketingSolutions\Model\ResourceOutcomeOfProductSet|\Criteo\Api\MarketingSolutions\Model\Outcome|\Criteo\Api\MarketingSolutions\Model\Outcome|\Criteo\Api\MarketingSolutions\Model\Outcome|\Criteo\Api\MarketingSolutions\Model\Outcome
      */
     public function createProductSet($value_resource_input_of_create_product_set_request = null, string $contentType = self::contentTypes['createProductSet'][0])
     {
@@ -156,12 +156,12 @@ class RecoApi
     /**
      * Operation createProductSetWithHttpInfo
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\ValueResourceInputOfCreateProductSetRequest $value_resource_input_of_create_product_set_request (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\ValueResourceInputOfCreateProductSetRequest $value_resource_input_of_create_product_set_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createProductSet'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \criteo\api\marketingsolutions\preview\Model\ResourceOutcomeOfProductSet|\criteo\api\marketingsolutions\preview\Model\Outcome|\criteo\api\marketingsolutions\preview\Model\Outcome|\criteo\api\marketingsolutions\preview\Model\Outcome|\criteo\api\marketingsolutions\preview\Model\Outcome, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Criteo\Api\MarketingSolutions\Model\ResourceOutcomeOfProductSet|\Criteo\Api\MarketingSolutions\Model\Outcome|\Criteo\Api\MarketingSolutions\Model\Outcome|\Criteo\Api\MarketingSolutions\Model\Outcome|\Criteo\Api\MarketingSolutions\Model\Outcome, HTTP status code, HTTP response headers (array of strings)
      */
     public function createProductSetWithHttpInfo($value_resource_input_of_create_product_set_request = null, string $contentType = self::contentTypes['createProductSet'][0])
     {
@@ -204,83 +204,83 @@ class RecoApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\criteo\api\marketingsolutions\preview\Model\ResourceOutcomeOfProductSet' === '\SplFileObject') {
+                    if ('\Criteo\Api\MarketingSolutions\Model\ResourceOutcomeOfProductSet' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\criteo\api\marketingsolutions\preview\Model\ResourceOutcomeOfProductSet' !== 'string') {
+                        if ('\Criteo\Api\MarketingSolutions\Model\ResourceOutcomeOfProductSet' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\criteo\api\marketingsolutions\preview\Model\ResourceOutcomeOfProductSet', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Api\MarketingSolutions\Model\ResourceOutcomeOfProductSet', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\criteo\api\marketingsolutions\preview\Model\Outcome' === '\SplFileObject') {
+                    if ('\Criteo\Api\MarketingSolutions\Model\Outcome' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\criteo\api\marketingsolutions\preview\Model\Outcome' !== 'string') {
+                        if ('\Criteo\Api\MarketingSolutions\Model\Outcome' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\criteo\api\marketingsolutions\preview\Model\Outcome', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Api\MarketingSolutions\Model\Outcome', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\criteo\api\marketingsolutions\preview\Model\Outcome' === '\SplFileObject') {
+                    if ('\Criteo\Api\MarketingSolutions\Model\Outcome' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\criteo\api\marketingsolutions\preview\Model\Outcome' !== 'string') {
+                        if ('\Criteo\Api\MarketingSolutions\Model\Outcome' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\criteo\api\marketingsolutions\preview\Model\Outcome', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Api\MarketingSolutions\Model\Outcome', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\criteo\api\marketingsolutions\preview\Model\Outcome' === '\SplFileObject') {
+                    if ('\Criteo\Api\MarketingSolutions\Model\Outcome' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\criteo\api\marketingsolutions\preview\Model\Outcome' !== 'string') {
+                        if ('\Criteo\Api\MarketingSolutions\Model\Outcome' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\criteo\api\marketingsolutions\preview\Model\Outcome', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Api\MarketingSolutions\Model\Outcome', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 500:
-                    if ('\criteo\api\marketingsolutions\preview\Model\Outcome' === '\SplFileObject') {
+                    if ('\Criteo\Api\MarketingSolutions\Model\Outcome' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\criteo\api\marketingsolutions\preview\Model\Outcome' !== 'string') {
+                        if ('\Criteo\Api\MarketingSolutions\Model\Outcome' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\criteo\api\marketingsolutions\preview\Model\Outcome', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Api\MarketingSolutions\Model\Outcome', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\criteo\api\marketingsolutions\preview\Model\ResourceOutcomeOfProductSet';
+            $returnType = '\Criteo\Api\MarketingSolutions\Model\ResourceOutcomeOfProductSet';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -301,7 +301,7 @@ class RecoApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\criteo\api\marketingsolutions\preview\Model\ResourceOutcomeOfProductSet',
+                        '\Criteo\Api\MarketingSolutions\Model\ResourceOutcomeOfProductSet',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -309,7 +309,7 @@ class RecoApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\criteo\api\marketingsolutions\preview\Model\Outcome',
+                        '\Criteo\Api\MarketingSolutions\Model\Outcome',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -317,7 +317,7 @@ class RecoApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\criteo\api\marketingsolutions\preview\Model\Outcome',
+                        '\Criteo\Api\MarketingSolutions\Model\Outcome',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -325,7 +325,7 @@ class RecoApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\criteo\api\marketingsolutions\preview\Model\Outcome',
+                        '\Criteo\Api\MarketingSolutions\Model\Outcome',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -333,7 +333,7 @@ class RecoApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\criteo\api\marketingsolutions\preview\Model\Outcome',
+                        '\Criteo\Api\MarketingSolutions\Model\Outcome',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -346,7 +346,7 @@ class RecoApi
     /**
      * Operation createProductSetAsync
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\ValueResourceInputOfCreateProductSetRequest $value_resource_input_of_create_product_set_request (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\ValueResourceInputOfCreateProductSetRequest $value_resource_input_of_create_product_set_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createProductSet'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -365,7 +365,7 @@ class RecoApi
     /**
      * Operation createProductSetAsyncWithHttpInfo
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\ValueResourceInputOfCreateProductSetRequest $value_resource_input_of_create_product_set_request (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\ValueResourceInputOfCreateProductSetRequest $value_resource_input_of_create_product_set_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createProductSet'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -373,7 +373,7 @@ class RecoApi
      */
     public function createProductSetAsyncWithHttpInfo($value_resource_input_of_create_product_set_request = null, string $contentType = self::contentTypes['createProductSet'][0])
     {
-        $returnType = '\criteo\api\marketingsolutions\preview\Model\ResourceOutcomeOfProductSet';
+        $returnType = '\Criteo\Api\MarketingSolutions\Model\ResourceOutcomeOfProductSet';
         $request = $this->createProductSetRequest($value_resource_input_of_create_product_set_request, $contentType);
 
         return $this->client
@@ -415,7 +415,7 @@ class RecoApi
     /**
      * Create request for operation 'createProductSet'
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\ValueResourceInputOfCreateProductSetRequest $value_resource_input_of_create_product_set_request (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\ValueResourceInputOfCreateProductSetRequest $value_resource_input_of_create_product_set_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createProductSet'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -511,9 +511,9 @@ class RecoApi
      * @param  string $product_set_id ID of the product set (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['fetchProductSet'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \criteo\api\marketingsolutions\preview\Model\ResourceOutcomeOfProductSet|\criteo\api\marketingsolutions\preview\Model\Outcome|\criteo\api\marketingsolutions\preview\Model\Outcome|\criteo\api\marketingsolutions\preview\Model\Outcome
+     * @return \Criteo\Api\MarketingSolutions\Model\ResourceOutcomeOfProductSet|\Criteo\Api\MarketingSolutions\Model\Outcome|\Criteo\Api\MarketingSolutions\Model\Outcome|\Criteo\Api\MarketingSolutions\Model\Outcome
      */
     public function fetchProductSet($product_set_id, string $contentType = self::contentTypes['fetchProductSet'][0])
     {
@@ -527,9 +527,9 @@ class RecoApi
      * @param  string $product_set_id ID of the product set (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['fetchProductSet'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \criteo\api\marketingsolutions\preview\Model\ResourceOutcomeOfProductSet|\criteo\api\marketingsolutions\preview\Model\Outcome|\criteo\api\marketingsolutions\preview\Model\Outcome|\criteo\api\marketingsolutions\preview\Model\Outcome, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Criteo\Api\MarketingSolutions\Model\ResourceOutcomeOfProductSet|\Criteo\Api\MarketingSolutions\Model\Outcome|\Criteo\Api\MarketingSolutions\Model\Outcome|\Criteo\Api\MarketingSolutions\Model\Outcome, HTTP status code, HTTP response headers (array of strings)
      */
     public function fetchProductSetWithHttpInfo($product_set_id, string $contentType = self::contentTypes['fetchProductSet'][0])
     {
@@ -572,68 +572,68 @@ class RecoApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\criteo\api\marketingsolutions\preview\Model\ResourceOutcomeOfProductSet' === '\SplFileObject') {
+                    if ('\Criteo\Api\MarketingSolutions\Model\ResourceOutcomeOfProductSet' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\criteo\api\marketingsolutions\preview\Model\ResourceOutcomeOfProductSet' !== 'string') {
+                        if ('\Criteo\Api\MarketingSolutions\Model\ResourceOutcomeOfProductSet' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\criteo\api\marketingsolutions\preview\Model\ResourceOutcomeOfProductSet', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Api\MarketingSolutions\Model\ResourceOutcomeOfProductSet', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\criteo\api\marketingsolutions\preview\Model\Outcome' === '\SplFileObject') {
+                    if ('\Criteo\Api\MarketingSolutions\Model\Outcome' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\criteo\api\marketingsolutions\preview\Model\Outcome' !== 'string') {
+                        if ('\Criteo\Api\MarketingSolutions\Model\Outcome' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\criteo\api\marketingsolutions\preview\Model\Outcome', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Api\MarketingSolutions\Model\Outcome', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\criteo\api\marketingsolutions\preview\Model\Outcome' === '\SplFileObject') {
+                    if ('\Criteo\Api\MarketingSolutions\Model\Outcome' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\criteo\api\marketingsolutions\preview\Model\Outcome' !== 'string') {
+                        if ('\Criteo\Api\MarketingSolutions\Model\Outcome' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\criteo\api\marketingsolutions\preview\Model\Outcome', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Api\MarketingSolutions\Model\Outcome', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 500:
-                    if ('\criteo\api\marketingsolutions\preview\Model\Outcome' === '\SplFileObject') {
+                    if ('\Criteo\Api\MarketingSolutions\Model\Outcome' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\criteo\api\marketingsolutions\preview\Model\Outcome' !== 'string') {
+                        if ('\Criteo\Api\MarketingSolutions\Model\Outcome' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\criteo\api\marketingsolutions\preview\Model\Outcome', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Api\MarketingSolutions\Model\Outcome', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\criteo\api\marketingsolutions\preview\Model\ResourceOutcomeOfProductSet';
+            $returnType = '\Criteo\Api\MarketingSolutions\Model\ResourceOutcomeOfProductSet';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -654,7 +654,7 @@ class RecoApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\criteo\api\marketingsolutions\preview\Model\ResourceOutcomeOfProductSet',
+                        '\Criteo\Api\MarketingSolutions\Model\ResourceOutcomeOfProductSet',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -662,7 +662,7 @@ class RecoApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\criteo\api\marketingsolutions\preview\Model\Outcome',
+                        '\Criteo\Api\MarketingSolutions\Model\Outcome',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -670,7 +670,7 @@ class RecoApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\criteo\api\marketingsolutions\preview\Model\Outcome',
+                        '\Criteo\Api\MarketingSolutions\Model\Outcome',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -678,7 +678,7 @@ class RecoApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\criteo\api\marketingsolutions\preview\Model\Outcome',
+                        '\Criteo\Api\MarketingSolutions\Model\Outcome',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -718,7 +718,7 @@ class RecoApi
      */
     public function fetchProductSetAsyncWithHttpInfo($product_set_id, string $contentType = self::contentTypes['fetchProductSet'][0])
     {
-        $returnType = '\criteo\api\marketingsolutions\preview\Model\ResourceOutcomeOfProductSet';
+        $returnType = '\Criteo\Api\MarketingSolutions\Model\ResourceOutcomeOfProductSet';
         $request = $this->fetchProductSetRequest($product_set_id, $contentType);
 
         return $this->client
@@ -863,9 +863,9 @@ class RecoApi
      * @param  string $dataset_id The ID of the dataset that should be used for product set retrieval (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['fetchProductSets'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \criteo\api\marketingsolutions\preview\Model\ResourceCollectionOutcomeOfProductSet|\criteo\api\marketingsolutions\preview\Model\Outcome|\criteo\api\marketingsolutions\preview\Model\Outcome|\criteo\api\marketingsolutions\preview\Model\Outcome
+     * @return \Criteo\Api\MarketingSolutions\Model\ResourceCollectionOutcomeOfProductSet|\Criteo\Api\MarketingSolutions\Model\Outcome|\Criteo\Api\MarketingSolutions\Model\Outcome|\Criteo\Api\MarketingSolutions\Model\Outcome
      */
     public function fetchProductSets($dataset_id, string $contentType = self::contentTypes['fetchProductSets'][0])
     {
@@ -879,9 +879,9 @@ class RecoApi
      * @param  string $dataset_id The ID of the dataset that should be used for product set retrieval (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['fetchProductSets'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \criteo\api\marketingsolutions\preview\Model\ResourceCollectionOutcomeOfProductSet|\criteo\api\marketingsolutions\preview\Model\Outcome|\criteo\api\marketingsolutions\preview\Model\Outcome|\criteo\api\marketingsolutions\preview\Model\Outcome, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Criteo\Api\MarketingSolutions\Model\ResourceCollectionOutcomeOfProductSet|\Criteo\Api\MarketingSolutions\Model\Outcome|\Criteo\Api\MarketingSolutions\Model\Outcome|\Criteo\Api\MarketingSolutions\Model\Outcome, HTTP status code, HTTP response headers (array of strings)
      */
     public function fetchProductSetsWithHttpInfo($dataset_id, string $contentType = self::contentTypes['fetchProductSets'][0])
     {
@@ -924,68 +924,68 @@ class RecoApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\criteo\api\marketingsolutions\preview\Model\ResourceCollectionOutcomeOfProductSet' === '\SplFileObject') {
+                    if ('\Criteo\Api\MarketingSolutions\Model\ResourceCollectionOutcomeOfProductSet' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\criteo\api\marketingsolutions\preview\Model\ResourceCollectionOutcomeOfProductSet' !== 'string') {
+                        if ('\Criteo\Api\MarketingSolutions\Model\ResourceCollectionOutcomeOfProductSet' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\criteo\api\marketingsolutions\preview\Model\ResourceCollectionOutcomeOfProductSet', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Api\MarketingSolutions\Model\ResourceCollectionOutcomeOfProductSet', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\criteo\api\marketingsolutions\preview\Model\Outcome' === '\SplFileObject') {
+                    if ('\Criteo\Api\MarketingSolutions\Model\Outcome' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\criteo\api\marketingsolutions\preview\Model\Outcome' !== 'string') {
+                        if ('\Criteo\Api\MarketingSolutions\Model\Outcome' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\criteo\api\marketingsolutions\preview\Model\Outcome', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Api\MarketingSolutions\Model\Outcome', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\criteo\api\marketingsolutions\preview\Model\Outcome' === '\SplFileObject') {
+                    if ('\Criteo\Api\MarketingSolutions\Model\Outcome' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\criteo\api\marketingsolutions\preview\Model\Outcome' !== 'string') {
+                        if ('\Criteo\Api\MarketingSolutions\Model\Outcome' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\criteo\api\marketingsolutions\preview\Model\Outcome', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Api\MarketingSolutions\Model\Outcome', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 500:
-                    if ('\criteo\api\marketingsolutions\preview\Model\Outcome' === '\SplFileObject') {
+                    if ('\Criteo\Api\MarketingSolutions\Model\Outcome' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\criteo\api\marketingsolutions\preview\Model\Outcome' !== 'string') {
+                        if ('\Criteo\Api\MarketingSolutions\Model\Outcome' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\criteo\api\marketingsolutions\preview\Model\Outcome', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Api\MarketingSolutions\Model\Outcome', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\criteo\api\marketingsolutions\preview\Model\ResourceCollectionOutcomeOfProductSet';
+            $returnType = '\Criteo\Api\MarketingSolutions\Model\ResourceCollectionOutcomeOfProductSet';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1006,7 +1006,7 @@ class RecoApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\criteo\api\marketingsolutions\preview\Model\ResourceCollectionOutcomeOfProductSet',
+                        '\Criteo\Api\MarketingSolutions\Model\ResourceCollectionOutcomeOfProductSet',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1014,7 +1014,7 @@ class RecoApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\criteo\api\marketingsolutions\preview\Model\Outcome',
+                        '\Criteo\Api\MarketingSolutions\Model\Outcome',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1022,7 +1022,7 @@ class RecoApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\criteo\api\marketingsolutions\preview\Model\Outcome',
+                        '\Criteo\Api\MarketingSolutions\Model\Outcome',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1030,7 +1030,7 @@ class RecoApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\criteo\api\marketingsolutions\preview\Model\Outcome',
+                        '\Criteo\Api\MarketingSolutions\Model\Outcome',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1070,7 +1070,7 @@ class RecoApi
      */
     public function fetchProductSetsAsyncWithHttpInfo($dataset_id, string $contentType = self::contentTypes['fetchProductSets'][0])
     {
-        $returnType = '\criteo\api\marketingsolutions\preview\Model\ResourceCollectionOutcomeOfProductSet';
+        $returnType = '\Criteo\Api\MarketingSolutions\Model\ResourceCollectionOutcomeOfProductSet';
         $request = $this->fetchProductSetsRequest($dataset_id, $contentType);
 
         return $this->client
@@ -1212,12 +1212,12 @@ class RecoApi
     /**
      * Operation previewProductSetsPreviewPost
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\ProductSetStatisticsQuery $product_set_statistics_query product_set_statistics_query (required)
+     * @param  \Criteo\Api\MarketingSolutions\Model\ProductSetStatisticsQuery $product_set_statistics_query product_set_statistics_query (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['previewProductSetsPreviewPost'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \criteo\api\marketingsolutions\preview\Model\OkResponse|\criteo\api\marketingsolutions\preview\Model\PreviewFailResponse|\criteo\api\marketingsolutions\preview\Model\PreviewFailResponse
+     * @return \Criteo\Api\MarketingSolutions\Model\OkResponse|\Criteo\Api\MarketingSolutions\Model\PreviewFailResponse|\Criteo\Api\MarketingSolutions\Model\PreviewFailResponse
      */
     public function previewProductSetsPreviewPost($product_set_statistics_query, string $contentType = self::contentTypes['previewProductSetsPreviewPost'][0])
     {
@@ -1228,12 +1228,12 @@ class RecoApi
     /**
      * Operation previewProductSetsPreviewPostWithHttpInfo
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\ProductSetStatisticsQuery $product_set_statistics_query (required)
+     * @param  \Criteo\Api\MarketingSolutions\Model\ProductSetStatisticsQuery $product_set_statistics_query (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['previewProductSetsPreviewPost'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \criteo\api\marketingsolutions\preview\Model\OkResponse|\criteo\api\marketingsolutions\preview\Model\PreviewFailResponse|\criteo\api\marketingsolutions\preview\Model\PreviewFailResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Criteo\Api\MarketingSolutions\Model\OkResponse|\Criteo\Api\MarketingSolutions\Model\PreviewFailResponse|\Criteo\Api\MarketingSolutions\Model\PreviewFailResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function previewProductSetsPreviewPostWithHttpInfo($product_set_statistics_query, string $contentType = self::contentTypes['previewProductSetsPreviewPost'][0])
     {
@@ -1276,53 +1276,53 @@ class RecoApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\criteo\api\marketingsolutions\preview\Model\OkResponse' === '\SplFileObject') {
+                    if ('\Criteo\Api\MarketingSolutions\Model\OkResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\criteo\api\marketingsolutions\preview\Model\OkResponse' !== 'string') {
+                        if ('\Criteo\Api\MarketingSolutions\Model\OkResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\criteo\api\marketingsolutions\preview\Model\OkResponse', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Api\MarketingSolutions\Model\OkResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\criteo\api\marketingsolutions\preview\Model\PreviewFailResponse' === '\SplFileObject') {
+                    if ('\Criteo\Api\MarketingSolutions\Model\PreviewFailResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\criteo\api\marketingsolutions\preview\Model\PreviewFailResponse' !== 'string') {
+                        if ('\Criteo\Api\MarketingSolutions\Model\PreviewFailResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\criteo\api\marketingsolutions\preview\Model\PreviewFailResponse', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Api\MarketingSolutions\Model\PreviewFailResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 500:
-                    if ('\criteo\api\marketingsolutions\preview\Model\PreviewFailResponse' === '\SplFileObject') {
+                    if ('\Criteo\Api\MarketingSolutions\Model\PreviewFailResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\criteo\api\marketingsolutions\preview\Model\PreviewFailResponse' !== 'string') {
+                        if ('\Criteo\Api\MarketingSolutions\Model\PreviewFailResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\criteo\api\marketingsolutions\preview\Model\PreviewFailResponse', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Api\MarketingSolutions\Model\PreviewFailResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\criteo\api\marketingsolutions\preview\Model\OkResponse';
+            $returnType = '\Criteo\Api\MarketingSolutions\Model\OkResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1343,7 +1343,7 @@ class RecoApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\criteo\api\marketingsolutions\preview\Model\OkResponse',
+                        '\Criteo\Api\MarketingSolutions\Model\OkResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1351,7 +1351,7 @@ class RecoApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\criteo\api\marketingsolutions\preview\Model\PreviewFailResponse',
+                        '\Criteo\Api\MarketingSolutions\Model\PreviewFailResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1359,7 +1359,7 @@ class RecoApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\criteo\api\marketingsolutions\preview\Model\PreviewFailResponse',
+                        '\Criteo\Api\MarketingSolutions\Model\PreviewFailResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1372,7 +1372,7 @@ class RecoApi
     /**
      * Operation previewProductSetsPreviewPostAsync
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\ProductSetStatisticsQuery $product_set_statistics_query (required)
+     * @param  \Criteo\Api\MarketingSolutions\Model\ProductSetStatisticsQuery $product_set_statistics_query (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['previewProductSetsPreviewPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1391,7 +1391,7 @@ class RecoApi
     /**
      * Operation previewProductSetsPreviewPostAsyncWithHttpInfo
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\ProductSetStatisticsQuery $product_set_statistics_query (required)
+     * @param  \Criteo\Api\MarketingSolutions\Model\ProductSetStatisticsQuery $product_set_statistics_query (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['previewProductSetsPreviewPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1399,7 +1399,7 @@ class RecoApi
      */
     public function previewProductSetsPreviewPostAsyncWithHttpInfo($product_set_statistics_query, string $contentType = self::contentTypes['previewProductSetsPreviewPost'][0])
     {
-        $returnType = '\criteo\api\marketingsolutions\preview\Model\OkResponse';
+        $returnType = '\Criteo\Api\MarketingSolutions\Model\OkResponse';
         $request = $this->previewProductSetsPreviewPostRequest($product_set_statistics_query, $contentType);
 
         return $this->client
@@ -1441,7 +1441,7 @@ class RecoApi
     /**
      * Create request for operation 'previewProductSetsPreviewPost'
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\ProductSetStatisticsQuery $product_set_statistics_query (required)
+     * @param  \Criteo\Api\MarketingSolutions\Model\ProductSetStatisticsQuery $product_set_statistics_query (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['previewProductSetsPreviewPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1543,9 +1543,9 @@ class RecoApi
      * @param  string $product_set_id ID of the product set to remove (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['removeProductSet'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \criteo\api\marketingsolutions\preview\Model\Outcome|\criteo\api\marketingsolutions\preview\Model\Outcome|\criteo\api\marketingsolutions\preview\Model\Outcome|\criteo\api\marketingsolutions\preview\Model\Outcome
+     * @return \Criteo\Api\MarketingSolutions\Model\Outcome|\Criteo\Api\MarketingSolutions\Model\Outcome|\Criteo\Api\MarketingSolutions\Model\Outcome|\Criteo\Api\MarketingSolutions\Model\Outcome
      */
     public function removeProductSet($product_set_id, string $contentType = self::contentTypes['removeProductSet'][0])
     {
@@ -1559,9 +1559,9 @@ class RecoApi
      * @param  string $product_set_id ID of the product set to remove (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['removeProductSet'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \criteo\api\marketingsolutions\preview\Model\Outcome|\criteo\api\marketingsolutions\preview\Model\Outcome|\criteo\api\marketingsolutions\preview\Model\Outcome|\criteo\api\marketingsolutions\preview\Model\Outcome, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Criteo\Api\MarketingSolutions\Model\Outcome|\Criteo\Api\MarketingSolutions\Model\Outcome|\Criteo\Api\MarketingSolutions\Model\Outcome|\Criteo\Api\MarketingSolutions\Model\Outcome, HTTP status code, HTTP response headers (array of strings)
      */
     public function removeProductSetWithHttpInfo($product_set_id, string $contentType = self::contentTypes['removeProductSet'][0])
     {
@@ -1604,68 +1604,68 @@ class RecoApi
 
             switch($statusCode) {
                 case 204:
-                    if ('\criteo\api\marketingsolutions\preview\Model\Outcome' === '\SplFileObject') {
+                    if ('\Criteo\Api\MarketingSolutions\Model\Outcome' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\criteo\api\marketingsolutions\preview\Model\Outcome' !== 'string') {
+                        if ('\Criteo\Api\MarketingSolutions\Model\Outcome' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\criteo\api\marketingsolutions\preview\Model\Outcome', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Api\MarketingSolutions\Model\Outcome', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\criteo\api\marketingsolutions\preview\Model\Outcome' === '\SplFileObject') {
+                    if ('\Criteo\Api\MarketingSolutions\Model\Outcome' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\criteo\api\marketingsolutions\preview\Model\Outcome' !== 'string') {
+                        if ('\Criteo\Api\MarketingSolutions\Model\Outcome' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\criteo\api\marketingsolutions\preview\Model\Outcome', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Api\MarketingSolutions\Model\Outcome', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\criteo\api\marketingsolutions\preview\Model\Outcome' === '\SplFileObject') {
+                    if ('\Criteo\Api\MarketingSolutions\Model\Outcome' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\criteo\api\marketingsolutions\preview\Model\Outcome' !== 'string') {
+                        if ('\Criteo\Api\MarketingSolutions\Model\Outcome' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\criteo\api\marketingsolutions\preview\Model\Outcome', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Api\MarketingSolutions\Model\Outcome', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 500:
-                    if ('\criteo\api\marketingsolutions\preview\Model\Outcome' === '\SplFileObject') {
+                    if ('\Criteo\Api\MarketingSolutions\Model\Outcome' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\criteo\api\marketingsolutions\preview\Model\Outcome' !== 'string') {
+                        if ('\Criteo\Api\MarketingSolutions\Model\Outcome' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\criteo\api\marketingsolutions\preview\Model\Outcome', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Api\MarketingSolutions\Model\Outcome', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\criteo\api\marketingsolutions\preview\Model\Outcome';
+            $returnType = '\Criteo\Api\MarketingSolutions\Model\Outcome';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1686,7 +1686,7 @@ class RecoApi
                 case 204:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\criteo\api\marketingsolutions\preview\Model\Outcome',
+                        '\Criteo\Api\MarketingSolutions\Model\Outcome',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1694,7 +1694,7 @@ class RecoApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\criteo\api\marketingsolutions\preview\Model\Outcome',
+                        '\Criteo\Api\MarketingSolutions\Model\Outcome',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1702,7 +1702,7 @@ class RecoApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\criteo\api\marketingsolutions\preview\Model\Outcome',
+                        '\Criteo\Api\MarketingSolutions\Model\Outcome',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1710,7 +1710,7 @@ class RecoApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\criteo\api\marketingsolutions\preview\Model\Outcome',
+                        '\Criteo\Api\MarketingSolutions\Model\Outcome',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1750,7 +1750,7 @@ class RecoApi
      */
     public function removeProductSetAsyncWithHttpInfo($product_set_id, string $contentType = self::contentTypes['removeProductSet'][0])
     {
-        $returnType = '\criteo\api\marketingsolutions\preview\Model\Outcome';
+        $returnType = '\Criteo\Api\MarketingSolutions\Model\Outcome';
         $request = $this->removeProductSetRequest($product_set_id, $contentType);
 
         return $this->client

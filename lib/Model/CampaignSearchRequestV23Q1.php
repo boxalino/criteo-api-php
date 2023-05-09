@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * CampaignSearchRequestV23Q1 Class Doc Comment
@@ -58,7 +58,7 @@ class CampaignSearchRequestV23Q1 implements ModelInterface, ArrayAccess, \JsonSe
       * @var string[]
       */
     protected static $openAPITypes = [
-        'filters' => '\criteo\api\marketingsolutions\preview\Model\CampaignSearchFiltersV23Q1'
+        'filters' => '\Criteo\Api\MarketingSolutions\Model\CampaignSearchFiltersV23Q1'
     ];
 
     /**
@@ -293,7 +293,7 @@ class CampaignSearchRequestV23Q1 implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets filters
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\CampaignSearchFiltersV23Q1|null
+     * @return \Criteo\Api\MarketingSolutions\Model\CampaignSearchFiltersV23Q1|null
      */
     public function getFilters()
     {
@@ -303,7 +303,7 @@ class CampaignSearchRequestV23Q1 implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets filters
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\CampaignSearchFiltersV23Q1|null $filters filters
+     * @param \Criteo\Api\MarketingSolutions\Model\CampaignSearchFiltersV23Q1|null $filters filters
      *
      * @return self
      */

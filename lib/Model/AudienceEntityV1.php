@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * AudienceEntityV1 Class Doc Comment
@@ -64,7 +64,7 @@ class AudienceEntityV1 implements ModelInterface, ArrayAccess, \JsonSerializable
         'updated_at' => '\DateTime',
         'advertiser_id' => 'string',
         'ad_set_ids' => 'string[]',
-        'algebra' => '\criteo\api\marketingsolutions\preview\Model\AlgebraNodeV1'
+        'algebra' => '\Criteo\Api\MarketingSolutions\Model\AlgebraNodeV1'
     ];
 
     /**
@@ -499,7 +499,7 @@ class AudienceEntityV1 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets algebra
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\AlgebraNodeV1|null
+     * @return \Criteo\Api\MarketingSolutions\Model\AlgebraNodeV1|null
      */
     public function getAlgebra()
     {
@@ -509,7 +509,7 @@ class AudienceEntityV1 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets algebra
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\AlgebraNodeV1|null $algebra algebra
+     * @param \Criteo\Api\MarketingSolutions\Model\AlgebraNodeV1|null $algebra algebra
      *
      * @return self
      */

@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * TransparencyReportDataMessage Class Doc Comment
@@ -58,7 +58,7 @@ class TransparencyReportDataMessage implements ModelInterface, ArrayAccess, \Jso
       * @var string[]
       */
     protected static $openAPITypes = [
-        'data' => '\criteo\api\marketingsolutions\preview\Model\TransparencyReportEntityMessage[]'
+        'data' => '\Criteo\Api\MarketingSolutions\Model\TransparencyReportEntityMessage[]'
     ];
 
     /**
@@ -296,7 +296,7 @@ class TransparencyReportDataMessage implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets data
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\TransparencyReportEntityMessage[]
+     * @return \Criteo\Api\MarketingSolutions\Model\TransparencyReportEntityMessage[]
      */
     public function getData()
     {
@@ -306,7 +306,7 @@ class TransparencyReportDataMessage implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets data
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\TransparencyReportEntityMessage[] $data data
+     * @param \Criteo\Api\MarketingSolutions\Model\TransparencyReportEntityMessage[] $data data
      *
      * @return self
      */

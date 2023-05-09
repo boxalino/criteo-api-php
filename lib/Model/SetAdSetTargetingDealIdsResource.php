@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * SetAdSetTargetingDealIdsResource Class Doc Comment
@@ -59,7 +59,7 @@ class SetAdSetTargetingDealIdsResource implements ModelInterface, ArrayAccess, \
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'attributes' => '\criteo\api\marketingsolutions\preview\Model\SetAdSetTargetingDealIds'
+        'attributes' => '\Criteo\Api\MarketingSolutions\Model\SetAdSetTargetingDealIds'
     ];
 
     /**
@@ -327,7 +327,7 @@ class SetAdSetTargetingDealIdsResource implements ModelInterface, ArrayAccess, \
     /**
      * Gets attributes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\SetAdSetTargetingDealIds|null
+     * @return \Criteo\Api\MarketingSolutions\Model\SetAdSetTargetingDealIds|null
      */
     public function getAttributes()
     {
@@ -337,7 +337,7 @@ class SetAdSetTargetingDealIdsResource implements ModelInterface, ArrayAccess, \
     /**
      * Sets attributes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\SetAdSetTargetingDealIds|null $attributes attributes
+     * @param \Criteo\Api\MarketingSolutions\Model\SetAdSetTargetingDealIds|null $attributes attributes
      *
      * @return self
      */

@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * CreateAdSetResource Class Doc Comment
@@ -58,7 +58,7 @@ class CreateAdSetResource implements ModelInterface, ArrayAccess, \JsonSerializa
       * @var string[]
       */
     protected static $openAPITypes = [
-        'attributes' => '\criteo\api\marketingsolutions\preview\Model\CreateAdSet',
+        'attributes' => '\Criteo\Api\MarketingSolutions\Model\CreateAdSet',
         'type' => 'string'
     ];
 
@@ -300,7 +300,7 @@ class CreateAdSetResource implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets attributes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\CreateAdSet|null
+     * @return \Criteo\Api\MarketingSolutions\Model\CreateAdSet|null
      */
     public function getAttributes()
     {
@@ -310,7 +310,7 @@ class CreateAdSetResource implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets attributes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\CreateAdSet|null $attributes attributes
+     * @param \Criteo\Api\MarketingSolutions\Model\CreateAdSet|null $attributes attributes
      *
      * @return self
      */

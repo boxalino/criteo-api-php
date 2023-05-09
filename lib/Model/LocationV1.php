@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * LocationV1 Class Doc Comment
@@ -58,7 +58,7 @@ class LocationV1 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'points_of_interest' => '\criteo\api\marketingsolutions\preview\Model\PointOfInterestV1[]',
+        'points_of_interest' => '\Criteo\Api\MarketingSolutions\Model\PointOfInterestV1[]',
         'radius_in_km' => 'int',
         'registry_type' => 'string'
     ];
@@ -331,7 +331,7 @@ class LocationV1 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets points_of_interest
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\PointOfInterestV1[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\PointOfInterestV1[]|null
      */
     public function getPointsOfInterest()
     {
@@ -341,7 +341,7 @@ class LocationV1 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets points_of_interest
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\PointOfInterestV1[]|null $points_of_interest Reach users which have been historically located in the given coordinates
+     * @param \Criteo\Api\MarketingSolutions\Model\PointOfInterestV1[]|null $points_of_interest Reach users which have been historically located in the given coordinates
      *
      * @return self
      */

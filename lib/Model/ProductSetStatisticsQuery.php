@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * ProductSetStatisticsQuery Class Doc Comment
@@ -58,7 +58,7 @@ class ProductSetStatisticsQuery implements ModelInterface, ArrayAccess, \JsonSer
       * @var string[]
       */
     protected static $openAPITypes = [
-        'product_set' => '\criteo\api\marketingsolutions\preview\Model\ProductSetPreview',
+        'product_set' => '\Criteo\Api\MarketingSolutions\Model\ProductSetPreview',
         'product_sample_count' => 'int'
     ];
 
@@ -306,7 +306,7 @@ class ProductSetStatisticsQuery implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets product_set
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ProductSetPreview
+     * @return \Criteo\Api\MarketingSolutions\Model\ProductSetPreview
      */
     public function getProductSet()
     {
@@ -316,7 +316,7 @@ class ProductSetStatisticsQuery implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets product_set
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ProductSetPreview $product_set product_set
+     * @param \Criteo\Api\MarketingSolutions\Model\ProductSetPreview $product_set product_set
      *
      * @return self
      */

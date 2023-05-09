@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * AudienceSegmentEntityV1 Class Doc Comment
@@ -64,13 +64,13 @@ class AudienceSegmentEntityV1 implements ModelInterface, ArrayAccess, \JsonSeria
         'created_at' => '\DateTime',
         'updated_at' => '\DateTime',
         'advertiser_id' => 'string',
-        'in_market' => '\criteo\api\marketingsolutions\preview\Model\InMarketV1',
+        'in_market' => '\Criteo\Api\MarketingSolutions\Model\InMarketV1',
         'prospecting' => 'object',
-        'contact_list' => '\criteo\api\marketingsolutions\preview\Model\ContactListV1',
-        'location' => '\criteo\api\marketingsolutions\preview\Model\LocationV1',
-        'behavioral' => '\criteo\api\marketingsolutions\preview\Model\BehavioralV1',
-        'retargeting' => '\criteo\api\marketingsolutions\preview\Model\RetargetingV1',
-        'lookalike' => '\criteo\api\marketingsolutions\preview\Model\LookalikeV1'
+        'contact_list' => '\Criteo\Api\MarketingSolutions\Model\ContactListV1',
+        'location' => '\Criteo\Api\MarketingSolutions\Model\LocationV1',
+        'behavioral' => '\Criteo\Api\MarketingSolutions\Model\BehavioralV1',
+        'retargeting' => '\Criteo\Api\MarketingSolutions\Model\RetargetingV1',
+        'lookalike' => '\Criteo\Api\MarketingSolutions\Model\LookalikeV1'
     ];
 
     /**
@@ -585,7 +585,7 @@ class AudienceSegmentEntityV1 implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets in_market
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\InMarketV1|null
+     * @return \Criteo\Api\MarketingSolutions\Model\InMarketV1|null
      */
     public function getInMarket()
     {
@@ -595,7 +595,7 @@ class AudienceSegmentEntityV1 implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets in_market
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\InMarketV1|null $in_market in_market
+     * @param \Criteo\Api\MarketingSolutions\Model\InMarketV1|null $in_market in_market
      *
      * @return self
      */
@@ -639,7 +639,7 @@ class AudienceSegmentEntityV1 implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets contact_list
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ContactListV1|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ContactListV1|null
      */
     public function getContactList()
     {
@@ -649,7 +649,7 @@ class AudienceSegmentEntityV1 implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets contact_list
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ContactListV1|null $contact_list contact_list
+     * @param \Criteo\Api\MarketingSolutions\Model\ContactListV1|null $contact_list contact_list
      *
      * @return self
      */
@@ -666,7 +666,7 @@ class AudienceSegmentEntityV1 implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets location
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\LocationV1|null
+     * @return \Criteo\Api\MarketingSolutions\Model\LocationV1|null
      */
     public function getLocation()
     {
@@ -676,7 +676,7 @@ class AudienceSegmentEntityV1 implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets location
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\LocationV1|null $location location
+     * @param \Criteo\Api\MarketingSolutions\Model\LocationV1|null $location location
      *
      * @return self
      */
@@ -693,7 +693,7 @@ class AudienceSegmentEntityV1 implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets behavioral
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\BehavioralV1|null
+     * @return \Criteo\Api\MarketingSolutions\Model\BehavioralV1|null
      */
     public function getBehavioral()
     {
@@ -703,7 +703,7 @@ class AudienceSegmentEntityV1 implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets behavioral
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\BehavioralV1|null $behavioral behavioral
+     * @param \Criteo\Api\MarketingSolutions\Model\BehavioralV1|null $behavioral behavioral
      *
      * @return self
      */
@@ -720,7 +720,7 @@ class AudienceSegmentEntityV1 implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets retargeting
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\RetargetingV1|null
+     * @return \Criteo\Api\MarketingSolutions\Model\RetargetingV1|null
      */
     public function getRetargeting()
     {
@@ -730,7 +730,7 @@ class AudienceSegmentEntityV1 implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets retargeting
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\RetargetingV1|null $retargeting retargeting
+     * @param \Criteo\Api\MarketingSolutions\Model\RetargetingV1|null $retargeting retargeting
      *
      * @return self
      */
@@ -747,7 +747,7 @@ class AudienceSegmentEntityV1 implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets lookalike
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\LookalikeV1|null
+     * @return \Criteo\Api\MarketingSolutions\Model\LookalikeV1|null
      */
     public function getLookalike()
     {
@@ -757,7 +757,7 @@ class AudienceSegmentEntityV1 implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets lookalike
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\LookalikeV1|null $lookalike lookalike
+     * @param \Criteo\Api\MarketingSolutions\Model\LookalikeV1|null $lookalike lookalike
      *
      * @return self
      */

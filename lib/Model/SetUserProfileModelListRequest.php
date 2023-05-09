@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * SetUserProfileModelListRequest Class Doc Comment
@@ -58,7 +58,7 @@ class SetUserProfileModelListRequest implements ModelInterface, ArrayAccess, \Js
       * @var string[]
       */
     protected static $openAPITypes = [
-        'data' => '\criteo\api\marketingsolutions\preview\Model\SetUserProfileModelResource[]'
+        'data' => '\Criteo\Api\MarketingSolutions\Model\SetUserProfileModelResource[]'
     ];
 
     /**
@@ -293,7 +293,7 @@ class SetUserProfileModelListRequest implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets data
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\SetUserProfileModelResource[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\SetUserProfileModelResource[]|null
      */
     public function getData()
     {
@@ -303,7 +303,7 @@ class SetUserProfileModelListRequest implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets data
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\SetUserProfileModelResource[]|null $data data
+     * @param \Criteo\Api\MarketingSolutions\Model\SetUserProfileModelResource[]|null $data data
      *
      * @return self
      */

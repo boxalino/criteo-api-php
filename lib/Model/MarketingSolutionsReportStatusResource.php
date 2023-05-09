@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * MarketingSolutionsReportStatusResource Class Doc Comment
@@ -58,7 +58,7 @@ class MarketingSolutionsReportStatusResource implements ModelInterface, ArrayAcc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'attributes' => '\criteo\api\marketingsolutions\preview\Model\MarketingSolutionsReportStatus',
+        'attributes' => '\Criteo\Api\MarketingSolutions\Model\MarketingSolutionsReportStatus',
         'id' => 'string',
         'type' => 'string'
     ];
@@ -307,7 +307,7 @@ class MarketingSolutionsReportStatusResource implements ModelInterface, ArrayAcc
     /**
      * Gets attributes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\MarketingSolutionsReportStatus|null
+     * @return \Criteo\Api\MarketingSolutions\Model\MarketingSolutionsReportStatus|null
      */
     public function getAttributes()
     {
@@ -317,7 +317,7 @@ class MarketingSolutionsReportStatusResource implements ModelInterface, ArrayAcc
     /**
      * Sets attributes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\MarketingSolutionsReportStatus|null $attributes attributes
+     * @param \Criteo\Api\MarketingSolutions\Model\MarketingSolutionsReportStatus|null $attributes attributes
      *
      * @return self
      */

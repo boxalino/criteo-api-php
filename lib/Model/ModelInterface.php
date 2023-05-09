@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  criteo\api\marketingsolutions\preview\Model
+ * @package  Criteo\Api\MarketingSolutions\Model
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,12 +26,12 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 /**
  * Interface abstracting model access.
  *
- * @package criteo\api\marketingsolutions\preview\Model
+ * @package Criteo\Api\MarketingSolutions\Model
  * @author  OpenAPI Generator team
  */
 interface ModelInterface

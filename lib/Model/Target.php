@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * Target Class Doc Comment
@@ -58,7 +58,7 @@ class Target implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'type' => '\criteo\api\marketingsolutions\preview\Model\TargetType',
+        'type' => '\Criteo\Api\MarketingSolutions\Model\TargetType',
         'id' => 'int'
     ];
 
@@ -306,7 +306,7 @@ class Target implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets type
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\TargetType
+     * @return \Criteo\Api\MarketingSolutions\Model\TargetType
      */
     public function getType()
     {
@@ -316,7 +316,7 @@ class Target implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets type
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\TargetType $type type
+     * @param \Criteo\Api\MarketingSolutions\Model\TargetType $type type
      *
      * @return self
      */

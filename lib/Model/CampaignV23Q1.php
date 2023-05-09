@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * CampaignV23Q1 Class Doc Comment
@@ -60,7 +60,7 @@ class CampaignV23Q1 implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'name' => 'string',
         'advertiser_id' => 'string',
-        'spend_limit' => '\criteo\api\marketingsolutions\preview\Model\CampaignSpendLimitV23Q1',
+        'spend_limit' => '\Criteo\Api\MarketingSolutions\Model\CampaignSpendLimitV23Q1',
         'goal' => 'string'
     ];
 
@@ -394,7 +394,7 @@ class CampaignV23Q1 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets spend_limit
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\CampaignSpendLimitV23Q1|null
+     * @return \Criteo\Api\MarketingSolutions\Model\CampaignSpendLimitV23Q1|null
      */
     public function getSpendLimit()
     {
@@ -404,7 +404,7 @@ class CampaignV23Q1 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets spend_limit
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\CampaignSpendLimitV23Q1|null $spend_limit spend_limit
+     * @param \Criteo\Api\MarketingSolutions\Model\CampaignSpendLimitV23Q1|null $spend_limit spend_limit
      *
      * @return self
      */

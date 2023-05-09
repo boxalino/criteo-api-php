@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * ApiRequestOfTargetingEntity Class Doc Comment
@@ -58,7 +58,7 @@ class ApiRequestOfTargetingEntity implements ModelInterface, ArrayAccess, \JsonS
       * @var string[]
       */
     protected static $openAPITypes = [
-        'data' => '\criteo\api\marketingsolutions\preview\Model\EntityWrapperOfTargetingEntity'
+        'data' => '\Criteo\Api\MarketingSolutions\Model\EntityWrapperOfTargetingEntity'
     ];
 
     /**
@@ -293,7 +293,7 @@ class ApiRequestOfTargetingEntity implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets data
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\EntityWrapperOfTargetingEntity|null
+     * @return \Criteo\Api\MarketingSolutions\Model\EntityWrapperOfTargetingEntity|null
      */
     public function getData()
     {
@@ -303,7 +303,7 @@ class ApiRequestOfTargetingEntity implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets data
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\EntityWrapperOfTargetingEntity|null $data data
+     * @param \Criteo\Api\MarketingSolutions\Model\EntityWrapperOfTargetingEntity|null $data data
      *
      * @return self
      */

@@ -26,8 +26,8 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+namespace Criteo\Api\MarketingSolutions\Model;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * TargetType Class Doc Comment

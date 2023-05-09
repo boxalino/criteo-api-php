@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * ImageSet Class Doc Comment
@@ -58,7 +58,7 @@ class ImageSet implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'images' => '\criteo\api\marketingsolutions\preview\Model\ImageShape[]',
+        'images' => '\Criteo\Api\MarketingSolutions\Model\ImageShape[]',
         'headline_text' => 'string'
     ];
 
@@ -303,7 +303,7 @@ class ImageSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets images
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ImageShape[]
+     * @return \Criteo\Api\MarketingSolutions\Model\ImageShape[]
      */
     public function getImages()
     {
@@ -313,7 +313,7 @@ class ImageSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets images
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ImageShape[] $images The images' urls with their shapes.
+     * @param \Criteo\Api\MarketingSolutions\Model\ImageShape[] $images The images' urls with their shapes.
      *
      * @return self
      */

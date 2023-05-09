@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * ReportOkResponse Class Doc Comment
@@ -64,7 +64,7 @@ class ReportOkResponse implements ModelInterface, ArrayAccess, \JsonSerializable
         'number_of_products_upserted' => 'int',
         'number_of_products_deleted' => 'int',
         'number_of_products_with_errors' => 'int',
-        'error_details' => '\criteo\api\marketingsolutions\preview\Model\ReportDetailErrors[]'
+        'error_details' => '\Criteo\Api\MarketingSolutions\Model\ReportDetailErrors[]'
     ];
 
     /**
@@ -558,7 +558,7 @@ class ReportOkResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets error_details
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ReportDetailErrors[]
+     * @return \Criteo\Api\MarketingSolutions\Model\ReportDetailErrors[]
      */
     public function getErrorDetails()
     {
@@ -568,7 +568,7 @@ class ReportOkResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets error_details
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ReportDetailErrors[] $error_details The list of errors with details.
+     * @param \Criteo\Api\MarketingSolutions\Model\ReportDetailErrors[] $error_details The list of errors with details.
      *
      * @return self
      */

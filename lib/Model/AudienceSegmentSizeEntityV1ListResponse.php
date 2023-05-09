@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * AudienceSegmentSizeEntityV1ListResponse Class Doc Comment
@@ -58,9 +58,9 @@ class AudienceSegmentSizeEntityV1ListResponse implements ModelInterface, ArrayAc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'data' => '\criteo\api\marketingsolutions\preview\Model\AudienceSegmentSizeEntityV1Resource[]',
-        'warnings' => '\criteo\api\marketingsolutions\preview\Model\CommonProblem[]',
-        'errors' => '\criteo\api\marketingsolutions\preview\Model\CommonProblem[]'
+        'data' => '\Criteo\Api\MarketingSolutions\Model\AudienceSegmentSizeEntityV1Resource[]',
+        'warnings' => '\Criteo\Api\MarketingSolutions\Model\CommonProblem[]',
+        'errors' => '\Criteo\Api\MarketingSolutions\Model\CommonProblem[]'
     ];
 
     /**
@@ -307,7 +307,7 @@ class AudienceSegmentSizeEntityV1ListResponse implements ModelInterface, ArrayAc
     /**
      * Gets data
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\AudienceSegmentSizeEntityV1Resource[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\AudienceSegmentSizeEntityV1Resource[]|null
      */
     public function getData()
     {
@@ -317,7 +317,7 @@ class AudienceSegmentSizeEntityV1ListResponse implements ModelInterface, ArrayAc
     /**
      * Sets data
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\AudienceSegmentSizeEntityV1Resource[]|null $data data
+     * @param \Criteo\Api\MarketingSolutions\Model\AudienceSegmentSizeEntityV1Resource[]|null $data data
      *
      * @return self
      */
@@ -336,7 +336,7 @@ class AudienceSegmentSizeEntityV1ListResponse implements ModelInterface, ArrayAc
     /**
      * Gets warnings
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\CommonProblem[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\CommonProblem[]|null
      */
     public function getWarnings()
     {
@@ -346,7 +346,7 @@ class AudienceSegmentSizeEntityV1ListResponse implements ModelInterface, ArrayAc
     /**
      * Sets warnings
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\CommonProblem[]|null $warnings warnings
+     * @param \Criteo\Api\MarketingSolutions\Model\CommonProblem[]|null $warnings warnings
      *
      * @return self
      */
@@ -365,7 +365,7 @@ class AudienceSegmentSizeEntityV1ListResponse implements ModelInterface, ArrayAc
     /**
      * Gets errors
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\CommonProblem[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\CommonProblem[]|null
      */
     public function getErrors()
     {
@@ -375,7 +375,7 @@ class AudienceSegmentSizeEntityV1ListResponse implements ModelInterface, ArrayAc
     /**
      * Sets errors
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\CommonProblem[]|null $errors errors
+     * @param \Criteo\Api\MarketingSolutions\Model\CommonProblem[]|null $errors errors
      *
      * @return self
      */

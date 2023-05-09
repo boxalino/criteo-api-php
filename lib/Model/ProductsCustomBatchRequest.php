@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * ProductsCustomBatchRequest Class Doc Comment
@@ -58,7 +58,7 @@ class ProductsCustomBatchRequest implements ModelInterface, ArrayAccess, \JsonSe
       * @var string[]
       */
     protected static $openAPITypes = [
-        'entries' => '\criteo\api\marketingsolutions\preview\Model\ProductsCustomBatchRequestEntry[]'
+        'entries' => '\Criteo\Api\MarketingSolutions\Model\ProductsCustomBatchRequestEntry[]'
     ];
 
     /**
@@ -296,7 +296,7 @@ class ProductsCustomBatchRequest implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets entries
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ProductsCustomBatchRequestEntry[]
+     * @return \Criteo\Api\MarketingSolutions\Model\ProductsCustomBatchRequestEntry[]
      */
     public function getEntries()
     {
@@ -306,7 +306,7 @@ class ProductsCustomBatchRequest implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets entries
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ProductsCustomBatchRequestEntry[] $entries The request entries to be processed in the batch.
+     * @param \Criteo\Api\MarketingSolutions\Model\ProductsCustomBatchRequestEntry[] $entries The request entries to be processed in the batch.
      *
      * @return self
      */

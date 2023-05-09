@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * ReportDataMessage Class Doc Comment
@@ -58,7 +58,7 @@ class ReportDataMessage implements ModelInterface, ArrayAccess, \JsonSerializabl
       * @var string[]
       */
     protected static $openAPITypes = [
-        'data' => '\criteo\api\marketingsolutions\preview\Model\ReportEntityMessage[]'
+        'data' => '\Criteo\Api\MarketingSolutions\Model\ReportEntityMessage[]'
     ];
 
     /**
@@ -296,7 +296,7 @@ class ReportDataMessage implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets data
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ReportEntityMessage[]
+     * @return \Criteo\Api\MarketingSolutions\Model\ReportEntityMessage[]
      */
     public function getData()
     {
@@ -306,7 +306,7 @@ class ReportDataMessage implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets data
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ReportEntityMessage[] $data data
+     * @param \Criteo\Api\MarketingSolutions\Model\ReportEntityMessage[] $data data
      *
      * @return self
      */

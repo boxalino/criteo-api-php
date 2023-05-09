@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * CreateCoupon Class Doc Comment
@@ -65,7 +65,7 @@ class CreateCoupon implements ModelInterface, ArrayAccess, \JsonSerializable
         'start_date' => 'string',
         'end_date' => 'string',
         'format' => 'string',
-        'images' => '\criteo\api\marketingsolutions\preview\Model\CreateImageSlide[]',
+        'images' => '\Criteo\Api\MarketingSolutions\Model\CreateImageSlide[]',
         'show_every' => 'int',
         'show_duration' => 'int',
         'rotations_number' => 'int'
@@ -579,7 +579,7 @@ class CreateCoupon implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets images
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\CreateImageSlide[]
+     * @return \Criteo\Api\MarketingSolutions\Model\CreateImageSlide[]
      */
     public function getImages()
     {
@@ -589,7 +589,7 @@ class CreateCoupon implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets images
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\CreateImageSlide[] $images List of slides containing the images as a base-64 encoded string
+     * @param \Criteo\Api\MarketingSolutions\Model\CreateImageSlide[] $images List of slides containing the images as a base-64 encoded string
      *
      * @return self
      */

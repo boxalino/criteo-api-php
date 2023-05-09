@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * DeleteUserProfileModelListRequest Class Doc Comment
@@ -58,7 +58,7 @@ class DeleteUserProfileModelListRequest implements ModelInterface, ArrayAccess, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'data' => '\criteo\api\marketingsolutions\preview\Model\DeleteUserProfileModelResource[]'
+        'data' => '\Criteo\Api\MarketingSolutions\Model\DeleteUserProfileModelResource[]'
     ];
 
     /**
@@ -293,7 +293,7 @@ class DeleteUserProfileModelListRequest implements ModelInterface, ArrayAccess, 
     /**
      * Gets data
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\DeleteUserProfileModelResource[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\DeleteUserProfileModelResource[]|null
      */
     public function getData()
     {
@@ -303,7 +303,7 @@ class DeleteUserProfileModelListRequest implements ModelInterface, ArrayAccess, 
     /**
      * Sets data
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\DeleteUserProfileModelResource[]|null $data data
+     * @param \Criteo\Api\MarketingSolutions\Model\DeleteUserProfileModelResource[]|null $data data
      *
      * @return self
      */

@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * OciTargetingResponse Class Doc Comment
@@ -58,9 +58,9 @@ class OciTargetingResponse implements ModelInterface, ArrayAccess, \JsonSerializ
       * @var string[]
       */
     protected static $openAPITypes = [
-        'data' => '\criteo\api\marketingsolutions\preview\Model\OciTargetingResponseData',
-        'warnings' => '\criteo\api\marketingsolutions\preview\Model\TargetingErrorModel[]',
-        'errors' => '\criteo\api\marketingsolutions\preview\Model\TargetingErrorModel[]'
+        'data' => '\Criteo\Api\MarketingSolutions\Model\OciTargetingResponseData',
+        'warnings' => '\Criteo\Api\MarketingSolutions\Model\TargetingErrorModel[]',
+        'errors' => '\Criteo\Api\MarketingSolutions\Model\TargetingErrorModel[]'
     ];
 
     /**
@@ -307,7 +307,7 @@ class OciTargetingResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets data
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\OciTargetingResponseData|null
+     * @return \Criteo\Api\MarketingSolutions\Model\OciTargetingResponseData|null
      */
     public function getData()
     {
@@ -317,7 +317,7 @@ class OciTargetingResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets data
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\OciTargetingResponseData|null $data data
+     * @param \Criteo\Api\MarketingSolutions\Model\OciTargetingResponseData|null $data data
      *
      * @return self
      */
@@ -334,7 +334,7 @@ class OciTargetingResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets warnings
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\TargetingErrorModel[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\TargetingErrorModel[]|null
      */
     public function getWarnings()
     {
@@ -344,7 +344,7 @@ class OciTargetingResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets warnings
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\TargetingErrorModel[]|null $warnings An array of warning objects
+     * @param \Criteo\Api\MarketingSolutions\Model\TargetingErrorModel[]|null $warnings An array of warning objects
      *
      * @return self
      */
@@ -361,7 +361,7 @@ class OciTargetingResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets errors
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\TargetingErrorModel[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\TargetingErrorModel[]|null
      */
     public function getErrors()
     {
@@ -371,7 +371,7 @@ class OciTargetingResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets errors
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\TargetingErrorModel[]|null $errors An array of error objects
+     * @param \Criteo\Api\MarketingSolutions\Model\TargetingErrorModel[]|null $errors An array of error objects
      *
      * @return self
      */

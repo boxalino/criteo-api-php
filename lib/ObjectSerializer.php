@@ -29,7 +29,7 @@
 namespace criteo\api\marketingsolutions\preview;
 
 use GuzzleHttp\Psr7\Utils;
-use criteo\api\marketingsolutions\preview\Model\ModelInterface;
+use Criteo\Api\MarketingSolutions\Model\ModelInterface;
 
 /**
  * ObjectSerializer Class Doc Comment
@@ -513,7 +513,7 @@ class ObjectSerializer
             // If a discriminator is defined and points to a valid subclass, use it.
             $discriminator = $class::DISCRIMINATOR;
             if (!empty($discriminator) && isset($data->{$discriminator}) && is_string($data->{$discriminator})) {
-                $subclass = '\criteo\api\marketingsolutions\preview\Model\\' . $data->{$discriminator};
+                $subclass = '\Criteo\Api\MarketingSolutions\Model\\' . $data->{$discriminator};
                 if (is_subclass_of($subclass, $class)) {
                     $class = $subclass;
                 }

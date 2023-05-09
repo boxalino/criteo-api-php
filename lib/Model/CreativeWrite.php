@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * CreativeWrite Class Doc Comment
@@ -62,10 +62,10 @@ class CreativeWrite implements ModelInterface, ArrayAccess, \JsonSerializable
         'description' => 'string',
         'format' => 'string',
         'dataset_id' => 'string',
-        'image_write_attributes' => '\criteo\api\marketingsolutions\preview\Model\ImageWriteAttributes',
-        'html_tag_write_attributes' => '\criteo\api\marketingsolutions\preview\Model\HtmlTagWriteAttributes',
-        'dynamic_write_attributes' => '\criteo\api\marketingsolutions\preview\Model\DynamicWriteAttributes',
-        'adaptive_write_attributes' => '\criteo\api\marketingsolutions\preview\Model\AdaptiveWriteAttributes'
+        'image_write_attributes' => '\Criteo\Api\MarketingSolutions\Model\ImageWriteAttributes',
+        'html_tag_write_attributes' => '\Criteo\Api\MarketingSolutions\Model\HtmlTagWriteAttributes',
+        'dynamic_write_attributes' => '\Criteo\Api\MarketingSolutions\Model\DynamicWriteAttributes',
+        'adaptive_write_attributes' => '\Criteo\Api\MarketingSolutions\Model\AdaptiveWriteAttributes'
     ];
 
     /**
@@ -453,7 +453,7 @@ class CreativeWrite implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets image_write_attributes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ImageWriteAttributes|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ImageWriteAttributes|null
      */
     public function getImageWriteAttributes()
     {
@@ -463,7 +463,7 @@ class CreativeWrite implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets image_write_attributes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ImageWriteAttributes|null $image_write_attributes image_write_attributes
+     * @param \Criteo\Api\MarketingSolutions\Model\ImageWriteAttributes|null $image_write_attributes image_write_attributes
      *
      * @return self
      */
@@ -480,7 +480,7 @@ class CreativeWrite implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets html_tag_write_attributes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\HtmlTagWriteAttributes|null
+     * @return \Criteo\Api\MarketingSolutions\Model\HtmlTagWriteAttributes|null
      */
     public function getHtmlTagWriteAttributes()
     {
@@ -490,7 +490,7 @@ class CreativeWrite implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets html_tag_write_attributes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\HtmlTagWriteAttributes|null $html_tag_write_attributes html_tag_write_attributes
+     * @param \Criteo\Api\MarketingSolutions\Model\HtmlTagWriteAttributes|null $html_tag_write_attributes html_tag_write_attributes
      *
      * @return self
      */
@@ -507,7 +507,7 @@ class CreativeWrite implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets dynamic_write_attributes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\DynamicWriteAttributes|null
+     * @return \Criteo\Api\MarketingSolutions\Model\DynamicWriteAttributes|null
      */
     public function getDynamicWriteAttributes()
     {
@@ -517,7 +517,7 @@ class CreativeWrite implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets dynamic_write_attributes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\DynamicWriteAttributes|null $dynamic_write_attributes dynamic_write_attributes
+     * @param \Criteo\Api\MarketingSolutions\Model\DynamicWriteAttributes|null $dynamic_write_attributes dynamic_write_attributes
      *
      * @return self
      */
@@ -534,7 +534,7 @@ class CreativeWrite implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets adaptive_write_attributes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\AdaptiveWriteAttributes|null
+     * @return \Criteo\Api\MarketingSolutions\Model\AdaptiveWriteAttributes|null
      */
     public function getAdaptiveWriteAttributes()
     {
@@ -544,7 +544,7 @@ class CreativeWrite implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets adaptive_write_attributes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\AdaptiveWriteAttributes|null $adaptive_write_attributes adaptive_write_attributes
+     * @param \Criteo\Api\MarketingSolutions\Model\AdaptiveWriteAttributes|null $adaptive_write_attributes adaptive_write_attributes
      *
      * @return self
      */

@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * DynamicAttributes Class Doc Comment
@@ -58,7 +58,7 @@ class DynamicAttributes implements ModelInterface, ArrayAccess, \JsonSerializabl
       * @var string[]
       */
     protected static $openAPITypes = [
-        'logos' => '\criteo\api\marketingsolutions\preview\Model\ImageShape[]',
+        'logos' => '\Criteo\Api\MarketingSolutions\Model\ImageShape[]',
         'creative_background_color' => 'string',
         'body_text_color' => 'string',
         'prices_color' => 'string',
@@ -359,7 +359,7 @@ class DynamicAttributes implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets logos
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ImageShape[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ImageShape[]|null
      */
     public function getLogos()
     {
@@ -369,7 +369,7 @@ class DynamicAttributes implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets logos
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ImageShape[]|null $logos Logo images uploaded on demostatic.criteo.com when deploying and then static.criteo.net
+     * @param \Criteo\Api\MarketingSolutions\Model\ImageShape[]|null $logos Logo images uploaded on demostatic.criteo.com when deploying and then static.criteo.net
      *
      * @return self
      */

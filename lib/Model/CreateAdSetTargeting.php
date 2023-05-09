@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * CreateAdSetTargeting Class Doc Comment
@@ -58,9 +58,9 @@ class CreateAdSetTargeting implements ModelInterface, ArrayAccess, \JsonSerializ
       * @var string[]
       */
     protected static $openAPITypes = [
-        'delivery_limitations' => '\criteo\api\marketingsolutions\preview\Model\AdSetDeliveryLimitations',
-        'geo_location' => '\criteo\api\marketingsolutions\preview\Model\CreateAdSetGeoLocation',
-        'frequency_capping' => '\criteo\api\marketingsolutions\preview\Model\AdSetFrequencyCapping'
+        'delivery_limitations' => '\Criteo\Api\MarketingSolutions\Model\AdSetDeliveryLimitations',
+        'geo_location' => '\Criteo\Api\MarketingSolutions\Model\CreateAdSetGeoLocation',
+        'frequency_capping' => '\Criteo\Api\MarketingSolutions\Model\AdSetFrequencyCapping'
     ];
 
     /**
@@ -307,7 +307,7 @@ class CreateAdSetTargeting implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets delivery_limitations
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\AdSetDeliveryLimitations|null
+     * @return \Criteo\Api\MarketingSolutions\Model\AdSetDeliveryLimitations|null
      */
     public function getDeliveryLimitations()
     {
@@ -317,7 +317,7 @@ class CreateAdSetTargeting implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets delivery_limitations
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\AdSetDeliveryLimitations|null $delivery_limitations delivery_limitations
+     * @param \Criteo\Api\MarketingSolutions\Model\AdSetDeliveryLimitations|null $delivery_limitations delivery_limitations
      *
      * @return self
      */
@@ -334,7 +334,7 @@ class CreateAdSetTargeting implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets geo_location
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\CreateAdSetGeoLocation|null
+     * @return \Criteo\Api\MarketingSolutions\Model\CreateAdSetGeoLocation|null
      */
     public function getGeoLocation()
     {
@@ -344,7 +344,7 @@ class CreateAdSetTargeting implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets geo_location
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\CreateAdSetGeoLocation|null $geo_location geo_location
+     * @param \Criteo\Api\MarketingSolutions\Model\CreateAdSetGeoLocation|null $geo_location geo_location
      *
      * @return self
      */
@@ -361,7 +361,7 @@ class CreateAdSetTargeting implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets frequency_capping
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\AdSetFrequencyCapping|null
+     * @return \Criteo\Api\MarketingSolutions\Model\AdSetFrequencyCapping|null
      */
     public function getFrequencyCapping()
     {
@@ -371,7 +371,7 @@ class CreateAdSetTargeting implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets frequency_capping
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\AdSetFrequencyCapping|null $frequency_capping frequency_capping
+     * @param \Criteo\Api\MarketingSolutions\Model\AdSetFrequencyCapping|null $frequency_capping frequency_capping
      *
      * @return self
      */

@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * CreateCampaignRequest Class Doc Comment
@@ -58,7 +58,7 @@ class CreateCampaignRequest implements ModelInterface, ArrayAccess, \JsonSeriali
       * @var string[]
       */
     protected static $openAPITypes = [
-        'data' => '\criteo\api\marketingsolutions\preview\Model\CreateCampaignResource'
+        'data' => '\Criteo\Api\MarketingSolutions\Model\CreateCampaignResource'
     ];
 
     /**
@@ -293,7 +293,7 @@ class CreateCampaignRequest implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets data
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\CreateCampaignResource|null
+     * @return \Criteo\Api\MarketingSolutions\Model\CreateCampaignResource|null
      */
     public function getData()
     {
@@ -303,7 +303,7 @@ class CreateCampaignRequest implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets data
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\CreateCampaignResource|null $data data
+     * @param \Criteo\Api\MarketingSolutions\Model\CreateCampaignResource|null $data data
      *
      * @return self
      */

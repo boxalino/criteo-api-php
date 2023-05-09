@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * AdSetAudienceLinkInputEntityV1 Class Doc Comment
@@ -58,7 +58,7 @@ class AdSetAudienceLinkInputEntityV1 implements ModelInterface, ArrayAccess, \Js
       * @var string[]
       */
     protected static $openAPITypes = [
-        'data' => '\criteo\api\marketingsolutions\preview\Model\AdSetAudienceLinkEntityV1Resource'
+        'data' => '\Criteo\Api\MarketingSolutions\Model\AdSetAudienceLinkEntityV1Resource'
     ];
 
     /**
@@ -293,7 +293,7 @@ class AdSetAudienceLinkInputEntityV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets data
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\AdSetAudienceLinkEntityV1Resource|null
+     * @return \Criteo\Api\MarketingSolutions\Model\AdSetAudienceLinkEntityV1Resource|null
      */
     public function getData()
     {
@@ -303,7 +303,7 @@ class AdSetAudienceLinkInputEntityV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets data
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\AdSetAudienceLinkEntityV1Resource|null $data data
+     * @param \Criteo\Api\MarketingSolutions\Model\AdSetAudienceLinkEntityV1Resource|null $data data
      *
      * @return self
      */

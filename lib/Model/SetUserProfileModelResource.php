@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * SetUserProfileModelResource Class Doc Comment
@@ -59,7 +59,7 @@ class SetUserProfileModelResource implements ModelInterface, ArrayAccess, \JsonS
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'attributes' => '\criteo\api\marketingsolutions\preview\Model\SetUserProfileModel'
+        'attributes' => '\Criteo\Api\MarketingSolutions\Model\SetUserProfileModel'
     ];
 
     /**
@@ -327,7 +327,7 @@ class SetUserProfileModelResource implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets attributes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\SetUserProfileModel|null
+     * @return \Criteo\Api\MarketingSolutions\Model\SetUserProfileModel|null
      */
     public function getAttributes()
     {
@@ -337,7 +337,7 @@ class SetUserProfileModelResource implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets attributes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\SetUserProfileModel|null $attributes attributes
+     * @param \Criteo\Api\MarketingSolutions\Model\SetUserProfileModel|null $attributes attributes
      *
      * @return self
      */

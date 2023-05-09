@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * ReadModelReadAdSet Class Doc Comment
@@ -60,7 +60,7 @@ class ReadModelReadAdSet implements ModelInterface, ArrayAccess, \JsonSerializab
     protected static $openAPITypes = [
         'id' => 'string',
         'type' => 'string',
-        'attributes' => '\criteo\api\marketingsolutions\preview\Model\ReadAdSet'
+        'attributes' => '\Criteo\Api\MarketingSolutions\Model\ReadAdSet'
     ];
 
     /**
@@ -361,7 +361,7 @@ class ReadModelReadAdSet implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets attributes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ReadAdSet|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ReadAdSet|null
      */
     public function getAttributes()
     {
@@ -371,7 +371,7 @@ class ReadModelReadAdSet implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets attributes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ReadAdSet|null $attributes attributes
+     * @param \Criteo\Api\MarketingSolutions\Model\ReadAdSet|null $attributes attributes
      *
      * @return self
      */

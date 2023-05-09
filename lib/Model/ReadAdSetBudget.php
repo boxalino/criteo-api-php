@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * ReadAdSetBudget Class Doc Comment
@@ -62,7 +62,7 @@ class ReadAdSetBudget implements ModelInterface, ArrayAccess, \JsonSerializable
         'budget_renewal' => 'string',
         'budget_delivery_smoothing' => 'string',
         'budget_delivery_week' => 'string',
-        'budget_amount' => '\criteo\api\marketingsolutions\preview\Model\NillableDecimal'
+        'budget_amount' => '\Criteo\Api\MarketingSolutions\Model\NillableDecimal'
     ];
 
     /**
@@ -581,7 +581,7 @@ class ReadAdSetBudget implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets budget_amount
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\NillableDecimal|null
+     * @return \Criteo\Api\MarketingSolutions\Model\NillableDecimal|null
      */
     public function getBudgetAmount()
     {
@@ -591,7 +591,7 @@ class ReadAdSetBudget implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets budget_amount
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\NillableDecimal|null $budget_amount budget_amount
+     * @param \Criteo\Api\MarketingSolutions\Model\NillableDecimal|null $budget_amount budget_amount
      *
      * @return self
      */

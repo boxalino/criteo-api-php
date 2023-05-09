@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * PatchCampaignWriteResource Class Doc Comment
@@ -60,7 +60,7 @@ class PatchCampaignWriteResource implements ModelInterface, ArrayAccess, \JsonSe
     protected static $openAPITypes = [
         'id' => 'string',
         'type' => 'string',
-        'attributes' => '\criteo\api\marketingsolutions\preview\Model\PatchCampaign'
+        'attributes' => '\Criteo\Api\MarketingSolutions\Model\PatchCampaign'
     ];
 
     /**
@@ -361,7 +361,7 @@ class PatchCampaignWriteResource implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets attributes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\PatchCampaign|null
+     * @return \Criteo\Api\MarketingSolutions\Model\PatchCampaign|null
      */
     public function getAttributes()
     {
@@ -371,7 +371,7 @@ class PatchCampaignWriteResource implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets attributes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\PatchCampaign|null $attributes attributes
+     * @param \Criteo\Api\MarketingSolutions\Model\PatchCampaign|null $attributes attributes
      *
      * @return self
      */

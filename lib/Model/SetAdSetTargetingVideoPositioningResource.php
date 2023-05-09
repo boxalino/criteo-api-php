@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * SetAdSetTargetingVideoPositioningResource Class Doc Comment
@@ -59,7 +59,7 @@ class SetAdSetTargetingVideoPositioningResource implements ModelInterface, Array
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'attributes' => '\criteo\api\marketingsolutions\preview\Model\SetAdSetTargetingVideoPositioning'
+        'attributes' => '\Criteo\Api\MarketingSolutions\Model\SetAdSetTargetingVideoPositioning'
     ];
 
     /**
@@ -327,7 +327,7 @@ class SetAdSetTargetingVideoPositioningResource implements ModelInterface, Array
     /**
      * Gets attributes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\SetAdSetTargetingVideoPositioning|null
+     * @return \Criteo\Api\MarketingSolutions\Model\SetAdSetTargetingVideoPositioning|null
      */
     public function getAttributes()
     {
@@ -337,7 +337,7 @@ class SetAdSetTargetingVideoPositioningResource implements ModelInterface, Array
     /**
      * Sets attributes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\SetAdSetTargetingVideoPositioning|null $attributes attributes
+     * @param \Criteo\Api\MarketingSolutions\Model\SetAdSetTargetingVideoPositioning|null $attributes attributes
      *
      * @return self
      */

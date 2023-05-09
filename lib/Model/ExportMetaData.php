@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * ExportMetaData Class Doc Comment
@@ -58,7 +58,7 @@ class ExportMetaData implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'columns' => '\criteo\api\marketingsolutions\preview\Model\ExportColumn[]',
+        'columns' => '\Criteo\Api\MarketingSolutions\Model\ExportColumn[]',
         'rows' => 'int'
     ];
 
@@ -300,7 +300,7 @@ class ExportMetaData implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets columns
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ExportColumn[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ExportColumn[]|null
      */
     public function getColumns()
     {
@@ -310,7 +310,7 @@ class ExportMetaData implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets columns
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ExportColumn[]|null $columns columns
+     * @param \Criteo\Api\MarketingSolutions\Model\ExportColumn[]|null $columns columns
      *
      * @return self
      */

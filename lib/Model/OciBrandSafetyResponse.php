@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * OciBrandSafetyResponse Class Doc Comment
@@ -58,9 +58,9 @@ class OciBrandSafetyResponse implements ModelInterface, ArrayAccess, \JsonSerial
       * @var string[]
       */
     protected static $openAPITypes = [
-        'data' => '\criteo\api\marketingsolutions\preview\Model\OciBrandSafetyResponseData',
-        'warnings' => '\criteo\api\marketingsolutions\preview\Model\TargetingErrorModel[]',
-        'errors' => '\criteo\api\marketingsolutions\preview\Model\TargetingErrorModel[]'
+        'data' => '\Criteo\Api\MarketingSolutions\Model\OciBrandSafetyResponseData',
+        'warnings' => '\Criteo\Api\MarketingSolutions\Model\TargetingErrorModel[]',
+        'errors' => '\Criteo\Api\MarketingSolutions\Model\TargetingErrorModel[]'
     ];
 
     /**
@@ -307,7 +307,7 @@ class OciBrandSafetyResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets data
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\OciBrandSafetyResponseData|null
+     * @return \Criteo\Api\MarketingSolutions\Model\OciBrandSafetyResponseData|null
      */
     public function getData()
     {
@@ -317,7 +317,7 @@ class OciBrandSafetyResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets data
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\OciBrandSafetyResponseData|null $data data
+     * @param \Criteo\Api\MarketingSolutions\Model\OciBrandSafetyResponseData|null $data data
      *
      * @return self
      */
@@ -334,7 +334,7 @@ class OciBrandSafetyResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets warnings
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\TargetingErrorModel[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\TargetingErrorModel[]|null
      */
     public function getWarnings()
     {
@@ -344,7 +344,7 @@ class OciBrandSafetyResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets warnings
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\TargetingErrorModel[]|null $warnings An array of warning objects
+     * @param \Criteo\Api\MarketingSolutions\Model\TargetingErrorModel[]|null $warnings An array of warning objects
      *
      * @return self
      */
@@ -361,7 +361,7 @@ class OciBrandSafetyResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets errors
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\TargetingErrorModel[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\TargetingErrorModel[]|null
      */
     public function getErrors()
     {
@@ -371,7 +371,7 @@ class OciBrandSafetyResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets errors
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\TargetingErrorModel[]|null $errors An array of error objects
+     * @param \Criteo\Api\MarketingSolutions\Model\TargetingErrorModel[]|null $errors An array of error objects
      *
      * @return self
      */

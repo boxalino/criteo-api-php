@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * PlacementsReportQueryDataMessage Class Doc Comment
@@ -58,7 +58,7 @@ class PlacementsReportQueryDataMessage implements ModelInterface, ArrayAccess, \
       * @var string[]
       */
     protected static $openAPITypes = [
-        'data' => '\criteo\api\marketingsolutions\preview\Model\PlacementsReportQueryEntityMessage[]'
+        'data' => '\Criteo\Api\MarketingSolutions\Model\PlacementsReportQueryEntityMessage[]'
     ];
 
     /**
@@ -296,7 +296,7 @@ class PlacementsReportQueryDataMessage implements ModelInterface, ArrayAccess, \
     /**
      * Gets data
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\PlacementsReportQueryEntityMessage[]
+     * @return \Criteo\Api\MarketingSolutions\Model\PlacementsReportQueryEntityMessage[]
      */
     public function getData()
     {
@@ -306,7 +306,7 @@ class PlacementsReportQueryDataMessage implements ModelInterface, ArrayAccess, \
     /**
      * Sets data
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\PlacementsReportQueryEntityMessage[] $data data
+     * @param \Criteo\Api\MarketingSolutions\Model\PlacementsReportQueryEntityMessage[] $data data
      *
      * @return self
      */

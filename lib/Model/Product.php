@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * Product Class Doc Comment
@@ -79,17 +79,17 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
         'material' => 'string',
         'mpn' => 'string',
         'pattern' => 'string',
-        'price' => '\criteo\api\marketingsolutions\preview\Model\Price',
-        'sale_price' => '\criteo\api\marketingsolutions\preview\Model\Price',
+        'price' => '\Criteo\Api\MarketingSolutions\Model\Price',
+        'sale_price' => '\Criteo\Api\MarketingSolutions\Model\Price',
         'sale_price_effective_date' => 'string',
-        'shipping' => '\criteo\api\marketingsolutions\preview\Model\ProductShipping[]',
-        'shipping_weight' => '\criteo\api\marketingsolutions\preview\Model\ProductShippingWeight',
+        'shipping' => '\Criteo\Api\MarketingSolutions\Model\ProductShipping[]',
+        'shipping_weight' => '\Criteo\Api\MarketingSolutions\Model\ProductShippingWeight',
         'sizes' => 'string[]',
-        'taxes' => '\criteo\api\marketingsolutions\preview\Model\ProductTax[]',
-        'custom_attributes' => '\criteo\api\marketingsolutions\preview\Model\CustomAttribute[]',
+        'taxes' => '\Criteo\Api\MarketingSolutions\Model\ProductTax[]',
+        'custom_attributes' => '\Criteo\Api\MarketingSolutions\Model\CustomAttribute[]',
         'identifier_exists' => 'bool',
-        'installment' => '\criteo\api\marketingsolutions\preview\Model\Installment',
-        'loyalty_points' => '\criteo\api\marketingsolutions\preview\Model\LoyaltyPoints',
+        'installment' => '\Criteo\Api\MarketingSolutions\Model\Installment',
+        'loyalty_points' => '\Criteo\Api\MarketingSolutions\Model\LoyaltyPoints',
         'multipack' => 'int',
         'custom_label0' => 'string',
         'custom_label1' => 'string',
@@ -100,11 +100,11 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
         'mobile_link' => 'string',
         'availability_date' => 'string',
         'shipping_label' => 'string',
-        'unit_pricing_measure' => '\criteo\api\marketingsolutions\preview\Model\ProductUnitPricingMeasure',
-        'unit_pricing_base_measure' => '\criteo\api\marketingsolutions\preview\Model\ProductUnitPricingBaseMeasure',
-        'shipping_length' => '\criteo\api\marketingsolutions\preview\Model\ProductShippingDimension',
-        'shipping_width' => '\criteo\api\marketingsolutions\preview\Model\ProductShippingDimension',
-        'shipping_height' => '\criteo\api\marketingsolutions\preview\Model\ProductShippingDimension',
+        'unit_pricing_measure' => '\Criteo\Api\MarketingSolutions\Model\ProductUnitPricingMeasure',
+        'unit_pricing_base_measure' => '\Criteo\Api\MarketingSolutions\Model\ProductUnitPricingBaseMeasure',
+        'shipping_length' => '\Criteo\Api\MarketingSolutions\Model\ProductShippingDimension',
+        'shipping_width' => '\Criteo\Api\MarketingSolutions\Model\ProductShippingDimension',
+        'shipping_height' => '\Criteo\Api\MarketingSolutions\Model\ProductShippingDimension',
         'display_ads_id' => 'string',
         'display_ads_similar_ids' => 'string[]',
         'display_ads_title' => 'string',
@@ -114,7 +114,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
         'promotion_ids' => 'string[]',
         'max_handling_time' => 'int',
         'min_handling_time' => 'int',
-        'cost_of_goods_sold' => '\criteo\api\marketingsolutions\preview\Model\Price',
+        'cost_of_goods_sold' => '\Criteo\Api\MarketingSolutions\Model\Price',
         'source' => 'string',
         'included_destinations' => 'string[]',
         'excluded_destinations' => 'string[]',
@@ -1432,7 +1432,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets price
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\Price|null
+     * @return \Criteo\Api\MarketingSolutions\Model\Price|null
      */
     public function getPrice()
     {
@@ -1442,7 +1442,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets price
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\Price|null $price price
+     * @param \Criteo\Api\MarketingSolutions\Model\Price|null $price price
      *
      * @return self
      */
@@ -1459,7 +1459,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets sale_price
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\Price|null
+     * @return \Criteo\Api\MarketingSolutions\Model\Price|null
      */
     public function getSalePrice()
     {
@@ -1469,7 +1469,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets sale_price
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\Price|null $sale_price sale_price
+     * @param \Criteo\Api\MarketingSolutions\Model\Price|null $sale_price sale_price
      *
      * @return self
      */
@@ -1513,7 +1513,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets shipping
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ProductShipping[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ProductShipping[]|null
      */
     public function getShipping()
     {
@@ -1523,7 +1523,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets shipping
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ProductShipping[]|null $shipping Shipping rules.
+     * @param \Criteo\Api\MarketingSolutions\Model\ProductShipping[]|null $shipping Shipping rules.
      *
      * @return self
      */
@@ -1540,7 +1540,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets shipping_weight
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ProductShippingWeight|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ProductShippingWeight|null
      */
     public function getShippingWeight()
     {
@@ -1550,7 +1550,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets shipping_weight
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ProductShippingWeight|null $shipping_weight shipping_weight
+     * @param \Criteo\Api\MarketingSolutions\Model\ProductShippingWeight|null $shipping_weight shipping_weight
      *
      * @return self
      */
@@ -1594,7 +1594,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets taxes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ProductTax[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ProductTax[]|null
      */
     public function getTaxes()
     {
@@ -1604,7 +1604,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets taxes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ProductTax[]|null $taxes Tax information.
+     * @param \Criteo\Api\MarketingSolutions\Model\ProductTax[]|null $taxes Tax information.
      *
      * @return self
      */
@@ -1621,7 +1621,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets custom_attributes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\CustomAttribute[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\CustomAttribute[]|null
      */
     public function getCustomAttributes()
     {
@@ -1631,7 +1631,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets custom_attributes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\CustomAttribute[]|null $custom_attributes A list of custom (merchant-provided) attributes. This is useful for submitting attributes not explicitly exposed by the API. Declaring attributes explicitly exposed by the API using is forbidden
+     * @param \Criteo\Api\MarketingSolutions\Model\CustomAttribute[]|null $custom_attributes A list of custom (merchant-provided) attributes. This is useful for submitting attributes not explicitly exposed by the API. Declaring attributes explicitly exposed by the API using is forbidden
      *
      * @return self
      */
@@ -1675,7 +1675,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets installment
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\Installment|null
+     * @return \Criteo\Api\MarketingSolutions\Model\Installment|null
      */
     public function getInstallment()
     {
@@ -1685,7 +1685,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets installment
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\Installment|null $installment installment
+     * @param \Criteo\Api\MarketingSolutions\Model\Installment|null $installment installment
      *
      * @return self
      */
@@ -1702,7 +1702,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets loyalty_points
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\LoyaltyPoints|null
+     * @return \Criteo\Api\MarketingSolutions\Model\LoyaltyPoints|null
      */
     public function getLoyaltyPoints()
     {
@@ -1712,7 +1712,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets loyalty_points
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\LoyaltyPoints|null $loyalty_points loyalty_points
+     * @param \Criteo\Api\MarketingSolutions\Model\LoyaltyPoints|null $loyalty_points loyalty_points
      *
      * @return self
      */
@@ -1999,7 +1999,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets unit_pricing_measure
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ProductUnitPricingMeasure|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ProductUnitPricingMeasure|null
      */
     public function getUnitPricingMeasure()
     {
@@ -2009,7 +2009,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets unit_pricing_measure
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ProductUnitPricingMeasure|null $unit_pricing_measure unit_pricing_measure
+     * @param \Criteo\Api\MarketingSolutions\Model\ProductUnitPricingMeasure|null $unit_pricing_measure unit_pricing_measure
      *
      * @return self
      */
@@ -2026,7 +2026,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets unit_pricing_base_measure
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ProductUnitPricingBaseMeasure|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ProductUnitPricingBaseMeasure|null
      */
     public function getUnitPricingBaseMeasure()
     {
@@ -2036,7 +2036,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets unit_pricing_base_measure
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ProductUnitPricingBaseMeasure|null $unit_pricing_base_measure unit_pricing_base_measure
+     * @param \Criteo\Api\MarketingSolutions\Model\ProductUnitPricingBaseMeasure|null $unit_pricing_base_measure unit_pricing_base_measure
      *
      * @return self
      */
@@ -2053,7 +2053,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets shipping_length
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ProductShippingDimension|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ProductShippingDimension|null
      */
     public function getShippingLength()
     {
@@ -2063,7 +2063,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets shipping_length
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ProductShippingDimension|null $shipping_length shipping_length
+     * @param \Criteo\Api\MarketingSolutions\Model\ProductShippingDimension|null $shipping_length shipping_length
      *
      * @return self
      */
@@ -2080,7 +2080,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets shipping_width
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ProductShippingDimension|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ProductShippingDimension|null
      */
     public function getShippingWidth()
     {
@@ -2090,7 +2090,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets shipping_width
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ProductShippingDimension|null $shipping_width shipping_width
+     * @param \Criteo\Api\MarketingSolutions\Model\ProductShippingDimension|null $shipping_width shipping_width
      *
      * @return self
      */
@@ -2107,7 +2107,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets shipping_height
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ProductShippingDimension|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ProductShippingDimension|null
      */
     public function getShippingHeight()
     {
@@ -2117,7 +2117,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets shipping_height
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ProductShippingDimension|null $shipping_height shipping_height
+     * @param \Criteo\Api\MarketingSolutions\Model\ProductShippingDimension|null $shipping_height shipping_height
      *
      * @return self
      */
@@ -2377,7 +2377,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets cost_of_goods_sold
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\Price|null
+     * @return \Criteo\Api\MarketingSolutions\Model\Price|null
      */
     public function getCostOfGoodsSold()
     {
@@ -2387,7 +2387,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets cost_of_goods_sold
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\Price|null $cost_of_goods_sold cost_of_goods_sold
+     * @param \Criteo\Api\MarketingSolutions\Model\Price|null $cost_of_goods_sold cost_of_goods_sold
      *
      * @return self
      */

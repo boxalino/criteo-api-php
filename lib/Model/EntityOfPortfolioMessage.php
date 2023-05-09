@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * EntityOfPortfolioMessage Class Doc Comment
@@ -60,7 +60,7 @@ class EntityOfPortfolioMessage implements ModelInterface, ArrayAccess, \JsonSeri
     protected static $openAPITypes = [
         'type' => 'string',
         'id' => 'string',
-        'attributes' => '\criteo\api\marketingsolutions\preview\Model\PortfolioMessage',
+        'attributes' => '\Criteo\Api\MarketingSolutions\Model\PortfolioMessage',
         'meta' => 'object'
     ];
 
@@ -418,7 +418,7 @@ class EntityOfPortfolioMessage implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets attributes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\PortfolioMessage|null
+     * @return \Criteo\Api\MarketingSolutions\Model\PortfolioMessage|null
      */
     public function getAttributes()
     {
@@ -428,7 +428,7 @@ class EntityOfPortfolioMessage implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets attributes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\PortfolioMessage|null $attributes attributes
+     * @param \Criteo\Api\MarketingSolutions\Model\PortfolioMessage|null $attributes attributes
      *
      * @return self
      */

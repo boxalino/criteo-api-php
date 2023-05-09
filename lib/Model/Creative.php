@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * Creative Class Doc Comment
@@ -65,10 +65,10 @@ class Creative implements ModelInterface, ArrayAccess, \JsonSerializable
         'format' => 'string',
         'advertiser_id' => 'string',
         'dataset_id' => 'string',
-        'image_attributes' => '\criteo\api\marketingsolutions\preview\Model\ImageAttributes',
-        'html_tag_attributes' => '\criteo\api\marketingsolutions\preview\Model\HtmlTagAttributes',
-        'dynamic_attributes' => '\criteo\api\marketingsolutions\preview\Model\DynamicAttributes',
-        'adaptive_attributes' => '\criteo\api\marketingsolutions\preview\Model\AdaptiveAttributes'
+        'image_attributes' => '\Criteo\Api\MarketingSolutions\Model\ImageAttributes',
+        'html_tag_attributes' => '\Criteo\Api\MarketingSolutions\Model\HtmlTagAttributes',
+        'dynamic_attributes' => '\Criteo\Api\MarketingSolutions\Model\DynamicAttributes',
+        'adaptive_attributes' => '\Criteo\Api\MarketingSolutions\Model\AdaptiveAttributes'
     ];
 
     /**
@@ -564,7 +564,7 @@ class Creative implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets image_attributes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ImageAttributes|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ImageAttributes|null
      */
     public function getImageAttributes()
     {
@@ -574,7 +574,7 @@ class Creative implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets image_attributes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ImageAttributes|null $image_attributes image_attributes
+     * @param \Criteo\Api\MarketingSolutions\Model\ImageAttributes|null $image_attributes image_attributes
      *
      * @return self
      */
@@ -591,7 +591,7 @@ class Creative implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets html_tag_attributes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\HtmlTagAttributes|null
+     * @return \Criteo\Api\MarketingSolutions\Model\HtmlTagAttributes|null
      */
     public function getHtmlTagAttributes()
     {
@@ -601,7 +601,7 @@ class Creative implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets html_tag_attributes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\HtmlTagAttributes|null $html_tag_attributes html_tag_attributes
+     * @param \Criteo\Api\MarketingSolutions\Model\HtmlTagAttributes|null $html_tag_attributes html_tag_attributes
      *
      * @return self
      */
@@ -618,7 +618,7 @@ class Creative implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets dynamic_attributes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\DynamicAttributes|null
+     * @return \Criteo\Api\MarketingSolutions\Model\DynamicAttributes|null
      */
     public function getDynamicAttributes()
     {
@@ -628,7 +628,7 @@ class Creative implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets dynamic_attributes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\DynamicAttributes|null $dynamic_attributes dynamic_attributes
+     * @param \Criteo\Api\MarketingSolutions\Model\DynamicAttributes|null $dynamic_attributes dynamic_attributes
      *
      * @return self
      */
@@ -645,7 +645,7 @@ class Creative implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets adaptive_attributes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\AdaptiveAttributes|null
+     * @return \Criteo\Api\MarketingSolutions\Model\AdaptiveAttributes|null
      */
     public function getAdaptiveAttributes()
     {
@@ -655,7 +655,7 @@ class Creative implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets adaptive_attributes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\AdaptiveAttributes|null $adaptive_attributes adaptive_attributes
+     * @param \Criteo\Api\MarketingSolutions\Model\AdaptiveAttributes|null $adaptive_attributes adaptive_attributes
      *
      * @return self
      */

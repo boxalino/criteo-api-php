@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * ProductSet Class Doc Comment
@@ -64,7 +64,7 @@ class ProductSet implements ModelInterface, ArrayAccess, \JsonSerializable
         'is_enabled' => 'bool',
         'number_of_products' => 'int',
         'creation_date' => 'string',
-        'rules' => '\criteo\api\marketingsolutions\preview\Model\ProductSetRule[]',
+        'rules' => '\Criteo\Api\MarketingSolutions\Model\ProductSetRule[]',
         'id' => 'string'
     ];
 
@@ -546,7 +546,7 @@ class ProductSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets rules
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ProductSetRule[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ProductSetRule[]|null
      */
     public function getRules()
     {
@@ -556,7 +556,7 @@ class ProductSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets rules
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ProductSetRule[]|null $rules The rules identifying the product belonging to the set
+     * @param \Criteo\Api\MarketingSolutions\Model\ProductSetRule[]|null $rules The rules identifying the product belonging to the set
      *
      * @return self
      */

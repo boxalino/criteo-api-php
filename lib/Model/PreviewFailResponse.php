@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * PreviewFailResponse Class Doc Comment
@@ -58,8 +58,8 @@ class PreviewFailResponse implements ModelInterface, ArrayAccess, \JsonSerializa
       * @var string[]
       */
     protected static $openAPITypes = [
-        'errors' => '\criteo\api\marketingsolutions\preview\Model\PreviewError[]',
-        'warnings' => '\criteo\api\marketingsolutions\preview\Model\PreviewWarning[]'
+        'errors' => '\Criteo\Api\MarketingSolutions\Model\PreviewError[]',
+        'warnings' => '\Criteo\Api\MarketingSolutions\Model\PreviewWarning[]'
     ];
 
     /**
@@ -306,7 +306,7 @@ class PreviewFailResponse implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets errors
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\PreviewError[]
+     * @return \Criteo\Api\MarketingSolutions\Model\PreviewError[]
      */
     public function getErrors()
     {
@@ -316,7 +316,7 @@ class PreviewFailResponse implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets errors
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\PreviewError[] $errors List of errors
+     * @param \Criteo\Api\MarketingSolutions\Model\PreviewError[] $errors List of errors
      *
      * @return self
      */
@@ -333,7 +333,7 @@ class PreviewFailResponse implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets warnings
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\PreviewWarning[]
+     * @return \Criteo\Api\MarketingSolutions\Model\PreviewWarning[]
      */
     public function getWarnings()
     {
@@ -343,7 +343,7 @@ class PreviewFailResponse implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets warnings
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\PreviewWarning[] $warnings List of warnings
+     * @param \Criteo\Api\MarketingSolutions\Model\PreviewWarning[] $warnings List of warnings
      *
      * @return self
      */

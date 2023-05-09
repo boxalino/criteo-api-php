@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * AudienceSegmentCreateEntityV1Resource Class Doc Comment
@@ -59,7 +59,7 @@ class AudienceSegmentCreateEntityV1Resource implements ModelInterface, ArrayAcce
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'attributes' => '\criteo\api\marketingsolutions\preview\Model\AudienceSegmentCreateEntityV1'
+        'attributes' => '\Criteo\Api\MarketingSolutions\Model\AudienceSegmentCreateEntityV1'
     ];
 
     /**
@@ -327,7 +327,7 @@ class AudienceSegmentCreateEntityV1Resource implements ModelInterface, ArrayAcce
     /**
      * Gets attributes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\AudienceSegmentCreateEntityV1|null
+     * @return \Criteo\Api\MarketingSolutions\Model\AudienceSegmentCreateEntityV1|null
      */
     public function getAttributes()
     {
@@ -337,7 +337,7 @@ class AudienceSegmentCreateEntityV1Resource implements ModelInterface, ArrayAcce
     /**
      * Sets attributes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\AudienceSegmentCreateEntityV1|null $attributes attributes
+     * @param \Criteo\Api\MarketingSolutions\Model\AudienceSegmentCreateEntityV1|null $attributes attributes
      *
      * @return self
      */

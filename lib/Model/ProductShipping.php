@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * ProductShipping Class Doc Comment
@@ -58,7 +58,7 @@ class ProductShipping implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'price' => '\criteo\api\marketingsolutions\preview\Model\Price',
+        'price' => '\Criteo\Api\MarketingSolutions\Model\Price',
         'country' => 'string',
         'region' => 'string',
         'service' => 'string',
@@ -335,7 +335,7 @@ class ProductShipping implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets price
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\Price|null
+     * @return \Criteo\Api\MarketingSolutions\Model\Price|null
      */
     public function getPrice()
     {
@@ -345,7 +345,7 @@ class ProductShipping implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets price
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\Price|null $price price
+     * @param \Criteo\Api\MarketingSolutions\Model\Price|null $price price
      *
      * @return self
      */

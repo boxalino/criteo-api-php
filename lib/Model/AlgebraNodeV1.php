@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * AlgebraNodeV1 Class Doc Comment
@@ -58,9 +58,9 @@ class AlgebraNodeV1 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'and' => '\criteo\api\marketingsolutions\preview\Model\AlgebraNodeV1[]',
-        'or' => '\criteo\api\marketingsolutions\preview\Model\AlgebraNodeV1[]',
-        'not' => '\criteo\api\marketingsolutions\preview\Model\AlgebraNodeV1',
+        'and' => '\Criteo\Api\MarketingSolutions\Model\AlgebraNodeV1[]',
+        'or' => '\Criteo\Api\MarketingSolutions\Model\AlgebraNodeV1[]',
+        'not' => '\Criteo\Api\MarketingSolutions\Model\AlgebraNodeV1',
         'audience_segment_id' => 'string'
     ];
 
@@ -314,7 +314,7 @@ class AlgebraNodeV1 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets and
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\AlgebraNodeV1[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\AlgebraNodeV1[]|null
      */
     public function getAnd()
     {
@@ -324,7 +324,7 @@ class AlgebraNodeV1 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets and
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\AlgebraNodeV1[]|null $and and
+     * @param \Criteo\Api\MarketingSolutions\Model\AlgebraNodeV1[]|null $and and
      *
      * @return self
      */
@@ -343,7 +343,7 @@ class AlgebraNodeV1 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets or
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\AlgebraNodeV1[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\AlgebraNodeV1[]|null
      */
     public function getOr()
     {
@@ -353,7 +353,7 @@ class AlgebraNodeV1 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets or
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\AlgebraNodeV1[]|null $or or
+     * @param \Criteo\Api\MarketingSolutions\Model\AlgebraNodeV1[]|null $or or
      *
      * @return self
      */
@@ -372,7 +372,7 @@ class AlgebraNodeV1 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets not
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\AlgebraNodeV1|null
+     * @return \Criteo\Api\MarketingSolutions\Model\AlgebraNodeV1|null
      */
     public function getNot()
     {
@@ -382,7 +382,7 @@ class AlgebraNodeV1 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets not
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\AlgebraNodeV1|null $not not
+     * @param \Criteo\Api\MarketingSolutions\Model\AlgebraNodeV1|null $not not
      *
      * @return self
      */

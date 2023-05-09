@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * InMarketAudienceSegmentInterestEntityV1Resource Class Doc Comment
@@ -58,7 +58,7 @@ class InMarketAudienceSegmentInterestEntityV1Resource implements ModelInterface,
       * @var string[]
       */
     protected static $openAPITypes = [
-        'attributes' => '\criteo\api\marketingsolutions\preview\Model\InMarketAudienceSegmentInterestEntityV1',
+        'attributes' => '\Criteo\Api\MarketingSolutions\Model\InMarketAudienceSegmentInterestEntityV1',
         'id' => 'string',
         'type' => 'string'
     ];
@@ -307,7 +307,7 @@ class InMarketAudienceSegmentInterestEntityV1Resource implements ModelInterface,
     /**
      * Gets attributes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\InMarketAudienceSegmentInterestEntityV1|null
+     * @return \Criteo\Api\MarketingSolutions\Model\InMarketAudienceSegmentInterestEntityV1|null
      */
     public function getAttributes()
     {
@@ -317,7 +317,7 @@ class InMarketAudienceSegmentInterestEntityV1Resource implements ModelInterface,
     /**
      * Sets attributes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\InMarketAudienceSegmentInterestEntityV1|null $attributes attributes
+     * @param \Criteo\Api\MarketingSolutions\Model\InMarketAudienceSegmentInterestEntityV1|null $attributes attributes
      *
      * @return self
      */

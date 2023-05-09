@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * AdResource Class Doc Comment
@@ -58,7 +58,7 @@ class AdResource implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'attributes' => '\criteo\api\marketingsolutions\preview\Model\Ad',
+        'attributes' => '\Criteo\Api\MarketingSolutions\Model\Ad',
         'id' => 'string',
         'type' => 'string'
     ];
@@ -307,7 +307,7 @@ class AdResource implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets attributes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\Ad|null
+     * @return \Criteo\Api\MarketingSolutions\Model\Ad|null
      */
     public function getAttributes()
     {
@@ -317,7 +317,7 @@ class AdResource implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets attributes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\Ad|null $attributes attributes
+     * @param \Criteo\Api\MarketingSolutions\Model\Ad|null $attributes attributes
      *
      * @return self
      */

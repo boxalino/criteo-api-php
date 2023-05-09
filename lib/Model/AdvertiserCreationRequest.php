@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * AdvertiserCreationRequest Class Doc Comment
@@ -59,7 +59,7 @@ class AdvertiserCreationRequest implements ModelInterface, ArrayAccess, \JsonSer
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'data' => '\criteo\api\marketingsolutions\preview\Model\AdvertiserCreationInput'
+        'data' => '\Criteo\Api\MarketingSolutions\Model\AdvertiserCreationInput'
     ];
 
     /**
@@ -384,7 +384,7 @@ class AdvertiserCreationRequest implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets data
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\AdvertiserCreationInput|null
+     * @return \Criteo\Api\MarketingSolutions\Model\AdvertiserCreationInput|null
      */
     public function getData()
     {
@@ -394,7 +394,7 @@ class AdvertiserCreationRequest implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets data
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\AdvertiserCreationInput|null $data data
+     * @param \Criteo\Api\MarketingSolutions\Model\AdvertiserCreationInput|null $data data
      *
      * @return self
      */

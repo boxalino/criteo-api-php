@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * PatchAdSetCategoryBidResultListResponse Class Doc Comment
@@ -58,9 +58,9 @@ class PatchAdSetCategoryBidResultListResponse implements ModelInterface, ArrayAc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'data' => '\criteo\api\marketingsolutions\preview\Model\PatchAdSetCategoryBidResultResource[]',
-        'warnings' => '\criteo\api\marketingsolutions\preview\Model\ProblemDetails[]',
-        'errors' => '\criteo\api\marketingsolutions\preview\Model\ProblemDetails[]'
+        'data' => '\Criteo\Api\MarketingSolutions\Model\PatchAdSetCategoryBidResultResource[]',
+        'warnings' => '\Criteo\Api\MarketingSolutions\Model\ProblemDetails[]',
+        'errors' => '\Criteo\Api\MarketingSolutions\Model\ProblemDetails[]'
     ];
 
     /**
@@ -307,7 +307,7 @@ class PatchAdSetCategoryBidResultListResponse implements ModelInterface, ArrayAc
     /**
      * Gets data
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\PatchAdSetCategoryBidResultResource[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\PatchAdSetCategoryBidResultResource[]|null
      */
     public function getData()
     {
@@ -317,7 +317,7 @@ class PatchAdSetCategoryBidResultListResponse implements ModelInterface, ArrayAc
     /**
      * Sets data
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\PatchAdSetCategoryBidResultResource[]|null $data data
+     * @param \Criteo\Api\MarketingSolutions\Model\PatchAdSetCategoryBidResultResource[]|null $data data
      *
      * @return self
      */
@@ -336,7 +336,7 @@ class PatchAdSetCategoryBidResultListResponse implements ModelInterface, ArrayAc
     /**
      * Gets warnings
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ProblemDetails[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ProblemDetails[]|null
      */
     public function getWarnings()
     {
@@ -346,7 +346,7 @@ class PatchAdSetCategoryBidResultListResponse implements ModelInterface, ArrayAc
     /**
      * Sets warnings
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ProblemDetails[]|null $warnings warnings
+     * @param \Criteo\Api\MarketingSolutions\Model\ProblemDetails[]|null $warnings warnings
      *
      * @return self
      */
@@ -365,7 +365,7 @@ class PatchAdSetCategoryBidResultListResponse implements ModelInterface, ArrayAc
     /**
      * Gets errors
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ProblemDetails[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\ProblemDetails[]|null
      */
     public function getErrors()
     {
@@ -375,7 +375,7 @@ class PatchAdSetCategoryBidResultListResponse implements ModelInterface, ArrayAc
     /**
      * Sets errors
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ProblemDetails[]|null $errors errors
+     * @param \Criteo\Api\MarketingSolutions\Model\ProblemDetails[]|null $errors errors
      *
      * @return self
      */

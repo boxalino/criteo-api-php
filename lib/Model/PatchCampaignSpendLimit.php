@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * PatchCampaignSpendLimit Class Doc Comment
@@ -60,7 +60,7 @@ class PatchCampaignSpendLimit implements ModelInterface, ArrayAccess, \JsonSeria
     protected static $openAPITypes = [
         'spend_limit_type' => 'string',
         'spend_limit_renewal' => 'string',
-        'spend_limit_amount' => '\criteo\api\marketingsolutions\preview\Model\NillableDecimal'
+        'spend_limit_amount' => '\Criteo\Api\MarketingSolutions\Model\NillableDecimal'
     ];
 
     /**
@@ -433,7 +433,7 @@ class PatchCampaignSpendLimit implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets spend_limit_amount
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\NillableDecimal|null
+     * @return \Criteo\Api\MarketingSolutions\Model\NillableDecimal|null
      */
     public function getSpendLimitAmount()
     {
@@ -443,7 +443,7 @@ class PatchCampaignSpendLimit implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets spend_limit_amount
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\NillableDecimal|null $spend_limit_amount spend_limit_amount
+     * @param \Criteo\Api\MarketingSolutions\Model\NillableDecimal|null $spend_limit_amount spend_limit_amount
      *
      * @return self
      */

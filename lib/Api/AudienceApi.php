@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Api;
+namespace Criteo\Api\MarketingSolutions\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,10 +34,10 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use criteo\api\marketingsolutions\preview\ApiException;
-use criteo\api\marketingsolutions\preview\Configuration;
-use criteo\api\marketingsolutions\preview\HeaderSelector;
-use criteo\api\marketingsolutions\preview\ObjectSerializer;
+use Criteo\Api\MarketingSolutions\ApiException;
+use Criteo\Api\MarketingSolutions\Configuration;
+use Criteo\Api\MarketingSolutions\HeaderSelector;
+use Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * AudienceApi Class Doc Comment
@@ -224,12 +224,12 @@ class AudienceApi
     /**
      * Operation bulkCreateAudienceSegments
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceSegmentBulkCreateInputV1 $audience_segment_bulk_create_input_v1 Segment creation parameter (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceSegmentBulkCreateInputV1 $audience_segment_bulk_create_input_v1 Segment creation parameter (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bulkCreateAudienceSegments'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \criteo\api\marketingsolutions\preview\Model\AudienceSegmentEntityV1ListResponse
+     * @return \Criteo\Api\MarketingSolutions\Model\AudienceSegmentEntityV1ListResponse
      */
     public function bulkCreateAudienceSegments($audience_segment_bulk_create_input_v1 = null, string $contentType = self::contentTypes['bulkCreateAudienceSegments'][0])
     {
@@ -240,12 +240,12 @@ class AudienceApi
     /**
      * Operation bulkCreateAudienceSegmentsWithHttpInfo
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceSegmentBulkCreateInputV1 $audience_segment_bulk_create_input_v1 Segment creation parameter (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceSegmentBulkCreateInputV1 $audience_segment_bulk_create_input_v1 Segment creation parameter (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bulkCreateAudienceSegments'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \criteo\api\marketingsolutions\preview\Model\AudienceSegmentEntityV1ListResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Criteo\Api\MarketingSolutions\Model\AudienceSegmentEntityV1ListResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function bulkCreateAudienceSegmentsWithHttpInfo($audience_segment_bulk_create_input_v1 = null, string $contentType = self::contentTypes['bulkCreateAudienceSegments'][0])
     {
@@ -288,23 +288,23 @@ class AudienceApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\criteo\api\marketingsolutions\preview\Model\AudienceSegmentEntityV1ListResponse' === '\SplFileObject') {
+                    if ('\Criteo\Api\MarketingSolutions\Model\AudienceSegmentEntityV1ListResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\criteo\api\marketingsolutions\preview\Model\AudienceSegmentEntityV1ListResponse' !== 'string') {
+                        if ('\Criteo\Api\MarketingSolutions\Model\AudienceSegmentEntityV1ListResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\criteo\api\marketingsolutions\preview\Model\AudienceSegmentEntityV1ListResponse', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Api\MarketingSolutions\Model\AudienceSegmentEntityV1ListResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\criteo\api\marketingsolutions\preview\Model\AudienceSegmentEntityV1ListResponse';
+            $returnType = '\Criteo\Api\MarketingSolutions\Model\AudienceSegmentEntityV1ListResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -325,7 +325,7 @@ class AudienceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\criteo\api\marketingsolutions\preview\Model\AudienceSegmentEntityV1ListResponse',
+                        '\Criteo\Api\MarketingSolutions\Model\AudienceSegmentEntityV1ListResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -338,7 +338,7 @@ class AudienceApi
     /**
      * Operation bulkCreateAudienceSegmentsAsync
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceSegmentBulkCreateInputV1 $audience_segment_bulk_create_input_v1 Segment creation parameter (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceSegmentBulkCreateInputV1 $audience_segment_bulk_create_input_v1 Segment creation parameter (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bulkCreateAudienceSegments'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -357,7 +357,7 @@ class AudienceApi
     /**
      * Operation bulkCreateAudienceSegmentsAsyncWithHttpInfo
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceSegmentBulkCreateInputV1 $audience_segment_bulk_create_input_v1 Segment creation parameter (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceSegmentBulkCreateInputV1 $audience_segment_bulk_create_input_v1 Segment creation parameter (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bulkCreateAudienceSegments'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -365,7 +365,7 @@ class AudienceApi
      */
     public function bulkCreateAudienceSegmentsAsyncWithHttpInfo($audience_segment_bulk_create_input_v1 = null, string $contentType = self::contentTypes['bulkCreateAudienceSegments'][0])
     {
-        $returnType = '\criteo\api\marketingsolutions\preview\Model\AudienceSegmentEntityV1ListResponse';
+        $returnType = '\Criteo\Api\MarketingSolutions\Model\AudienceSegmentEntityV1ListResponse';
         $request = $this->bulkCreateAudienceSegmentsRequest($audience_segment_bulk_create_input_v1, $contentType);
 
         return $this->client
@@ -407,7 +407,7 @@ class AudienceApi
     /**
      * Create request for operation 'bulkCreateAudienceSegments'
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceSegmentBulkCreateInputV1 $audience_segment_bulk_create_input_v1 Segment creation parameter (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceSegmentBulkCreateInputV1 $audience_segment_bulk_create_input_v1 Segment creation parameter (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bulkCreateAudienceSegments'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -500,12 +500,12 @@ class AudienceApi
     /**
      * Operation bulkCreateAudiences
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceBulkCreateInputV1 $audience_bulk_create_input_v1  (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceBulkCreateInputV1 $audience_bulk_create_input_v1  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bulkCreateAudiences'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \criteo\api\marketingsolutions\preview\Model\AudienceEntityV1ListResponse
+     * @return \Criteo\Api\MarketingSolutions\Model\AudienceEntityV1ListResponse
      */
     public function bulkCreateAudiences($audience_bulk_create_input_v1 = null, string $contentType = self::contentTypes['bulkCreateAudiences'][0])
     {
@@ -516,12 +516,12 @@ class AudienceApi
     /**
      * Operation bulkCreateAudiencesWithHttpInfo
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceBulkCreateInputV1 $audience_bulk_create_input_v1  (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceBulkCreateInputV1 $audience_bulk_create_input_v1  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bulkCreateAudiences'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \criteo\api\marketingsolutions\preview\Model\AudienceEntityV1ListResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Criteo\Api\MarketingSolutions\Model\AudienceEntityV1ListResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function bulkCreateAudiencesWithHttpInfo($audience_bulk_create_input_v1 = null, string $contentType = self::contentTypes['bulkCreateAudiences'][0])
     {
@@ -564,23 +564,23 @@ class AudienceApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\criteo\api\marketingsolutions\preview\Model\AudienceEntityV1ListResponse' === '\SplFileObject') {
+                    if ('\Criteo\Api\MarketingSolutions\Model\AudienceEntityV1ListResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\criteo\api\marketingsolutions\preview\Model\AudienceEntityV1ListResponse' !== 'string') {
+                        if ('\Criteo\Api\MarketingSolutions\Model\AudienceEntityV1ListResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\criteo\api\marketingsolutions\preview\Model\AudienceEntityV1ListResponse', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Api\MarketingSolutions\Model\AudienceEntityV1ListResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\criteo\api\marketingsolutions\preview\Model\AudienceEntityV1ListResponse';
+            $returnType = '\Criteo\Api\MarketingSolutions\Model\AudienceEntityV1ListResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -601,7 +601,7 @@ class AudienceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\criteo\api\marketingsolutions\preview\Model\AudienceEntityV1ListResponse',
+                        '\Criteo\Api\MarketingSolutions\Model\AudienceEntityV1ListResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -614,7 +614,7 @@ class AudienceApi
     /**
      * Operation bulkCreateAudiencesAsync
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceBulkCreateInputV1 $audience_bulk_create_input_v1  (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceBulkCreateInputV1 $audience_bulk_create_input_v1  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bulkCreateAudiences'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -633,7 +633,7 @@ class AudienceApi
     /**
      * Operation bulkCreateAudiencesAsyncWithHttpInfo
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceBulkCreateInputV1 $audience_bulk_create_input_v1  (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceBulkCreateInputV1 $audience_bulk_create_input_v1  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bulkCreateAudiences'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -641,7 +641,7 @@ class AudienceApi
      */
     public function bulkCreateAudiencesAsyncWithHttpInfo($audience_bulk_create_input_v1 = null, string $contentType = self::contentTypes['bulkCreateAudiences'][0])
     {
-        $returnType = '\criteo\api\marketingsolutions\preview\Model\AudienceEntityV1ListResponse';
+        $returnType = '\Criteo\Api\MarketingSolutions\Model\AudienceEntityV1ListResponse';
         $request = $this->bulkCreateAudiencesRequest($audience_bulk_create_input_v1, $contentType);
 
         return $this->client
@@ -683,7 +683,7 @@ class AudienceApi
     /**
      * Create request for operation 'bulkCreateAudiences'
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceBulkCreateInputV1 $audience_bulk_create_input_v1  (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceBulkCreateInputV1 $audience_bulk_create_input_v1  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bulkCreateAudiences'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -776,12 +776,12 @@ class AudienceApi
     /**
      * Operation bulkDeleteAudienceSegment
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceSegmentBulkDeleteInputV1 $audience_segment_bulk_delete_input_v1 Segment delete request. (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceSegmentBulkDeleteInputV1 $audience_segment_bulk_delete_input_v1 Segment delete request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bulkDeleteAudienceSegment'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \criteo\api\marketingsolutions\preview\Model\AudienceSegmentIdEntityV1ListResponse
+     * @return \Criteo\Api\MarketingSolutions\Model\AudienceSegmentIdEntityV1ListResponse
      */
     public function bulkDeleteAudienceSegment($audience_segment_bulk_delete_input_v1 = null, string $contentType = self::contentTypes['bulkDeleteAudienceSegment'][0])
     {
@@ -792,12 +792,12 @@ class AudienceApi
     /**
      * Operation bulkDeleteAudienceSegmentWithHttpInfo
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceSegmentBulkDeleteInputV1 $audience_segment_bulk_delete_input_v1 Segment delete request. (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceSegmentBulkDeleteInputV1 $audience_segment_bulk_delete_input_v1 Segment delete request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bulkDeleteAudienceSegment'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \criteo\api\marketingsolutions\preview\Model\AudienceSegmentIdEntityV1ListResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Criteo\Api\MarketingSolutions\Model\AudienceSegmentIdEntityV1ListResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function bulkDeleteAudienceSegmentWithHttpInfo($audience_segment_bulk_delete_input_v1 = null, string $contentType = self::contentTypes['bulkDeleteAudienceSegment'][0])
     {
@@ -840,23 +840,23 @@ class AudienceApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\criteo\api\marketingsolutions\preview\Model\AudienceSegmentIdEntityV1ListResponse' === '\SplFileObject') {
+                    if ('\Criteo\Api\MarketingSolutions\Model\AudienceSegmentIdEntityV1ListResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\criteo\api\marketingsolutions\preview\Model\AudienceSegmentIdEntityV1ListResponse' !== 'string') {
+                        if ('\Criteo\Api\MarketingSolutions\Model\AudienceSegmentIdEntityV1ListResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\criteo\api\marketingsolutions\preview\Model\AudienceSegmentIdEntityV1ListResponse', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Api\MarketingSolutions\Model\AudienceSegmentIdEntityV1ListResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\criteo\api\marketingsolutions\preview\Model\AudienceSegmentIdEntityV1ListResponse';
+            $returnType = '\Criteo\Api\MarketingSolutions\Model\AudienceSegmentIdEntityV1ListResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -877,7 +877,7 @@ class AudienceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\criteo\api\marketingsolutions\preview\Model\AudienceSegmentIdEntityV1ListResponse',
+                        '\Criteo\Api\MarketingSolutions\Model\AudienceSegmentIdEntityV1ListResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -890,7 +890,7 @@ class AudienceApi
     /**
      * Operation bulkDeleteAudienceSegmentAsync
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceSegmentBulkDeleteInputV1 $audience_segment_bulk_delete_input_v1 Segment delete request. (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceSegmentBulkDeleteInputV1 $audience_segment_bulk_delete_input_v1 Segment delete request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bulkDeleteAudienceSegment'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -909,7 +909,7 @@ class AudienceApi
     /**
      * Operation bulkDeleteAudienceSegmentAsyncWithHttpInfo
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceSegmentBulkDeleteInputV1 $audience_segment_bulk_delete_input_v1 Segment delete request. (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceSegmentBulkDeleteInputV1 $audience_segment_bulk_delete_input_v1 Segment delete request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bulkDeleteAudienceSegment'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -917,7 +917,7 @@ class AudienceApi
      */
     public function bulkDeleteAudienceSegmentAsyncWithHttpInfo($audience_segment_bulk_delete_input_v1 = null, string $contentType = self::contentTypes['bulkDeleteAudienceSegment'][0])
     {
-        $returnType = '\criteo\api\marketingsolutions\preview\Model\AudienceSegmentIdEntityV1ListResponse';
+        $returnType = '\Criteo\Api\MarketingSolutions\Model\AudienceSegmentIdEntityV1ListResponse';
         $request = $this->bulkDeleteAudienceSegmentRequest($audience_segment_bulk_delete_input_v1, $contentType);
 
         return $this->client
@@ -959,7 +959,7 @@ class AudienceApi
     /**
      * Create request for operation 'bulkDeleteAudienceSegment'
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceSegmentBulkDeleteInputV1 $audience_segment_bulk_delete_input_v1 Segment delete request. (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceSegmentBulkDeleteInputV1 $audience_segment_bulk_delete_input_v1 Segment delete request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bulkDeleteAudienceSegment'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1052,12 +1052,12 @@ class AudienceApi
     /**
      * Operation bulkDeleteAudiences
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceBulkDeleteInputV1 $audience_bulk_delete_input_v1  (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceBulkDeleteInputV1 $audience_bulk_delete_input_v1  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bulkDeleteAudiences'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \criteo\api\marketingsolutions\preview\Model\AudienceIdEntityV1ListResponse
+     * @return \Criteo\Api\MarketingSolutions\Model\AudienceIdEntityV1ListResponse
      */
     public function bulkDeleteAudiences($audience_bulk_delete_input_v1 = null, string $contentType = self::contentTypes['bulkDeleteAudiences'][0])
     {
@@ -1068,12 +1068,12 @@ class AudienceApi
     /**
      * Operation bulkDeleteAudiencesWithHttpInfo
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceBulkDeleteInputV1 $audience_bulk_delete_input_v1  (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceBulkDeleteInputV1 $audience_bulk_delete_input_v1  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bulkDeleteAudiences'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \criteo\api\marketingsolutions\preview\Model\AudienceIdEntityV1ListResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Criteo\Api\MarketingSolutions\Model\AudienceIdEntityV1ListResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function bulkDeleteAudiencesWithHttpInfo($audience_bulk_delete_input_v1 = null, string $contentType = self::contentTypes['bulkDeleteAudiences'][0])
     {
@@ -1116,23 +1116,23 @@ class AudienceApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\criteo\api\marketingsolutions\preview\Model\AudienceIdEntityV1ListResponse' === '\SplFileObject') {
+                    if ('\Criteo\Api\MarketingSolutions\Model\AudienceIdEntityV1ListResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\criteo\api\marketingsolutions\preview\Model\AudienceIdEntityV1ListResponse' !== 'string') {
+                        if ('\Criteo\Api\MarketingSolutions\Model\AudienceIdEntityV1ListResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\criteo\api\marketingsolutions\preview\Model\AudienceIdEntityV1ListResponse', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Api\MarketingSolutions\Model\AudienceIdEntityV1ListResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\criteo\api\marketingsolutions\preview\Model\AudienceIdEntityV1ListResponse';
+            $returnType = '\Criteo\Api\MarketingSolutions\Model\AudienceIdEntityV1ListResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1153,7 +1153,7 @@ class AudienceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\criteo\api\marketingsolutions\preview\Model\AudienceIdEntityV1ListResponse',
+                        '\Criteo\Api\MarketingSolutions\Model\AudienceIdEntityV1ListResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1166,7 +1166,7 @@ class AudienceApi
     /**
      * Operation bulkDeleteAudiencesAsync
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceBulkDeleteInputV1 $audience_bulk_delete_input_v1  (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceBulkDeleteInputV1 $audience_bulk_delete_input_v1  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bulkDeleteAudiences'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1185,7 +1185,7 @@ class AudienceApi
     /**
      * Operation bulkDeleteAudiencesAsyncWithHttpInfo
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceBulkDeleteInputV1 $audience_bulk_delete_input_v1  (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceBulkDeleteInputV1 $audience_bulk_delete_input_v1  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bulkDeleteAudiences'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1193,7 +1193,7 @@ class AudienceApi
      */
     public function bulkDeleteAudiencesAsyncWithHttpInfo($audience_bulk_delete_input_v1 = null, string $contentType = self::contentTypes['bulkDeleteAudiences'][0])
     {
-        $returnType = '\criteo\api\marketingsolutions\preview\Model\AudienceIdEntityV1ListResponse';
+        $returnType = '\Criteo\Api\MarketingSolutions\Model\AudienceIdEntityV1ListResponse';
         $request = $this->bulkDeleteAudiencesRequest($audience_bulk_delete_input_v1, $contentType);
 
         return $this->client
@@ -1235,7 +1235,7 @@ class AudienceApi
     /**
      * Create request for operation 'bulkDeleteAudiences'
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceBulkDeleteInputV1 $audience_bulk_delete_input_v1  (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceBulkDeleteInputV1 $audience_bulk_delete_input_v1  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bulkDeleteAudiences'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1328,12 +1328,12 @@ class AudienceApi
     /**
      * Operation bulkUpdateAudienceSegments
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceSegmentBulkUpdateInputV1 $audience_segment_bulk_update_input_v1 Segment Update request (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceSegmentBulkUpdateInputV1 $audience_segment_bulk_update_input_v1 Segment Update request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bulkUpdateAudienceSegments'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \criteo\api\marketingsolutions\preview\Model\AudienceSegmentEntityV1ListResponse
+     * @return \Criteo\Api\MarketingSolutions\Model\AudienceSegmentEntityV1ListResponse
      */
     public function bulkUpdateAudienceSegments($audience_segment_bulk_update_input_v1 = null, string $contentType = self::contentTypes['bulkUpdateAudienceSegments'][0])
     {
@@ -1344,12 +1344,12 @@ class AudienceApi
     /**
      * Operation bulkUpdateAudienceSegmentsWithHttpInfo
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceSegmentBulkUpdateInputV1 $audience_segment_bulk_update_input_v1 Segment Update request (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceSegmentBulkUpdateInputV1 $audience_segment_bulk_update_input_v1 Segment Update request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bulkUpdateAudienceSegments'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \criteo\api\marketingsolutions\preview\Model\AudienceSegmentEntityV1ListResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Criteo\Api\MarketingSolutions\Model\AudienceSegmentEntityV1ListResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function bulkUpdateAudienceSegmentsWithHttpInfo($audience_segment_bulk_update_input_v1 = null, string $contentType = self::contentTypes['bulkUpdateAudienceSegments'][0])
     {
@@ -1392,23 +1392,23 @@ class AudienceApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\criteo\api\marketingsolutions\preview\Model\AudienceSegmentEntityV1ListResponse' === '\SplFileObject') {
+                    if ('\Criteo\Api\MarketingSolutions\Model\AudienceSegmentEntityV1ListResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\criteo\api\marketingsolutions\preview\Model\AudienceSegmentEntityV1ListResponse' !== 'string') {
+                        if ('\Criteo\Api\MarketingSolutions\Model\AudienceSegmentEntityV1ListResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\criteo\api\marketingsolutions\preview\Model\AudienceSegmentEntityV1ListResponse', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Api\MarketingSolutions\Model\AudienceSegmentEntityV1ListResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\criteo\api\marketingsolutions\preview\Model\AudienceSegmentEntityV1ListResponse';
+            $returnType = '\Criteo\Api\MarketingSolutions\Model\AudienceSegmentEntityV1ListResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1429,7 +1429,7 @@ class AudienceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\criteo\api\marketingsolutions\preview\Model\AudienceSegmentEntityV1ListResponse',
+                        '\Criteo\Api\MarketingSolutions\Model\AudienceSegmentEntityV1ListResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1442,7 +1442,7 @@ class AudienceApi
     /**
      * Operation bulkUpdateAudienceSegmentsAsync
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceSegmentBulkUpdateInputV1 $audience_segment_bulk_update_input_v1 Segment Update request (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceSegmentBulkUpdateInputV1 $audience_segment_bulk_update_input_v1 Segment Update request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bulkUpdateAudienceSegments'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1461,7 +1461,7 @@ class AudienceApi
     /**
      * Operation bulkUpdateAudienceSegmentsAsyncWithHttpInfo
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceSegmentBulkUpdateInputV1 $audience_segment_bulk_update_input_v1 Segment Update request (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceSegmentBulkUpdateInputV1 $audience_segment_bulk_update_input_v1 Segment Update request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bulkUpdateAudienceSegments'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1469,7 +1469,7 @@ class AudienceApi
      */
     public function bulkUpdateAudienceSegmentsAsyncWithHttpInfo($audience_segment_bulk_update_input_v1 = null, string $contentType = self::contentTypes['bulkUpdateAudienceSegments'][0])
     {
-        $returnType = '\criteo\api\marketingsolutions\preview\Model\AudienceSegmentEntityV1ListResponse';
+        $returnType = '\Criteo\Api\MarketingSolutions\Model\AudienceSegmentEntityV1ListResponse';
         $request = $this->bulkUpdateAudienceSegmentsRequest($audience_segment_bulk_update_input_v1, $contentType);
 
         return $this->client
@@ -1511,7 +1511,7 @@ class AudienceApi
     /**
      * Create request for operation 'bulkUpdateAudienceSegments'
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceSegmentBulkUpdateInputV1 $audience_segment_bulk_update_input_v1 Segment Update request (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceSegmentBulkUpdateInputV1 $audience_segment_bulk_update_input_v1 Segment Update request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bulkUpdateAudienceSegments'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1604,12 +1604,12 @@ class AudienceApi
     /**
      * Operation bulkUpdateAudiences
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceBulkUpdateInputV1 $audience_bulk_update_input_v1  (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceBulkUpdateInputV1 $audience_bulk_update_input_v1  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bulkUpdateAudiences'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \criteo\api\marketingsolutions\preview\Model\AudienceEntityV1ListResponse
+     * @return \Criteo\Api\MarketingSolutions\Model\AudienceEntityV1ListResponse
      */
     public function bulkUpdateAudiences($audience_bulk_update_input_v1 = null, string $contentType = self::contentTypes['bulkUpdateAudiences'][0])
     {
@@ -1620,12 +1620,12 @@ class AudienceApi
     /**
      * Operation bulkUpdateAudiencesWithHttpInfo
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceBulkUpdateInputV1 $audience_bulk_update_input_v1  (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceBulkUpdateInputV1 $audience_bulk_update_input_v1  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bulkUpdateAudiences'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \criteo\api\marketingsolutions\preview\Model\AudienceEntityV1ListResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Criteo\Api\MarketingSolutions\Model\AudienceEntityV1ListResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function bulkUpdateAudiencesWithHttpInfo($audience_bulk_update_input_v1 = null, string $contentType = self::contentTypes['bulkUpdateAudiences'][0])
     {
@@ -1668,23 +1668,23 @@ class AudienceApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\criteo\api\marketingsolutions\preview\Model\AudienceEntityV1ListResponse' === '\SplFileObject') {
+                    if ('\Criteo\Api\MarketingSolutions\Model\AudienceEntityV1ListResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\criteo\api\marketingsolutions\preview\Model\AudienceEntityV1ListResponse' !== 'string') {
+                        if ('\Criteo\Api\MarketingSolutions\Model\AudienceEntityV1ListResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\criteo\api\marketingsolutions\preview\Model\AudienceEntityV1ListResponse', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Api\MarketingSolutions\Model\AudienceEntityV1ListResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\criteo\api\marketingsolutions\preview\Model\AudienceEntityV1ListResponse';
+            $returnType = '\Criteo\Api\MarketingSolutions\Model\AudienceEntityV1ListResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1705,7 +1705,7 @@ class AudienceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\criteo\api\marketingsolutions\preview\Model\AudienceEntityV1ListResponse',
+                        '\Criteo\Api\MarketingSolutions\Model\AudienceEntityV1ListResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1718,7 +1718,7 @@ class AudienceApi
     /**
      * Operation bulkUpdateAudiencesAsync
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceBulkUpdateInputV1 $audience_bulk_update_input_v1  (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceBulkUpdateInputV1 $audience_bulk_update_input_v1  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bulkUpdateAudiences'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1737,7 +1737,7 @@ class AudienceApi
     /**
      * Operation bulkUpdateAudiencesAsyncWithHttpInfo
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceBulkUpdateInputV1 $audience_bulk_update_input_v1  (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceBulkUpdateInputV1 $audience_bulk_update_input_v1  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bulkUpdateAudiences'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1745,7 +1745,7 @@ class AudienceApi
      */
     public function bulkUpdateAudiencesAsyncWithHttpInfo($audience_bulk_update_input_v1 = null, string $contentType = self::contentTypes['bulkUpdateAudiences'][0])
     {
-        $returnType = '\criteo\api\marketingsolutions\preview\Model\AudienceEntityV1ListResponse';
+        $returnType = '\Criteo\Api\MarketingSolutions\Model\AudienceEntityV1ListResponse';
         $request = $this->bulkUpdateAudiencesRequest($audience_bulk_update_input_v1, $contentType);
 
         return $this->client
@@ -1787,7 +1787,7 @@ class AudienceApi
     /**
      * Create request for operation 'bulkUpdateAudiences'
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceBulkUpdateInputV1 $audience_bulk_update_input_v1  (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceBulkUpdateInputV1 $audience_bulk_update_input_v1  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bulkUpdateAudiences'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1880,12 +1880,12 @@ class AudienceApi
     /**
      * Operation computeAudienceSegmentsSizes
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceSegmentComputeSizesInputV1 $audience_segment_compute_sizes_input_v1  (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceSegmentComputeSizesInputV1 $audience_segment_compute_sizes_input_v1  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['computeAudienceSegmentsSizes'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \criteo\api\marketingsolutions\preview\Model\AudienceSegmentSizeEntityV1ListResponse
+     * @return \Criteo\Api\MarketingSolutions\Model\AudienceSegmentSizeEntityV1ListResponse
      */
     public function computeAudienceSegmentsSizes($audience_segment_compute_sizes_input_v1 = null, string $contentType = self::contentTypes['computeAudienceSegmentsSizes'][0])
     {
@@ -1896,12 +1896,12 @@ class AudienceApi
     /**
      * Operation computeAudienceSegmentsSizesWithHttpInfo
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceSegmentComputeSizesInputV1 $audience_segment_compute_sizes_input_v1  (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceSegmentComputeSizesInputV1 $audience_segment_compute_sizes_input_v1  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['computeAudienceSegmentsSizes'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \criteo\api\marketingsolutions\preview\Model\AudienceSegmentSizeEntityV1ListResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Criteo\Api\MarketingSolutions\Model\AudienceSegmentSizeEntityV1ListResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function computeAudienceSegmentsSizesWithHttpInfo($audience_segment_compute_sizes_input_v1 = null, string $contentType = self::contentTypes['computeAudienceSegmentsSizes'][0])
     {
@@ -1944,23 +1944,23 @@ class AudienceApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\criteo\api\marketingsolutions\preview\Model\AudienceSegmentSizeEntityV1ListResponse' === '\SplFileObject') {
+                    if ('\Criteo\Api\MarketingSolutions\Model\AudienceSegmentSizeEntityV1ListResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\criteo\api\marketingsolutions\preview\Model\AudienceSegmentSizeEntityV1ListResponse' !== 'string') {
+                        if ('\Criteo\Api\MarketingSolutions\Model\AudienceSegmentSizeEntityV1ListResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\criteo\api\marketingsolutions\preview\Model\AudienceSegmentSizeEntityV1ListResponse', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Api\MarketingSolutions\Model\AudienceSegmentSizeEntityV1ListResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\criteo\api\marketingsolutions\preview\Model\AudienceSegmentSizeEntityV1ListResponse';
+            $returnType = '\Criteo\Api\MarketingSolutions\Model\AudienceSegmentSizeEntityV1ListResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1981,7 +1981,7 @@ class AudienceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\criteo\api\marketingsolutions\preview\Model\AudienceSegmentSizeEntityV1ListResponse',
+                        '\Criteo\Api\MarketingSolutions\Model\AudienceSegmentSizeEntityV1ListResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1994,7 +1994,7 @@ class AudienceApi
     /**
      * Operation computeAudienceSegmentsSizesAsync
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceSegmentComputeSizesInputV1 $audience_segment_compute_sizes_input_v1  (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceSegmentComputeSizesInputV1 $audience_segment_compute_sizes_input_v1  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['computeAudienceSegmentsSizes'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2013,7 +2013,7 @@ class AudienceApi
     /**
      * Operation computeAudienceSegmentsSizesAsyncWithHttpInfo
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceSegmentComputeSizesInputV1 $audience_segment_compute_sizes_input_v1  (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceSegmentComputeSizesInputV1 $audience_segment_compute_sizes_input_v1  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['computeAudienceSegmentsSizes'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2021,7 +2021,7 @@ class AudienceApi
      */
     public function computeAudienceSegmentsSizesAsyncWithHttpInfo($audience_segment_compute_sizes_input_v1 = null, string $contentType = self::contentTypes['computeAudienceSegmentsSizes'][0])
     {
-        $returnType = '\criteo\api\marketingsolutions\preview\Model\AudienceSegmentSizeEntityV1ListResponse';
+        $returnType = '\Criteo\Api\MarketingSolutions\Model\AudienceSegmentSizeEntityV1ListResponse';
         $request = $this->computeAudienceSegmentsSizesRequest($audience_segment_compute_sizes_input_v1, $contentType);
 
         return $this->client
@@ -2063,7 +2063,7 @@ class AudienceApi
     /**
      * Create request for operation 'computeAudienceSegmentsSizes'
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceSegmentComputeSizesInputV1 $audience_segment_compute_sizes_input_v1  (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceSegmentComputeSizesInputV1 $audience_segment_compute_sizes_input_v1  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['computeAudienceSegmentsSizes'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2156,12 +2156,12 @@ class AudienceApi
     /**
      * Operation computeAudiencesSizes
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceComputeSizesInputV1 $audience_compute_sizes_input_v1  (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceComputeSizesInputV1 $audience_compute_sizes_input_v1  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['computeAudiencesSizes'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \criteo\api\marketingsolutions\preview\Model\AudienceSizeEntityV1ListResponse
+     * @return \Criteo\Api\MarketingSolutions\Model\AudienceSizeEntityV1ListResponse
      */
     public function computeAudiencesSizes($audience_compute_sizes_input_v1 = null, string $contentType = self::contentTypes['computeAudiencesSizes'][0])
     {
@@ -2172,12 +2172,12 @@ class AudienceApi
     /**
      * Operation computeAudiencesSizesWithHttpInfo
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceComputeSizesInputV1 $audience_compute_sizes_input_v1  (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceComputeSizesInputV1 $audience_compute_sizes_input_v1  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['computeAudiencesSizes'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \criteo\api\marketingsolutions\preview\Model\AudienceSizeEntityV1ListResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Criteo\Api\MarketingSolutions\Model\AudienceSizeEntityV1ListResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function computeAudiencesSizesWithHttpInfo($audience_compute_sizes_input_v1 = null, string $contentType = self::contentTypes['computeAudiencesSizes'][0])
     {
@@ -2220,23 +2220,23 @@ class AudienceApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\criteo\api\marketingsolutions\preview\Model\AudienceSizeEntityV1ListResponse' === '\SplFileObject') {
+                    if ('\Criteo\Api\MarketingSolutions\Model\AudienceSizeEntityV1ListResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\criteo\api\marketingsolutions\preview\Model\AudienceSizeEntityV1ListResponse' !== 'string') {
+                        if ('\Criteo\Api\MarketingSolutions\Model\AudienceSizeEntityV1ListResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\criteo\api\marketingsolutions\preview\Model\AudienceSizeEntityV1ListResponse', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Api\MarketingSolutions\Model\AudienceSizeEntityV1ListResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\criteo\api\marketingsolutions\preview\Model\AudienceSizeEntityV1ListResponse';
+            $returnType = '\Criteo\Api\MarketingSolutions\Model\AudienceSizeEntityV1ListResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2257,7 +2257,7 @@ class AudienceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\criteo\api\marketingsolutions\preview\Model\AudienceSizeEntityV1ListResponse',
+                        '\Criteo\Api\MarketingSolutions\Model\AudienceSizeEntityV1ListResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2270,7 +2270,7 @@ class AudienceApi
     /**
      * Operation computeAudiencesSizesAsync
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceComputeSizesInputV1 $audience_compute_sizes_input_v1  (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceComputeSizesInputV1 $audience_compute_sizes_input_v1  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['computeAudiencesSizes'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2289,7 +2289,7 @@ class AudienceApi
     /**
      * Operation computeAudiencesSizesAsyncWithHttpInfo
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceComputeSizesInputV1 $audience_compute_sizes_input_v1  (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceComputeSizesInputV1 $audience_compute_sizes_input_v1  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['computeAudiencesSizes'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2297,7 +2297,7 @@ class AudienceApi
      */
     public function computeAudiencesSizesAsyncWithHttpInfo($audience_compute_sizes_input_v1 = null, string $contentType = self::contentTypes['computeAudiencesSizes'][0])
     {
-        $returnType = '\criteo\api\marketingsolutions\preview\Model\AudienceSizeEntityV1ListResponse';
+        $returnType = '\Criteo\Api\MarketingSolutions\Model\AudienceSizeEntityV1ListResponse';
         $request = $this->computeAudiencesSizesRequest($audience_compute_sizes_input_v1, $contentType);
 
         return $this->client
@@ -2339,7 +2339,7 @@ class AudienceApi
     /**
      * Create request for operation 'computeAudiencesSizes'
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceComputeSizesInputV1 $audience_compute_sizes_input_v1  (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceComputeSizesInputV1 $audience_compute_sizes_input_v1  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['computeAudiencesSizes'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2435,9 +2435,9 @@ class AudienceApi
      * @param  string $audience_segment_id The ID of the Audience Segment to amend (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteContactListIdentifiers'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \criteo\api\marketingsolutions\preview\Model\DeleteAudienceContactListResponse|\criteo\api\marketingsolutions\preview\Model\ErrorCodeResponse
+     * @return \Criteo\Api\MarketingSolutions\Model\DeleteAudienceContactListResponse|\Criteo\Api\MarketingSolutions\Model\ErrorCodeResponse
      */
     public function deleteContactListIdentifiers($audience_segment_id, string $contentType = self::contentTypes['deleteContactListIdentifiers'][0])
     {
@@ -2451,9 +2451,9 @@ class AudienceApi
      * @param  string $audience_segment_id The ID of the Audience Segment to amend (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteContactListIdentifiers'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \criteo\api\marketingsolutions\preview\Model\DeleteAudienceContactListResponse|\criteo\api\marketingsolutions\preview\Model\ErrorCodeResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Criteo\Api\MarketingSolutions\Model\DeleteAudienceContactListResponse|\Criteo\Api\MarketingSolutions\Model\ErrorCodeResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteContactListIdentifiersWithHttpInfo($audience_segment_id, string $contentType = self::contentTypes['deleteContactListIdentifiers'][0])
     {
@@ -2496,38 +2496,38 @@ class AudienceApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\criteo\api\marketingsolutions\preview\Model\DeleteAudienceContactListResponse' === '\SplFileObject') {
+                    if ('\Criteo\Api\MarketingSolutions\Model\DeleteAudienceContactListResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\criteo\api\marketingsolutions\preview\Model\DeleteAudienceContactListResponse' !== 'string') {
+                        if ('\Criteo\Api\MarketingSolutions\Model\DeleteAudienceContactListResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\criteo\api\marketingsolutions\preview\Model\DeleteAudienceContactListResponse', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Api\MarketingSolutions\Model\DeleteAudienceContactListResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\criteo\api\marketingsolutions\preview\Model\ErrorCodeResponse' === '\SplFileObject') {
+                    if ('\Criteo\Api\MarketingSolutions\Model\ErrorCodeResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\criteo\api\marketingsolutions\preview\Model\ErrorCodeResponse' !== 'string') {
+                        if ('\Criteo\Api\MarketingSolutions\Model\ErrorCodeResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\criteo\api\marketingsolutions\preview\Model\ErrorCodeResponse', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Api\MarketingSolutions\Model\ErrorCodeResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\criteo\api\marketingsolutions\preview\Model\DeleteAudienceContactListResponse';
+            $returnType = '\Criteo\Api\MarketingSolutions\Model\DeleteAudienceContactListResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2548,7 +2548,7 @@ class AudienceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\criteo\api\marketingsolutions\preview\Model\DeleteAudienceContactListResponse',
+                        '\Criteo\Api\MarketingSolutions\Model\DeleteAudienceContactListResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2556,7 +2556,7 @@ class AudienceApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\criteo\api\marketingsolutions\preview\Model\ErrorCodeResponse',
+                        '\Criteo\Api\MarketingSolutions\Model\ErrorCodeResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2596,7 +2596,7 @@ class AudienceApi
      */
     public function deleteContactListIdentifiersAsyncWithHttpInfo($audience_segment_id, string $contentType = self::contentTypes['deleteContactListIdentifiers'][0])
     {
-        $returnType = '\criteo\api\marketingsolutions\preview\Model\DeleteAudienceContactListResponse';
+        $returnType = '\Criteo\Api\MarketingSolutions\Model\DeleteAudienceContactListResponse';
         $request = $this->deleteContactListIdentifiersRequest($audience_segment_id, $contentType);
 
         return $this->client
@@ -2739,10 +2739,10 @@ class AudienceApi
      * Operation deleteUserProfiles
      *
      * @param  int $advertiser_id Criteo Advertiser ID of user profiles&#39; owner (required)
-     * @param  \criteo\api\marketingsolutions\preview\Model\DeleteUserProfileModelListRequest $delete_user_profile_model_list_request delete_user_profile_model_list_request (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\DeleteUserProfileModelListRequest $delete_user_profile_model_list_request delete_user_profile_model_list_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteUserProfiles'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2755,10 +2755,10 @@ class AudienceApi
      * Operation deleteUserProfilesWithHttpInfo
      *
      * @param  int $advertiser_id Criteo Advertiser ID of user profiles&#39; owner (required)
-     * @param  \criteo\api\marketingsolutions\preview\Model\DeleteUserProfileModelListRequest $delete_user_profile_model_list_request (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\DeleteUserProfileModelListRequest $delete_user_profile_model_list_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteUserProfiles'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2814,7 +2814,7 @@ class AudienceApi
      * Operation deleteUserProfilesAsync
      *
      * @param  int $advertiser_id Criteo Advertiser ID of user profiles&#39; owner (required)
-     * @param  \criteo\api\marketingsolutions\preview\Model\DeleteUserProfileModelListRequest $delete_user_profile_model_list_request (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\DeleteUserProfileModelListRequest $delete_user_profile_model_list_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteUserProfiles'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2834,7 +2834,7 @@ class AudienceApi
      * Operation deleteUserProfilesAsyncWithHttpInfo
      *
      * @param  int $advertiser_id Criteo Advertiser ID of user profiles&#39; owner (required)
-     * @param  \criteo\api\marketingsolutions\preview\Model\DeleteUserProfileModelListRequest $delete_user_profile_model_list_request (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\DeleteUserProfileModelListRequest $delete_user_profile_model_list_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteUserProfiles'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2872,7 +2872,7 @@ class AudienceApi
      * Create request for operation 'deleteUserProfiles'
      *
      * @param  int $advertiser_id Criteo Advertiser ID of user profiles&#39; owner (required)
-     * @param  \criteo\api\marketingsolutions\preview\Model\DeleteUserProfileModelListRequest $delete_user_profile_model_list_request (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\DeleteUserProfileModelListRequest $delete_user_profile_model_list_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteUserProfiles'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2980,12 +2980,12 @@ class AudienceApi
     /**
      * Operation estimateAudienceSegmentSize
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceSegmentEstimateSizeInputV1 $audience_segment_estimate_size_input_v1  (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceSegmentEstimateSizeInputV1 $audience_segment_estimate_size_input_v1  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['estimateAudienceSegmentSize'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \criteo\api\marketingsolutions\preview\Model\AudienceSegmentSizeEstimationV1Response
+     * @return \Criteo\Api\MarketingSolutions\Model\AudienceSegmentSizeEstimationV1Response
      */
     public function estimateAudienceSegmentSize($audience_segment_estimate_size_input_v1 = null, string $contentType = self::contentTypes['estimateAudienceSegmentSize'][0])
     {
@@ -2996,12 +2996,12 @@ class AudienceApi
     /**
      * Operation estimateAudienceSegmentSizeWithHttpInfo
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceSegmentEstimateSizeInputV1 $audience_segment_estimate_size_input_v1  (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceSegmentEstimateSizeInputV1 $audience_segment_estimate_size_input_v1  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['estimateAudienceSegmentSize'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \criteo\api\marketingsolutions\preview\Model\AudienceSegmentSizeEstimationV1Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Criteo\Api\MarketingSolutions\Model\AudienceSegmentSizeEstimationV1Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function estimateAudienceSegmentSizeWithHttpInfo($audience_segment_estimate_size_input_v1 = null, string $contentType = self::contentTypes['estimateAudienceSegmentSize'][0])
     {
@@ -3044,23 +3044,23 @@ class AudienceApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\criteo\api\marketingsolutions\preview\Model\AudienceSegmentSizeEstimationV1Response' === '\SplFileObject') {
+                    if ('\Criteo\Api\MarketingSolutions\Model\AudienceSegmentSizeEstimationV1Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\criteo\api\marketingsolutions\preview\Model\AudienceSegmentSizeEstimationV1Response' !== 'string') {
+                        if ('\Criteo\Api\MarketingSolutions\Model\AudienceSegmentSizeEstimationV1Response' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\criteo\api\marketingsolutions\preview\Model\AudienceSegmentSizeEstimationV1Response', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Api\MarketingSolutions\Model\AudienceSegmentSizeEstimationV1Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\criteo\api\marketingsolutions\preview\Model\AudienceSegmentSizeEstimationV1Response';
+            $returnType = '\Criteo\Api\MarketingSolutions\Model\AudienceSegmentSizeEstimationV1Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3081,7 +3081,7 @@ class AudienceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\criteo\api\marketingsolutions\preview\Model\AudienceSegmentSizeEstimationV1Response',
+                        '\Criteo\Api\MarketingSolutions\Model\AudienceSegmentSizeEstimationV1Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3094,7 +3094,7 @@ class AudienceApi
     /**
      * Operation estimateAudienceSegmentSizeAsync
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceSegmentEstimateSizeInputV1 $audience_segment_estimate_size_input_v1  (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceSegmentEstimateSizeInputV1 $audience_segment_estimate_size_input_v1  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['estimateAudienceSegmentSize'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3113,7 +3113,7 @@ class AudienceApi
     /**
      * Operation estimateAudienceSegmentSizeAsyncWithHttpInfo
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceSegmentEstimateSizeInputV1 $audience_segment_estimate_size_input_v1  (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceSegmentEstimateSizeInputV1 $audience_segment_estimate_size_input_v1  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['estimateAudienceSegmentSize'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3121,7 +3121,7 @@ class AudienceApi
      */
     public function estimateAudienceSegmentSizeAsyncWithHttpInfo($audience_segment_estimate_size_input_v1 = null, string $contentType = self::contentTypes['estimateAudienceSegmentSize'][0])
     {
-        $returnType = '\criteo\api\marketingsolutions\preview\Model\AudienceSegmentSizeEstimationV1Response';
+        $returnType = '\Criteo\Api\MarketingSolutions\Model\AudienceSegmentSizeEstimationV1Response';
         $request = $this->estimateAudienceSegmentSizeRequest($audience_segment_estimate_size_input_v1, $contentType);
 
         return $this->client
@@ -3163,7 +3163,7 @@ class AudienceApi
     /**
      * Create request for operation 'estimateAudienceSegmentSize'
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceSegmentEstimateSizeInputV1 $audience_segment_estimate_size_input_v1  (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceSegmentEstimateSizeInputV1 $audience_segment_estimate_size_input_v1  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['estimateAudienceSegmentSize'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3256,12 +3256,12 @@ class AudienceApi
     /**
      * Operation estimateAudienceSize
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceEstimateSizeInputV1 $audience_estimate_size_input_v1  (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceEstimateSizeInputV1 $audience_estimate_size_input_v1  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['estimateAudienceSize'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \criteo\api\marketingsolutions\preview\Model\AudienceSizeEstimationV1Response
+     * @return \Criteo\Api\MarketingSolutions\Model\AudienceSizeEstimationV1Response
      */
     public function estimateAudienceSize($audience_estimate_size_input_v1 = null, string $contentType = self::contentTypes['estimateAudienceSize'][0])
     {
@@ -3272,12 +3272,12 @@ class AudienceApi
     /**
      * Operation estimateAudienceSizeWithHttpInfo
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceEstimateSizeInputV1 $audience_estimate_size_input_v1  (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceEstimateSizeInputV1 $audience_estimate_size_input_v1  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['estimateAudienceSize'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \criteo\api\marketingsolutions\preview\Model\AudienceSizeEstimationV1Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Criteo\Api\MarketingSolutions\Model\AudienceSizeEstimationV1Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function estimateAudienceSizeWithHttpInfo($audience_estimate_size_input_v1 = null, string $contentType = self::contentTypes['estimateAudienceSize'][0])
     {
@@ -3320,23 +3320,23 @@ class AudienceApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\criteo\api\marketingsolutions\preview\Model\AudienceSizeEstimationV1Response' === '\SplFileObject') {
+                    if ('\Criteo\Api\MarketingSolutions\Model\AudienceSizeEstimationV1Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\criteo\api\marketingsolutions\preview\Model\AudienceSizeEstimationV1Response' !== 'string') {
+                        if ('\Criteo\Api\MarketingSolutions\Model\AudienceSizeEstimationV1Response' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\criteo\api\marketingsolutions\preview\Model\AudienceSizeEstimationV1Response', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Api\MarketingSolutions\Model\AudienceSizeEstimationV1Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\criteo\api\marketingsolutions\preview\Model\AudienceSizeEstimationV1Response';
+            $returnType = '\Criteo\Api\MarketingSolutions\Model\AudienceSizeEstimationV1Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3357,7 +3357,7 @@ class AudienceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\criteo\api\marketingsolutions\preview\Model\AudienceSizeEstimationV1Response',
+                        '\Criteo\Api\MarketingSolutions\Model\AudienceSizeEstimationV1Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3370,7 +3370,7 @@ class AudienceApi
     /**
      * Operation estimateAudienceSizeAsync
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceEstimateSizeInputV1 $audience_estimate_size_input_v1  (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceEstimateSizeInputV1 $audience_estimate_size_input_v1  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['estimateAudienceSize'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3389,7 +3389,7 @@ class AudienceApi
     /**
      * Operation estimateAudienceSizeAsyncWithHttpInfo
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceEstimateSizeInputV1 $audience_estimate_size_input_v1  (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceEstimateSizeInputV1 $audience_estimate_size_input_v1  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['estimateAudienceSize'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3397,7 +3397,7 @@ class AudienceApi
      */
     public function estimateAudienceSizeAsyncWithHttpInfo($audience_estimate_size_input_v1 = null, string $contentType = self::contentTypes['estimateAudienceSize'][0])
     {
-        $returnType = '\criteo\api\marketingsolutions\preview\Model\AudienceSizeEstimationV1Response';
+        $returnType = '\Criteo\Api\MarketingSolutions\Model\AudienceSizeEstimationV1Response';
         $request = $this->estimateAudienceSizeRequest($audience_estimate_size_input_v1, $contentType);
 
         return $this->client
@@ -3439,7 +3439,7 @@ class AudienceApi
     /**
      * Create request for operation 'estimateAudienceSize'
      *
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceEstimateSizeInputV1 $audience_estimate_size_input_v1  (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceEstimateSizeInputV1 $audience_estimate_size_input_v1  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['estimateAudienceSize'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3535,9 +3535,9 @@ class AudienceApi
      * @param  int $audience_segment_id The segment ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getContactListStatistics'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \criteo\api\marketingsolutions\preview\Model\ContactListStatisticsEntityV1Response
+     * @return \Criteo\Api\MarketingSolutions\Model\ContactListStatisticsEntityV1Response
      */
     public function getContactListStatistics($audience_segment_id, string $contentType = self::contentTypes['getContactListStatistics'][0])
     {
@@ -3551,9 +3551,9 @@ class AudienceApi
      * @param  int $audience_segment_id The segment ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getContactListStatistics'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \criteo\api\marketingsolutions\preview\Model\ContactListStatisticsEntityV1Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Criteo\Api\MarketingSolutions\Model\ContactListStatisticsEntityV1Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getContactListStatisticsWithHttpInfo($audience_segment_id, string $contentType = self::contentTypes['getContactListStatistics'][0])
     {
@@ -3596,23 +3596,23 @@ class AudienceApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\criteo\api\marketingsolutions\preview\Model\ContactListStatisticsEntityV1Response' === '\SplFileObject') {
+                    if ('\Criteo\Api\MarketingSolutions\Model\ContactListStatisticsEntityV1Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\criteo\api\marketingsolutions\preview\Model\ContactListStatisticsEntityV1Response' !== 'string') {
+                        if ('\Criteo\Api\MarketingSolutions\Model\ContactListStatisticsEntityV1Response' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\criteo\api\marketingsolutions\preview\Model\ContactListStatisticsEntityV1Response', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Api\MarketingSolutions\Model\ContactListStatisticsEntityV1Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\criteo\api\marketingsolutions\preview\Model\ContactListStatisticsEntityV1Response';
+            $returnType = '\Criteo\Api\MarketingSolutions\Model\ContactListStatisticsEntityV1Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3633,7 +3633,7 @@ class AudienceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\criteo\api\marketingsolutions\preview\Model\ContactListStatisticsEntityV1Response',
+                        '\Criteo\Api\MarketingSolutions\Model\ContactListStatisticsEntityV1Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3673,7 +3673,7 @@ class AudienceApi
      */
     public function getContactListStatisticsAsyncWithHttpInfo($audience_segment_id, string $contentType = self::contentTypes['getContactListStatistics'][0])
     {
-        $returnType = '\criteo\api\marketingsolutions\preview\Model\ContactListStatisticsEntityV1Response';
+        $returnType = '\Criteo\Api\MarketingSolutions\Model\ContactListStatisticsEntityV1Response';
         $request = $this->getContactListStatisticsRequest($audience_segment_id, $contentType);
 
         return $this->client
@@ -3819,9 +3819,9 @@ class AudienceApi
      * @param  string $country The ISO 3166-1 alpha-2 country code. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getInMarketBrands'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \criteo\api\marketingsolutions\preview\Model\InMarketAudienceSegmentBrandEntityV1ListResponse
+     * @return \Criteo\Api\MarketingSolutions\Model\InMarketAudienceSegmentBrandEntityV1ListResponse
      */
     public function getInMarketBrands($advertiser_id, $country, string $contentType = self::contentTypes['getInMarketBrands'][0])
     {
@@ -3836,9 +3836,9 @@ class AudienceApi
      * @param  string $country The ISO 3166-1 alpha-2 country code. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getInMarketBrands'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \criteo\api\marketingsolutions\preview\Model\InMarketAudienceSegmentBrandEntityV1ListResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Criteo\Api\MarketingSolutions\Model\InMarketAudienceSegmentBrandEntityV1ListResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getInMarketBrandsWithHttpInfo($advertiser_id, $country, string $contentType = self::contentTypes['getInMarketBrands'][0])
     {
@@ -3881,23 +3881,23 @@ class AudienceApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\criteo\api\marketingsolutions\preview\Model\InMarketAudienceSegmentBrandEntityV1ListResponse' === '\SplFileObject') {
+                    if ('\Criteo\Api\MarketingSolutions\Model\InMarketAudienceSegmentBrandEntityV1ListResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\criteo\api\marketingsolutions\preview\Model\InMarketAudienceSegmentBrandEntityV1ListResponse' !== 'string') {
+                        if ('\Criteo\Api\MarketingSolutions\Model\InMarketAudienceSegmentBrandEntityV1ListResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\criteo\api\marketingsolutions\preview\Model\InMarketAudienceSegmentBrandEntityV1ListResponse', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Api\MarketingSolutions\Model\InMarketAudienceSegmentBrandEntityV1ListResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\criteo\api\marketingsolutions\preview\Model\InMarketAudienceSegmentBrandEntityV1ListResponse';
+            $returnType = '\Criteo\Api\MarketingSolutions\Model\InMarketAudienceSegmentBrandEntityV1ListResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3918,7 +3918,7 @@ class AudienceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\criteo\api\marketingsolutions\preview\Model\InMarketAudienceSegmentBrandEntityV1ListResponse',
+                        '\Criteo\Api\MarketingSolutions\Model\InMarketAudienceSegmentBrandEntityV1ListResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3960,7 +3960,7 @@ class AudienceApi
      */
     public function getInMarketBrandsAsyncWithHttpInfo($advertiser_id, $country, string $contentType = self::contentTypes['getInMarketBrands'][0])
     {
-        $returnType = '\criteo\api\marketingsolutions\preview\Model\InMarketAudienceSegmentBrandEntityV1ListResponse';
+        $returnType = '\Criteo\Api\MarketingSolutions\Model\InMarketAudienceSegmentBrandEntityV1ListResponse';
         $request = $this->getInMarketBrandsRequest($advertiser_id, $country, $contentType);
 
         return $this->client
@@ -4124,9 +4124,9 @@ class AudienceApi
      * @param  string $country The ISO 3166-1 alpha-2 country code. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getInMarketInterests'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \criteo\api\marketingsolutions\preview\Model\InMarketAudienceSegmentInterestEntityV1ListResponse
+     * @return \Criteo\Api\MarketingSolutions\Model\InMarketAudienceSegmentInterestEntityV1ListResponse
      */
     public function getInMarketInterests($advertiser_id, $country, string $contentType = self::contentTypes['getInMarketInterests'][0])
     {
@@ -4141,9 +4141,9 @@ class AudienceApi
      * @param  string $country The ISO 3166-1 alpha-2 country code. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getInMarketInterests'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \criteo\api\marketingsolutions\preview\Model\InMarketAudienceSegmentInterestEntityV1ListResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Criteo\Api\MarketingSolutions\Model\InMarketAudienceSegmentInterestEntityV1ListResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getInMarketInterestsWithHttpInfo($advertiser_id, $country, string $contentType = self::contentTypes['getInMarketInterests'][0])
     {
@@ -4186,23 +4186,23 @@ class AudienceApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\criteo\api\marketingsolutions\preview\Model\InMarketAudienceSegmentInterestEntityV1ListResponse' === '\SplFileObject') {
+                    if ('\Criteo\Api\MarketingSolutions\Model\InMarketAudienceSegmentInterestEntityV1ListResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\criteo\api\marketingsolutions\preview\Model\InMarketAudienceSegmentInterestEntityV1ListResponse' !== 'string') {
+                        if ('\Criteo\Api\MarketingSolutions\Model\InMarketAudienceSegmentInterestEntityV1ListResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\criteo\api\marketingsolutions\preview\Model\InMarketAudienceSegmentInterestEntityV1ListResponse', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Api\MarketingSolutions\Model\InMarketAudienceSegmentInterestEntityV1ListResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\criteo\api\marketingsolutions\preview\Model\InMarketAudienceSegmentInterestEntityV1ListResponse';
+            $returnType = '\Criteo\Api\MarketingSolutions\Model\InMarketAudienceSegmentInterestEntityV1ListResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -4223,7 +4223,7 @@ class AudienceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\criteo\api\marketingsolutions\preview\Model\InMarketAudienceSegmentInterestEntityV1ListResponse',
+                        '\Criteo\Api\MarketingSolutions\Model\InMarketAudienceSegmentInterestEntityV1ListResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4265,7 +4265,7 @@ class AudienceApi
      */
     public function getInMarketInterestsAsyncWithHttpInfo($advertiser_id, $country, string $contentType = self::contentTypes['getInMarketInterests'][0])
     {
-        $returnType = '\criteo\api\marketingsolutions\preview\Model\InMarketAudienceSegmentInterestEntityV1ListResponse';
+        $returnType = '\Criteo\Api\MarketingSolutions\Model\InMarketAudienceSegmentInterestEntityV1ListResponse';
         $request = $this->getInMarketInterestsRequest($advertiser_id, $country, $contentType);
 
         return $this->client
@@ -4426,12 +4426,12 @@ class AudienceApi
      * Operation modifyAudienceUsersWithAttributes
      *
      * @param  int $audience_id The id of the audience to amend (required)
-     * @param  \criteo\api\marketingsolutions\preview\Model\ContactlistWithAttributesAmendmentRequest $contactlist_with_attributes_amendment_request contactlist_with_attributes_amendment_request (required)
+     * @param  \Criteo\Api\MarketingSolutions\Model\ContactlistWithAttributesAmendmentRequest $contactlist_with_attributes_amendment_request contactlist_with_attributes_amendment_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['modifyAudienceUsersWithAttributes'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \criteo\api\marketingsolutions\preview\Model\ModifyAudienceResponse
+     * @return \Criteo\Api\MarketingSolutions\Model\ModifyAudienceResponse
      */
     public function modifyAudienceUsersWithAttributes($audience_id, $contactlist_with_attributes_amendment_request, string $contentType = self::contentTypes['modifyAudienceUsersWithAttributes'][0])
     {
@@ -4443,12 +4443,12 @@ class AudienceApi
      * Operation modifyAudienceUsersWithAttributesWithHttpInfo
      *
      * @param  int $audience_id The id of the audience to amend (required)
-     * @param  \criteo\api\marketingsolutions\preview\Model\ContactlistWithAttributesAmendmentRequest $contactlist_with_attributes_amendment_request (required)
+     * @param  \Criteo\Api\MarketingSolutions\Model\ContactlistWithAttributesAmendmentRequest $contactlist_with_attributes_amendment_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['modifyAudienceUsersWithAttributes'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \criteo\api\marketingsolutions\preview\Model\ModifyAudienceResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Criteo\Api\MarketingSolutions\Model\ModifyAudienceResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function modifyAudienceUsersWithAttributesWithHttpInfo($audience_id, $contactlist_with_attributes_amendment_request, string $contentType = self::contentTypes['modifyAudienceUsersWithAttributes'][0])
     {
@@ -4491,23 +4491,23 @@ class AudienceApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\criteo\api\marketingsolutions\preview\Model\ModifyAudienceResponse' === '\SplFileObject') {
+                    if ('\Criteo\Api\MarketingSolutions\Model\ModifyAudienceResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\criteo\api\marketingsolutions\preview\Model\ModifyAudienceResponse' !== 'string') {
+                        if ('\Criteo\Api\MarketingSolutions\Model\ModifyAudienceResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\criteo\api\marketingsolutions\preview\Model\ModifyAudienceResponse', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Api\MarketingSolutions\Model\ModifyAudienceResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\criteo\api\marketingsolutions\preview\Model\ModifyAudienceResponse';
+            $returnType = '\Criteo\Api\MarketingSolutions\Model\ModifyAudienceResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -4528,7 +4528,7 @@ class AudienceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\criteo\api\marketingsolutions\preview\Model\ModifyAudienceResponse',
+                        '\Criteo\Api\MarketingSolutions\Model\ModifyAudienceResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4542,7 +4542,7 @@ class AudienceApi
      * Operation modifyAudienceUsersWithAttributesAsync
      *
      * @param  int $audience_id The id of the audience to amend (required)
-     * @param  \criteo\api\marketingsolutions\preview\Model\ContactlistWithAttributesAmendmentRequest $contactlist_with_attributes_amendment_request (required)
+     * @param  \Criteo\Api\MarketingSolutions\Model\ContactlistWithAttributesAmendmentRequest $contactlist_with_attributes_amendment_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['modifyAudienceUsersWithAttributes'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4562,7 +4562,7 @@ class AudienceApi
      * Operation modifyAudienceUsersWithAttributesAsyncWithHttpInfo
      *
      * @param  int $audience_id The id of the audience to amend (required)
-     * @param  \criteo\api\marketingsolutions\preview\Model\ContactlistWithAttributesAmendmentRequest $contactlist_with_attributes_amendment_request (required)
+     * @param  \Criteo\Api\MarketingSolutions\Model\ContactlistWithAttributesAmendmentRequest $contactlist_with_attributes_amendment_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['modifyAudienceUsersWithAttributes'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4570,7 +4570,7 @@ class AudienceApi
      */
     public function modifyAudienceUsersWithAttributesAsyncWithHttpInfo($audience_id, $contactlist_with_attributes_amendment_request, string $contentType = self::contentTypes['modifyAudienceUsersWithAttributes'][0])
     {
-        $returnType = '\criteo\api\marketingsolutions\preview\Model\ModifyAudienceResponse';
+        $returnType = '\Criteo\Api\MarketingSolutions\Model\ModifyAudienceResponse';
         $request = $this->modifyAudienceUsersWithAttributesRequest($audience_id, $contactlist_with_attributes_amendment_request, $contentType);
 
         return $this->client
@@ -4613,7 +4613,7 @@ class AudienceApi
      * Create request for operation 'modifyAudienceUsersWithAttributes'
      *
      * @param  int $audience_id The id of the audience to amend (required)
-     * @param  \criteo\api\marketingsolutions\preview\Model\ContactlistWithAttributesAmendmentRequest $contactlist_with_attributes_amendment_request (required)
+     * @param  \Criteo\Api\MarketingSolutions\Model\ContactlistWithAttributesAmendmentRequest $contactlist_with_attributes_amendment_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['modifyAudienceUsersWithAttributes'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4729,12 +4729,12 @@ class AudienceApi
      *
      * @param  int $limit The number of elements to be returned. The default is 50 and the maximum is 100. (optional)
      * @param  int $offset The (zero-based) offset into the collection. The default is 0. (optional)
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceSegmentSearchInputV1 $audience_segment_search_input_v1 Segment search filters. (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceSegmentSearchInputV1 $audience_segment_search_input_v1 Segment search filters. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchAudienceSegments'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \criteo\api\marketingsolutions\preview\Model\AudienceSegmentEntityV1AudienceSegmentSearchMetadataV1ListResponse
+     * @return \Criteo\Api\MarketingSolutions\Model\AudienceSegmentEntityV1AudienceSegmentSearchMetadataV1ListResponse
      */
     public function searchAudienceSegments($limit = null, $offset = null, $audience_segment_search_input_v1 = null, string $contentType = self::contentTypes['searchAudienceSegments'][0])
     {
@@ -4747,12 +4747,12 @@ class AudienceApi
      *
      * @param  int $limit The number of elements to be returned. The default is 50 and the maximum is 100. (optional)
      * @param  int $offset The (zero-based) offset into the collection. The default is 0. (optional)
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceSegmentSearchInputV1 $audience_segment_search_input_v1 Segment search filters. (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceSegmentSearchInputV1 $audience_segment_search_input_v1 Segment search filters. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchAudienceSegments'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \criteo\api\marketingsolutions\preview\Model\AudienceSegmentEntityV1AudienceSegmentSearchMetadataV1ListResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Criteo\Api\MarketingSolutions\Model\AudienceSegmentEntityV1AudienceSegmentSearchMetadataV1ListResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function searchAudienceSegmentsWithHttpInfo($limit = null, $offset = null, $audience_segment_search_input_v1 = null, string $contentType = self::contentTypes['searchAudienceSegments'][0])
     {
@@ -4795,23 +4795,23 @@ class AudienceApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\criteo\api\marketingsolutions\preview\Model\AudienceSegmentEntityV1AudienceSegmentSearchMetadataV1ListResponse' === '\SplFileObject') {
+                    if ('\Criteo\Api\MarketingSolutions\Model\AudienceSegmentEntityV1AudienceSegmentSearchMetadataV1ListResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\criteo\api\marketingsolutions\preview\Model\AudienceSegmentEntityV1AudienceSegmentSearchMetadataV1ListResponse' !== 'string') {
+                        if ('\Criteo\Api\MarketingSolutions\Model\AudienceSegmentEntityV1AudienceSegmentSearchMetadataV1ListResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\criteo\api\marketingsolutions\preview\Model\AudienceSegmentEntityV1AudienceSegmentSearchMetadataV1ListResponse', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Api\MarketingSolutions\Model\AudienceSegmentEntityV1AudienceSegmentSearchMetadataV1ListResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\criteo\api\marketingsolutions\preview\Model\AudienceSegmentEntityV1AudienceSegmentSearchMetadataV1ListResponse';
+            $returnType = '\Criteo\Api\MarketingSolutions\Model\AudienceSegmentEntityV1AudienceSegmentSearchMetadataV1ListResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -4832,7 +4832,7 @@ class AudienceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\criteo\api\marketingsolutions\preview\Model\AudienceSegmentEntityV1AudienceSegmentSearchMetadataV1ListResponse',
+                        '\Criteo\Api\MarketingSolutions\Model\AudienceSegmentEntityV1AudienceSegmentSearchMetadataV1ListResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4847,7 +4847,7 @@ class AudienceApi
      *
      * @param  int $limit The number of elements to be returned. The default is 50 and the maximum is 100. (optional)
      * @param  int $offset The (zero-based) offset into the collection. The default is 0. (optional)
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceSegmentSearchInputV1 $audience_segment_search_input_v1 Segment search filters. (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceSegmentSearchInputV1 $audience_segment_search_input_v1 Segment search filters. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchAudienceSegments'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4868,7 +4868,7 @@ class AudienceApi
      *
      * @param  int $limit The number of elements to be returned. The default is 50 and the maximum is 100. (optional)
      * @param  int $offset The (zero-based) offset into the collection. The default is 0. (optional)
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceSegmentSearchInputV1 $audience_segment_search_input_v1 Segment search filters. (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceSegmentSearchInputV1 $audience_segment_search_input_v1 Segment search filters. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchAudienceSegments'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4876,7 +4876,7 @@ class AudienceApi
      */
     public function searchAudienceSegmentsAsyncWithHttpInfo($limit = null, $offset = null, $audience_segment_search_input_v1 = null, string $contentType = self::contentTypes['searchAudienceSegments'][0])
     {
-        $returnType = '\criteo\api\marketingsolutions\preview\Model\AudienceSegmentEntityV1AudienceSegmentSearchMetadataV1ListResponse';
+        $returnType = '\Criteo\Api\MarketingSolutions\Model\AudienceSegmentEntityV1AudienceSegmentSearchMetadataV1ListResponse';
         $request = $this->searchAudienceSegmentsRequest($limit, $offset, $audience_segment_search_input_v1, $contentType);
 
         return $this->client
@@ -4920,7 +4920,7 @@ class AudienceApi
      *
      * @param  int $limit The number of elements to be returned. The default is 50 and the maximum is 100. (optional)
      * @param  int $offset The (zero-based) offset into the collection. The default is 0. (optional)
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceSegmentSearchInputV1 $audience_segment_search_input_v1 Segment search filters. (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceSegmentSearchInputV1 $audience_segment_search_input_v1 Segment search filters. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchAudienceSegments'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5035,12 +5035,12 @@ class AudienceApi
      *
      * @param  int $limit The number of elements to be returned. The default is 50 and the maximum is 100. (optional)
      * @param  int $offset The (zero-based) offset into the collection. The default is 0. (optional)
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceSearchInputV1 $audience_search_input_v1 Audience search filters. (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceSearchInputV1 $audience_search_input_v1 Audience search filters. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchAudiences'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \criteo\api\marketingsolutions\preview\Model\AudienceEntityV1AudienceSearchMetadataV1ListResponse
+     * @return \Criteo\Api\MarketingSolutions\Model\AudienceEntityV1AudienceSearchMetadataV1ListResponse
      */
     public function searchAudiences($limit = null, $offset = null, $audience_search_input_v1 = null, string $contentType = self::contentTypes['searchAudiences'][0])
     {
@@ -5053,12 +5053,12 @@ class AudienceApi
      *
      * @param  int $limit The number of elements to be returned. The default is 50 and the maximum is 100. (optional)
      * @param  int $offset The (zero-based) offset into the collection. The default is 0. (optional)
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceSearchInputV1 $audience_search_input_v1 Audience search filters. (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceSearchInputV1 $audience_search_input_v1 Audience search filters. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchAudiences'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \criteo\api\marketingsolutions\preview\Model\AudienceEntityV1AudienceSearchMetadataV1ListResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Criteo\Api\MarketingSolutions\Model\AudienceEntityV1AudienceSearchMetadataV1ListResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function searchAudiencesWithHttpInfo($limit = null, $offset = null, $audience_search_input_v1 = null, string $contentType = self::contentTypes['searchAudiences'][0])
     {
@@ -5101,23 +5101,23 @@ class AudienceApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\criteo\api\marketingsolutions\preview\Model\AudienceEntityV1AudienceSearchMetadataV1ListResponse' === '\SplFileObject') {
+                    if ('\Criteo\Api\MarketingSolutions\Model\AudienceEntityV1AudienceSearchMetadataV1ListResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\criteo\api\marketingsolutions\preview\Model\AudienceEntityV1AudienceSearchMetadataV1ListResponse' !== 'string') {
+                        if ('\Criteo\Api\MarketingSolutions\Model\AudienceEntityV1AudienceSearchMetadataV1ListResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\criteo\api\marketingsolutions\preview\Model\AudienceEntityV1AudienceSearchMetadataV1ListResponse', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Api\MarketingSolutions\Model\AudienceEntityV1AudienceSearchMetadataV1ListResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\criteo\api\marketingsolutions\preview\Model\AudienceEntityV1AudienceSearchMetadataV1ListResponse';
+            $returnType = '\Criteo\Api\MarketingSolutions\Model\AudienceEntityV1AudienceSearchMetadataV1ListResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -5138,7 +5138,7 @@ class AudienceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\criteo\api\marketingsolutions\preview\Model\AudienceEntityV1AudienceSearchMetadataV1ListResponse',
+                        '\Criteo\Api\MarketingSolutions\Model\AudienceEntityV1AudienceSearchMetadataV1ListResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5153,7 +5153,7 @@ class AudienceApi
      *
      * @param  int $limit The number of elements to be returned. The default is 50 and the maximum is 100. (optional)
      * @param  int $offset The (zero-based) offset into the collection. The default is 0. (optional)
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceSearchInputV1 $audience_search_input_v1 Audience search filters. (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceSearchInputV1 $audience_search_input_v1 Audience search filters. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchAudiences'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5174,7 +5174,7 @@ class AudienceApi
      *
      * @param  int $limit The number of elements to be returned. The default is 50 and the maximum is 100. (optional)
      * @param  int $offset The (zero-based) offset into the collection. The default is 0. (optional)
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceSearchInputV1 $audience_search_input_v1 Audience search filters. (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceSearchInputV1 $audience_search_input_v1 Audience search filters. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchAudiences'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5182,7 +5182,7 @@ class AudienceApi
      */
     public function searchAudiencesAsyncWithHttpInfo($limit = null, $offset = null, $audience_search_input_v1 = null, string $contentType = self::contentTypes['searchAudiences'][0])
     {
-        $returnType = '\criteo\api\marketingsolutions\preview\Model\AudienceEntityV1AudienceSearchMetadataV1ListResponse';
+        $returnType = '\Criteo\Api\MarketingSolutions\Model\AudienceEntityV1AudienceSearchMetadataV1ListResponse';
         $request = $this->searchAudiencesRequest($limit, $offset, $audience_search_input_v1, $contentType);
 
         return $this->client
@@ -5226,7 +5226,7 @@ class AudienceApi
      *
      * @param  int $limit The number of elements to be returned. The default is 50 and the maximum is 100. (optional)
      * @param  int $offset The (zero-based) offset into the collection. The default is 0. (optional)
-     * @param  \criteo\api\marketingsolutions\preview\Model\AudienceSearchInputV1 $audience_search_input_v1 Audience search filters. (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\AudienceSearchInputV1 $audience_search_input_v1 Audience search filters. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchAudiences'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5340,10 +5340,10 @@ class AudienceApi
      * Operation setUserProfiles
      *
      * @param  int $advertiser_id Criteo Advertiser ID of user profiles&#39; owner (required)
-     * @param  \criteo\api\marketingsolutions\preview\Model\SetUserProfileModelListRequest $set_user_profile_model_list_request set_user_profile_model_list_request (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\SetUserProfileModelListRequest $set_user_profile_model_list_request set_user_profile_model_list_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['setUserProfiles'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -5356,10 +5356,10 @@ class AudienceApi
      * Operation setUserProfilesWithHttpInfo
      *
      * @param  int $advertiser_id Criteo Advertiser ID of user profiles&#39; owner (required)
-     * @param  \criteo\api\marketingsolutions\preview\Model\SetUserProfileModelListRequest $set_user_profile_model_list_request (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\SetUserProfileModelListRequest $set_user_profile_model_list_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['setUserProfiles'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -5415,7 +5415,7 @@ class AudienceApi
      * Operation setUserProfilesAsync
      *
      * @param  int $advertiser_id Criteo Advertiser ID of user profiles&#39; owner (required)
-     * @param  \criteo\api\marketingsolutions\preview\Model\SetUserProfileModelListRequest $set_user_profile_model_list_request (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\SetUserProfileModelListRequest $set_user_profile_model_list_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['setUserProfiles'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5435,7 +5435,7 @@ class AudienceApi
      * Operation setUserProfilesAsyncWithHttpInfo
      *
      * @param  int $advertiser_id Criteo Advertiser ID of user profiles&#39; owner (required)
-     * @param  \criteo\api\marketingsolutions\preview\Model\SetUserProfileModelListRequest $set_user_profile_model_list_request (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\SetUserProfileModelListRequest $set_user_profile_model_list_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['setUserProfiles'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5473,7 +5473,7 @@ class AudienceApi
      * Create request for operation 'setUserProfiles'
      *
      * @param  int $advertiser_id Criteo Advertiser ID of user profiles&#39; owner (required)
-     * @param  \criteo\api\marketingsolutions\preview\Model\SetUserProfileModelListRequest $set_user_profile_model_list_request (optional)
+     * @param  \Criteo\Api\MarketingSolutions\Model\SetUserProfileModelListRequest $set_user_profile_model_list_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['setUserProfiles'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5582,12 +5582,12 @@ class AudienceApi
      * Operation updateContactListIdentifiers
      *
      * @param  string $audience_segment_id The ID of the Audience Segment to amend (required)
-     * @param  \criteo\api\marketingsolutions\preview\Model\ContactlistAmendmentRequest $contactlist_amendment_request contactlist_amendment_request (required)
+     * @param  \Criteo\Api\MarketingSolutions\Model\ContactlistAmendmentRequest $contactlist_amendment_request contactlist_amendment_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateContactListIdentifiers'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \criteo\api\marketingsolutions\preview\Model\ModifyAudienceResponse|\criteo\api\marketingsolutions\preview\Model\ErrorCodeResponse|\criteo\api\marketingsolutions\preview\Model\ErrorCodeResponse
+     * @return \Criteo\Api\MarketingSolutions\Model\ModifyAudienceResponse|\Criteo\Api\MarketingSolutions\Model\ErrorCodeResponse|\Criteo\Api\MarketingSolutions\Model\ErrorCodeResponse
      */
     public function updateContactListIdentifiers($audience_segment_id, $contactlist_amendment_request, string $contentType = self::contentTypes['updateContactListIdentifiers'][0])
     {
@@ -5599,12 +5599,12 @@ class AudienceApi
      * Operation updateContactListIdentifiersWithHttpInfo
      *
      * @param  string $audience_segment_id The ID of the Audience Segment to amend (required)
-     * @param  \criteo\api\marketingsolutions\preview\Model\ContactlistAmendmentRequest $contactlist_amendment_request (required)
+     * @param  \Criteo\Api\MarketingSolutions\Model\ContactlistAmendmentRequest $contactlist_amendment_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateContactListIdentifiers'] to see the possible values for this operation
      *
-     * @throws \criteo\api\marketingsolutions\preview\ApiException on non-2xx response
+     * @throws \Criteo\Api\MarketingSolutions\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \criteo\api\marketingsolutions\preview\Model\ModifyAudienceResponse|\criteo\api\marketingsolutions\preview\Model\ErrorCodeResponse|\criteo\api\marketingsolutions\preview\Model\ErrorCodeResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Criteo\Api\MarketingSolutions\Model\ModifyAudienceResponse|\Criteo\Api\MarketingSolutions\Model\ErrorCodeResponse|\Criteo\Api\MarketingSolutions\Model\ErrorCodeResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateContactListIdentifiersWithHttpInfo($audience_segment_id, $contactlist_amendment_request, string $contentType = self::contentTypes['updateContactListIdentifiers'][0])
     {
@@ -5647,53 +5647,53 @@ class AudienceApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\criteo\api\marketingsolutions\preview\Model\ModifyAudienceResponse' === '\SplFileObject') {
+                    if ('\Criteo\Api\MarketingSolutions\Model\ModifyAudienceResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\criteo\api\marketingsolutions\preview\Model\ModifyAudienceResponse' !== 'string') {
+                        if ('\Criteo\Api\MarketingSolutions\Model\ModifyAudienceResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\criteo\api\marketingsolutions\preview\Model\ModifyAudienceResponse', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Api\MarketingSolutions\Model\ModifyAudienceResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\criteo\api\marketingsolutions\preview\Model\ErrorCodeResponse' === '\SplFileObject') {
+                    if ('\Criteo\Api\MarketingSolutions\Model\ErrorCodeResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\criteo\api\marketingsolutions\preview\Model\ErrorCodeResponse' !== 'string') {
+                        if ('\Criteo\Api\MarketingSolutions\Model\ErrorCodeResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\criteo\api\marketingsolutions\preview\Model\ErrorCodeResponse', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Api\MarketingSolutions\Model\ErrorCodeResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\criteo\api\marketingsolutions\preview\Model\ErrorCodeResponse' === '\SplFileObject') {
+                    if ('\Criteo\Api\MarketingSolutions\Model\ErrorCodeResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\criteo\api\marketingsolutions\preview\Model\ErrorCodeResponse' !== 'string') {
+                        if ('\Criteo\Api\MarketingSolutions\Model\ErrorCodeResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\criteo\api\marketingsolutions\preview\Model\ErrorCodeResponse', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Api\MarketingSolutions\Model\ErrorCodeResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\criteo\api\marketingsolutions\preview\Model\ModifyAudienceResponse';
+            $returnType = '\Criteo\Api\MarketingSolutions\Model\ModifyAudienceResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -5714,7 +5714,7 @@ class AudienceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\criteo\api\marketingsolutions\preview\Model\ModifyAudienceResponse',
+                        '\Criteo\Api\MarketingSolutions\Model\ModifyAudienceResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5722,7 +5722,7 @@ class AudienceApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\criteo\api\marketingsolutions\preview\Model\ErrorCodeResponse',
+                        '\Criteo\Api\MarketingSolutions\Model\ErrorCodeResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5730,7 +5730,7 @@ class AudienceApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\criteo\api\marketingsolutions\preview\Model\ErrorCodeResponse',
+                        '\Criteo\Api\MarketingSolutions\Model\ErrorCodeResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5744,7 +5744,7 @@ class AudienceApi
      * Operation updateContactListIdentifiersAsync
      *
      * @param  string $audience_segment_id The ID of the Audience Segment to amend (required)
-     * @param  \criteo\api\marketingsolutions\preview\Model\ContactlistAmendmentRequest $contactlist_amendment_request (required)
+     * @param  \Criteo\Api\MarketingSolutions\Model\ContactlistAmendmentRequest $contactlist_amendment_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateContactListIdentifiers'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5764,7 +5764,7 @@ class AudienceApi
      * Operation updateContactListIdentifiersAsyncWithHttpInfo
      *
      * @param  string $audience_segment_id The ID of the Audience Segment to amend (required)
-     * @param  \criteo\api\marketingsolutions\preview\Model\ContactlistAmendmentRequest $contactlist_amendment_request (required)
+     * @param  \Criteo\Api\MarketingSolutions\Model\ContactlistAmendmentRequest $contactlist_amendment_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateContactListIdentifiers'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5772,7 +5772,7 @@ class AudienceApi
      */
     public function updateContactListIdentifiersAsyncWithHttpInfo($audience_segment_id, $contactlist_amendment_request, string $contentType = self::contentTypes['updateContactListIdentifiers'][0])
     {
-        $returnType = '\criteo\api\marketingsolutions\preview\Model\ModifyAudienceResponse';
+        $returnType = '\Criteo\Api\MarketingSolutions\Model\ModifyAudienceResponse';
         $request = $this->updateContactListIdentifiersRequest($audience_segment_id, $contactlist_amendment_request, $contentType);
 
         return $this->client
@@ -5815,7 +5815,7 @@ class AudienceApi
      * Create request for operation 'updateContactListIdentifiers'
      *
      * @param  string $audience_segment_id The ID of the Audience Segment to amend (required)
-     * @param  \criteo\api\marketingsolutions\preview\Model\ContactlistAmendmentRequest $contactlist_amendment_request (required)
+     * @param  \Criteo\Api\MarketingSolutions\Model\ContactlistAmendmentRequest $contactlist_amendment_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateContactListIdentifiers'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

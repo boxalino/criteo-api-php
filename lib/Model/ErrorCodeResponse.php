@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * ErrorCodeResponse Class Doc Comment
@@ -58,8 +58,8 @@ class ErrorCodeResponse implements ModelInterface, ArrayAccess, \JsonSerializabl
       * @var string[]
       */
     protected static $openAPITypes = [
-        'errors' => '\criteo\api\marketingsolutions\preview\Model\AudienceError[]',
-        'warnings' => '\criteo\api\marketingsolutions\preview\Model\AudienceWarning[]'
+        'errors' => '\Criteo\Api\MarketingSolutions\Model\AudienceError[]',
+        'warnings' => '\Criteo\Api\MarketingSolutions\Model\AudienceWarning[]'
     ];
 
     /**
@@ -303,7 +303,7 @@ class ErrorCodeResponse implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets errors
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\AudienceError[]
+     * @return \Criteo\Api\MarketingSolutions\Model\AudienceError[]
      */
     public function getErrors()
     {
@@ -313,7 +313,7 @@ class ErrorCodeResponse implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets errors
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\AudienceError[] $errors errors
+     * @param \Criteo\Api\MarketingSolutions\Model\AudienceError[] $errors errors
      *
      * @return self
      */
@@ -330,7 +330,7 @@ class ErrorCodeResponse implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets warnings
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\AudienceWarning[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\AudienceWarning[]|null
      */
     public function getWarnings()
     {
@@ -340,7 +340,7 @@ class ErrorCodeResponse implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets warnings
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\AudienceWarning[]|null $warnings warnings
+     * @param \Criteo\Api\MarketingSolutions\Model\AudienceWarning[]|null $warnings warnings
      *
      * @return self
      */

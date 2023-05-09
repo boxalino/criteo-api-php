@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * AudienceSegmentCreateEntityV1 Class Doc Comment
@@ -61,12 +61,12 @@ class AudienceSegmentCreateEntityV1 implements ModelInterface, ArrayAccess, \Jso
         'name' => 'string',
         'description' => 'string',
         'advertiser_id' => 'string',
-        'in_market' => '\criteo\api\marketingsolutions\preview\Model\InMarketCreateV1',
+        'in_market' => '\Criteo\Api\MarketingSolutions\Model\InMarketCreateV1',
         'prospecting' => 'object',
         'contact_list' => 'object',
-        'location' => '\criteo\api\marketingsolutions\preview\Model\LocationCreateV1',
-        'retargeting' => '\criteo\api\marketingsolutions\preview\Model\RetargetingCreateV1',
-        'lookalike' => '\criteo\api\marketingsolutions\preview\Model\LookalikeCreateV1'
+        'location' => '\Criteo\Api\MarketingSolutions\Model\LocationCreateV1',
+        'retargeting' => '\Criteo\Api\MarketingSolutions\Model\RetargetingCreateV1',
+        'lookalike' => '\Criteo\Api\MarketingSolutions\Model\LookalikeCreateV1'
     ];
 
     /**
@@ -430,7 +430,7 @@ class AudienceSegmentCreateEntityV1 implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets in_market
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\InMarketCreateV1|null
+     * @return \Criteo\Api\MarketingSolutions\Model\InMarketCreateV1|null
      */
     public function getInMarket()
     {
@@ -440,7 +440,7 @@ class AudienceSegmentCreateEntityV1 implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets in_market
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\InMarketCreateV1|null $in_market in_market
+     * @param \Criteo\Api\MarketingSolutions\Model\InMarketCreateV1|null $in_market in_market
      *
      * @return self
      */
@@ -511,7 +511,7 @@ class AudienceSegmentCreateEntityV1 implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets location
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\LocationCreateV1|null
+     * @return \Criteo\Api\MarketingSolutions\Model\LocationCreateV1|null
      */
     public function getLocation()
     {
@@ -521,7 +521,7 @@ class AudienceSegmentCreateEntityV1 implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets location
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\LocationCreateV1|null $location location
+     * @param \Criteo\Api\MarketingSolutions\Model\LocationCreateV1|null $location location
      *
      * @return self
      */
@@ -538,7 +538,7 @@ class AudienceSegmentCreateEntityV1 implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets retargeting
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\RetargetingCreateV1|null
+     * @return \Criteo\Api\MarketingSolutions\Model\RetargetingCreateV1|null
      */
     public function getRetargeting()
     {
@@ -548,7 +548,7 @@ class AudienceSegmentCreateEntityV1 implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets retargeting
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\RetargetingCreateV1|null $retargeting retargeting
+     * @param \Criteo\Api\MarketingSolutions\Model\RetargetingCreateV1|null $retargeting retargeting
      *
      * @return self
      */
@@ -565,7 +565,7 @@ class AudienceSegmentCreateEntityV1 implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets lookalike
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\LookalikeCreateV1|null
+     * @return \Criteo\Api\MarketingSolutions\Model\LookalikeCreateV1|null
      */
     public function getLookalike()
     {
@@ -575,7 +575,7 @@ class AudienceSegmentCreateEntityV1 implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets lookalike
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\LookalikeCreateV1|null $lookalike lookalike
+     * @param \Criteo\Api\MarketingSolutions\Model\LookalikeCreateV1|null $lookalike lookalike
      *
      * @return self
      */

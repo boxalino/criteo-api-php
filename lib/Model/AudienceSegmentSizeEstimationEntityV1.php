@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * AudienceSegmentSizeEstimationEntityV1 Class Doc Comment
@@ -59,8 +59,8 @@ class AudienceSegmentSizeEstimationEntityV1 implements ModelInterface, ArrayAcce
       */
     protected static $openAPITypes = [
         'advertiser_id' => 'string',
-        'in_market' => '\criteo\api\marketingsolutions\preview\Model\InMarketSizeEstimationV1',
-        'location' => '\criteo\api\marketingsolutions\preview\Model\LocationSizeEstimationV1'
+        'in_market' => '\Criteo\Api\MarketingSolutions\Model\InMarketSizeEstimationV1',
+        'location' => '\Criteo\Api\MarketingSolutions\Model\LocationSizeEstimationV1'
     ];
 
     /**
@@ -334,7 +334,7 @@ class AudienceSegmentSizeEstimationEntityV1 implements ModelInterface, ArrayAcce
     /**
      * Gets in_market
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\InMarketSizeEstimationV1|null
+     * @return \Criteo\Api\MarketingSolutions\Model\InMarketSizeEstimationV1|null
      */
     public function getInMarket()
     {
@@ -344,7 +344,7 @@ class AudienceSegmentSizeEstimationEntityV1 implements ModelInterface, ArrayAcce
     /**
      * Sets in_market
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\InMarketSizeEstimationV1|null $in_market in_market
+     * @param \Criteo\Api\MarketingSolutions\Model\InMarketSizeEstimationV1|null $in_market in_market
      *
      * @return self
      */
@@ -361,7 +361,7 @@ class AudienceSegmentSizeEstimationEntityV1 implements ModelInterface, ArrayAcce
     /**
      * Gets location
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\LocationSizeEstimationV1|null
+     * @return \Criteo\Api\MarketingSolutions\Model\LocationSizeEstimationV1|null
      */
     public function getLocation()
     {
@@ -371,7 +371,7 @@ class AudienceSegmentSizeEstimationEntityV1 implements ModelInterface, ArrayAcce
     /**
      * Sets location
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\LocationSizeEstimationV1|null $location location
+     * @param \Criteo\Api\MarketingSolutions\Model\LocationSizeEstimationV1|null $location location
      *
      * @return self
      */

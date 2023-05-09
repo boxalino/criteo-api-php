@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * AudienceSegmentEntityV1AudienceSegmentSearchMetadataV1ListResponse Class Doc Comment
@@ -58,10 +58,10 @@ class AudienceSegmentEntityV1AudienceSegmentSearchMetadataV1ListResponse impleme
       * @var string[]
       */
     protected static $openAPITypes = [
-        'meta' => '\criteo\api\marketingsolutions\preview\Model\AudienceSegmentSearchMetadataV1',
-        'data' => '\criteo\api\marketingsolutions\preview\Model\AudienceSegmentEntityV1Resource[]',
-        'warnings' => '\criteo\api\marketingsolutions\preview\Model\CommonProblem[]',
-        'errors' => '\criteo\api\marketingsolutions\preview\Model\CommonProblem[]'
+        'meta' => '\Criteo\Api\MarketingSolutions\Model\AudienceSegmentSearchMetadataV1',
+        'data' => '\Criteo\Api\MarketingSolutions\Model\AudienceSegmentEntityV1Resource[]',
+        'warnings' => '\Criteo\Api\MarketingSolutions\Model\CommonProblem[]',
+        'errors' => '\Criteo\Api\MarketingSolutions\Model\CommonProblem[]'
     ];
 
     /**
@@ -314,7 +314,7 @@ class AudienceSegmentEntityV1AudienceSegmentSearchMetadataV1ListResponse impleme
     /**
      * Gets meta
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\AudienceSegmentSearchMetadataV1|null
+     * @return \Criteo\Api\MarketingSolutions\Model\AudienceSegmentSearchMetadataV1|null
      */
     public function getMeta()
     {
@@ -324,7 +324,7 @@ class AudienceSegmentEntityV1AudienceSegmentSearchMetadataV1ListResponse impleme
     /**
      * Sets meta
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\AudienceSegmentSearchMetadataV1|null $meta meta
+     * @param \Criteo\Api\MarketingSolutions\Model\AudienceSegmentSearchMetadataV1|null $meta meta
      *
      * @return self
      */
@@ -341,7 +341,7 @@ class AudienceSegmentEntityV1AudienceSegmentSearchMetadataV1ListResponse impleme
     /**
      * Gets data
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\AudienceSegmentEntityV1Resource[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\AudienceSegmentEntityV1Resource[]|null
      */
     public function getData()
     {
@@ -351,7 +351,7 @@ class AudienceSegmentEntityV1AudienceSegmentSearchMetadataV1ListResponse impleme
     /**
      * Sets data
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\AudienceSegmentEntityV1Resource[]|null $data data
+     * @param \Criteo\Api\MarketingSolutions\Model\AudienceSegmentEntityV1Resource[]|null $data data
      *
      * @return self
      */
@@ -370,7 +370,7 @@ class AudienceSegmentEntityV1AudienceSegmentSearchMetadataV1ListResponse impleme
     /**
      * Gets warnings
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\CommonProblem[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\CommonProblem[]|null
      */
     public function getWarnings()
     {
@@ -380,7 +380,7 @@ class AudienceSegmentEntityV1AudienceSegmentSearchMetadataV1ListResponse impleme
     /**
      * Sets warnings
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\CommonProblem[]|null $warnings warnings
+     * @param \Criteo\Api\MarketingSolutions\Model\CommonProblem[]|null $warnings warnings
      *
      * @return self
      */
@@ -399,7 +399,7 @@ class AudienceSegmentEntityV1AudienceSegmentSearchMetadataV1ListResponse impleme
     /**
      * Gets errors
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\CommonProblem[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\CommonProblem[]|null
      */
     public function getErrors()
     {
@@ -409,7 +409,7 @@ class AudienceSegmentEntityV1AudienceSegmentSearchMetadataV1ListResponse impleme
     /**
      * Sets errors
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\CommonProblem[]|null $errors errors
+     * @param \Criteo\Api\MarketingSolutions\Model\CommonProblem[]|null $errors errors
      *
      * @return self
      */

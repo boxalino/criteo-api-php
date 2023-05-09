@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * OnSiteRecoRequest Class Doc Comment
@@ -60,7 +60,7 @@ class OnSiteRecoRequest implements ModelInterface, ArrayAccess, \JsonSerializabl
     protected static $openAPITypes = [
         'nb_requested_products' => 'int',
         'user_id' => 'string',
-        'user_events' => '\criteo\api\marketingsolutions\preview\Model\UserEvent[]',
+        'user_events' => '\Criteo\Api\MarketingSolutions\Model\UserEvent[]',
         'ad_set_id' => 'int',
         'partner_id' => 'int'
     ];
@@ -381,7 +381,7 @@ class OnSiteRecoRequest implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets user_events
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\UserEvent[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\UserEvent[]|null
      */
     public function getUserEvents()
     {
@@ -391,7 +391,7 @@ class OnSiteRecoRequest implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets user_events
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\UserEvent[]|null $user_events Used to perform a recommendation without relying on events stored for a UserId. Optional if UserId is passed.
+     * @param \Criteo\Api\MarketingSolutions\Model\UserEvent[]|null $user_events Used to perform a recommendation without relying on events stored for a UserId. Optional if UserId is passed.
      *
      * @return self
      */

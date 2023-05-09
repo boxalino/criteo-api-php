@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * TransparencyReportAttributes Class Doc Comment
@@ -60,7 +60,7 @@ class TransparencyReportAttributes implements ModelInterface, ArrayAccess, \Json
     protected static $openAPITypes = [
         'advertiser_id' => 'string',
         'token_valid_until' => '\DateTime',
-        'files' => '\criteo\api\marketingsolutions\preview\Model\TransparencyReportFile[]'
+        'files' => '\Criteo\Api\MarketingSolutions\Model\TransparencyReportFile[]'
     ];
 
     /**
@@ -370,7 +370,7 @@ class TransparencyReportAttributes implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets files
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\TransparencyReportFile[]
+     * @return \Criteo\Api\MarketingSolutions\Model\TransparencyReportFile[]
      */
     public function getFiles()
     {
@@ -380,7 +380,7 @@ class TransparencyReportAttributes implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets files
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\TransparencyReportFile[] $files files
+     * @param \Criteo\Api\MarketingSolutions\Model\TransparencyReportFile[] $files files
      *
      * @return self
      */

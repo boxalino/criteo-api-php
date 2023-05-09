@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * HtmlTagWriteAttributes Class Doc Comment
@@ -58,7 +58,7 @@ class HtmlTagWriteAttributes implements ModelInterface, ArrayAccess, \JsonSerial
       * @var string[]
       */
     protected static $openAPITypes = [
-        'tags' => '\criteo\api\marketingsolutions\preview\Model\Tag[]'
+        'tags' => '\Criteo\Api\MarketingSolutions\Model\Tag[]'
     ];
 
     /**
@@ -293,7 +293,7 @@ class HtmlTagWriteAttributes implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets tags
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\Tag[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\Tag[]|null
      */
     public function getTags()
     {
@@ -303,7 +303,7 @@ class HtmlTagWriteAttributes implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets tags
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\Tag[]|null $tags An array containing the html tags
+     * @param \Criteo\Api\MarketingSolutions\Model\Tag[]|null $tags An array containing the html tags
      *
      * @return self
      */

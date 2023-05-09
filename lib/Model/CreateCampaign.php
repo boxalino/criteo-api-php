@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * CreateCampaign Class Doc Comment
@@ -61,7 +61,7 @@ class CreateCampaign implements ModelInterface, ArrayAccess, \JsonSerializable
         'name' => 'string',
         'advertiser_id' => 'string',
         'goal' => 'string',
-        'spend_limit' => '\criteo\api\marketingsolutions\preview\Model\CreateCampaignSpendLimit'
+        'spend_limit' => '\Criteo\Api\MarketingSolutions\Model\CreateCampaignSpendLimit'
     ];
 
     /**
@@ -431,7 +431,7 @@ class CreateCampaign implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets spend_limit
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\CreateCampaignSpendLimit|null
+     * @return \Criteo\Api\MarketingSolutions\Model\CreateCampaignSpendLimit|null
      */
     public function getSpendLimit()
     {
@@ -441,7 +441,7 @@ class CreateCampaign implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets spend_limit
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\CreateCampaignSpendLimit|null $spend_limit spend_limit
+     * @param \Criteo\Api\MarketingSolutions\Model\CreateCampaignSpendLimit|null $spend_limit spend_limit
      *
      * @return self
      */

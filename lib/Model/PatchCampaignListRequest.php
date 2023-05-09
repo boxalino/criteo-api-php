@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * PatchCampaignListRequest Class Doc Comment
@@ -58,7 +58,7 @@ class PatchCampaignListRequest implements ModelInterface, ArrayAccess, \JsonSeri
       * @var string[]
       */
     protected static $openAPITypes = [
-        'data' => '\criteo\api\marketingsolutions\preview\Model\PatchCampaignWriteResource[]'
+        'data' => '\Criteo\Api\MarketingSolutions\Model\PatchCampaignWriteResource[]'
     ];
 
     /**
@@ -293,7 +293,7 @@ class PatchCampaignListRequest implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets data
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\PatchCampaignWriteResource[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\PatchCampaignWriteResource[]|null
      */
     public function getData()
     {
@@ -303,7 +303,7 @@ class PatchCampaignListRequest implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets data
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\PatchCampaignWriteResource[]|null $data data
+     * @param \Criteo\Api\MarketingSolutions\Model\PatchCampaignWriteResource[]|null $data data
      *
      * @return self
      */

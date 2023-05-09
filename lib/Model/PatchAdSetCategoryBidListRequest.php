@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * PatchAdSetCategoryBidListRequest Class Doc Comment
@@ -58,7 +58,7 @@ class PatchAdSetCategoryBidListRequest implements ModelInterface, ArrayAccess, \
       * @var string[]
       */
     protected static $openAPITypes = [
-        'data' => '\criteo\api\marketingsolutions\preview\Model\PatchAdSetCategoryBidResource[]'
+        'data' => '\Criteo\Api\MarketingSolutions\Model\PatchAdSetCategoryBidResource[]'
     ];
 
     /**
@@ -293,7 +293,7 @@ class PatchAdSetCategoryBidListRequest implements ModelInterface, ArrayAccess, \
     /**
      * Gets data
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\PatchAdSetCategoryBidResource[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\PatchAdSetCategoryBidResource[]|null
      */
     public function getData()
     {
@@ -303,7 +303,7 @@ class PatchAdSetCategoryBidListRequest implements ModelInterface, ArrayAccess, \
     /**
      * Sets data
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\PatchAdSetCategoryBidResource[]|null $data data
+     * @param \Criteo\Api\MarketingSolutions\Model\PatchAdSetCategoryBidResource[]|null $data data
      *
      * @return self
      */

@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * PatchAdSet Class Doc Comment
@@ -59,10 +59,10 @@ class PatchAdSet implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'name' => 'string',
-        'scheduling' => '\criteo\api\marketingsolutions\preview\Model\PatchAdSetScheduling',
-        'bidding' => '\criteo\api\marketingsolutions\preview\Model\PatchAdSetBidding',
-        'targeting' => '\criteo\api\marketingsolutions\preview\Model\AdSetTargeting',
-        'budget' => '\criteo\api\marketingsolutions\preview\Model\PatchAdSetBudget'
+        'scheduling' => '\Criteo\Api\MarketingSolutions\Model\PatchAdSetScheduling',
+        'bidding' => '\Criteo\Api\MarketingSolutions\Model\PatchAdSetBidding',
+        'targeting' => '\Criteo\Api\MarketingSolutions\Model\AdSetTargeting',
+        'budget' => '\Criteo\Api\MarketingSolutions\Model\PatchAdSetBudget'
     ];
 
     /**
@@ -348,7 +348,7 @@ class PatchAdSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets scheduling
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\PatchAdSetScheduling|null
+     * @return \Criteo\Api\MarketingSolutions\Model\PatchAdSetScheduling|null
      */
     public function getScheduling()
     {
@@ -358,7 +358,7 @@ class PatchAdSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets scheduling
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\PatchAdSetScheduling|null $scheduling scheduling
+     * @param \Criteo\Api\MarketingSolutions\Model\PatchAdSetScheduling|null $scheduling scheduling
      *
      * @return self
      */
@@ -375,7 +375,7 @@ class PatchAdSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets bidding
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\PatchAdSetBidding|null
+     * @return \Criteo\Api\MarketingSolutions\Model\PatchAdSetBidding|null
      */
     public function getBidding()
     {
@@ -385,7 +385,7 @@ class PatchAdSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets bidding
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\PatchAdSetBidding|null $bidding bidding
+     * @param \Criteo\Api\MarketingSolutions\Model\PatchAdSetBidding|null $bidding bidding
      *
      * @return self
      */
@@ -402,7 +402,7 @@ class PatchAdSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets targeting
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\AdSetTargeting|null
+     * @return \Criteo\Api\MarketingSolutions\Model\AdSetTargeting|null
      */
     public function getTargeting()
     {
@@ -412,7 +412,7 @@ class PatchAdSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets targeting
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\AdSetTargeting|null $targeting targeting
+     * @param \Criteo\Api\MarketingSolutions\Model\AdSetTargeting|null $targeting targeting
      *
      * @return self
      */
@@ -429,7 +429,7 @@ class PatchAdSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets budget
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\PatchAdSetBudget|null
+     * @return \Criteo\Api\MarketingSolutions\Model\PatchAdSetBudget|null
      */
     public function getBudget()
     {
@@ -439,7 +439,7 @@ class PatchAdSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets budget
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\PatchAdSetBudget|null $budget budget
+     * @param \Criteo\Api\MarketingSolutions\Model\PatchAdSetBudget|null $budget budget
      *
      * @return self
      */

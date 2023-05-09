@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * CouponSupportedSizesResponse Class Doc Comment
@@ -58,9 +58,9 @@ class CouponSupportedSizesResponse implements ModelInterface, ArrayAccess, \Json
       * @var string[]
       */
     protected static $openAPITypes = [
-        'data' => '\criteo\api\marketingsolutions\preview\Model\CouponSupportedSizesResource',
-        'warnings' => '\criteo\api\marketingsolutions\preview\Model\CommonProblem[]',
-        'errors' => '\criteo\api\marketingsolutions\preview\Model\CommonProblem[]'
+        'data' => '\Criteo\Api\MarketingSolutions\Model\CouponSupportedSizesResource',
+        'warnings' => '\Criteo\Api\MarketingSolutions\Model\CommonProblem[]',
+        'errors' => '\Criteo\Api\MarketingSolutions\Model\CommonProblem[]'
     ];
 
     /**
@@ -307,7 +307,7 @@ class CouponSupportedSizesResponse implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets data
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\CouponSupportedSizesResource|null
+     * @return \Criteo\Api\MarketingSolutions\Model\CouponSupportedSizesResource|null
      */
     public function getData()
     {
@@ -317,7 +317,7 @@ class CouponSupportedSizesResponse implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets data
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\CouponSupportedSizesResource|null $data data
+     * @param \Criteo\Api\MarketingSolutions\Model\CouponSupportedSizesResource|null $data data
      *
      * @return self
      */
@@ -334,7 +334,7 @@ class CouponSupportedSizesResponse implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets warnings
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\CommonProblem[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\CommonProblem[]|null
      */
     public function getWarnings()
     {
@@ -344,7 +344,7 @@ class CouponSupportedSizesResponse implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets warnings
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\CommonProblem[]|null $warnings warnings
+     * @param \Criteo\Api\MarketingSolutions\Model\CommonProblem[]|null $warnings warnings
      *
      * @return self
      */
@@ -363,7 +363,7 @@ class CouponSupportedSizesResponse implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets errors
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\CommonProblem[]|null
+     * @return \Criteo\Api\MarketingSolutions\Model\CommonProblem[]|null
      */
     public function getErrors()
     {
@@ -373,7 +373,7 @@ class CouponSupportedSizesResponse implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets errors
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\CommonProblem[]|null $errors errors
+     * @param \Criteo\Api\MarketingSolutions\Model\CommonProblem[]|null $errors errors
      *
      * @return self
      */

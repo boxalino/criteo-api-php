@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * FailResponse Class Doc Comment
@@ -58,8 +58,8 @@ class FailResponse implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'errors' => '\criteo\api\marketingsolutions\preview\Model\ProductImporterError[]',
-        'warnings' => '\criteo\api\marketingsolutions\preview\Model\ProductImporterWarning[]'
+        'errors' => '\Criteo\Api\MarketingSolutions\Model\ProductImporterError[]',
+        'warnings' => '\Criteo\Api\MarketingSolutions\Model\ProductImporterWarning[]'
     ];
 
     /**
@@ -306,7 +306,7 @@ class FailResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets errors
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ProductImporterError[]
+     * @return \Criteo\Api\MarketingSolutions\Model\ProductImporterError[]
      */
     public function getErrors()
     {
@@ -316,7 +316,7 @@ class FailResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets errors
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ProductImporterError[] $errors List of errors
+     * @param \Criteo\Api\MarketingSolutions\Model\ProductImporterError[] $errors List of errors
      *
      * @return self
      */
@@ -333,7 +333,7 @@ class FailResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets warnings
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ProductImporterWarning[]
+     * @return \Criteo\Api\MarketingSolutions\Model\ProductImporterWarning[]
      */
     public function getWarnings()
     {
@@ -343,7 +343,7 @@ class FailResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets warnings
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ProductImporterWarning[] $warnings List of warnings
+     * @param \Criteo\Api\MarketingSolutions\Model\ProductImporterWarning[] $warnings List of warnings
      *
      * @return self
      */

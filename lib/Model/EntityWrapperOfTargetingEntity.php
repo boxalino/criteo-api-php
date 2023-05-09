@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * EntityWrapperOfTargetingEntity Class Doc Comment
@@ -59,7 +59,7 @@ class EntityWrapperOfTargetingEntity implements ModelInterface, ArrayAccess, \Js
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'attributes' => '\criteo\api\marketingsolutions\preview\Model\TargetingEntity'
+        'attributes' => '\Criteo\Api\MarketingSolutions\Model\TargetingEntity'
     ];
 
     /**
@@ -327,7 +327,7 @@ class EntityWrapperOfTargetingEntity implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets attributes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\TargetingEntity|null
+     * @return \Criteo\Api\MarketingSolutions\Model\TargetingEntity|null
      */
     public function getAttributes()
     {
@@ -337,7 +337,7 @@ class EntityWrapperOfTargetingEntity implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets attributes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\TargetingEntity|null $attributes attributes
+     * @param \Criteo\Api\MarketingSolutions\Model\TargetingEntity|null $attributes attributes
      *
      * @return self
      */

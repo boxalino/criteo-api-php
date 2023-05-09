@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * OciTargetingResponseData Class Doc Comment
@@ -60,7 +60,7 @@ class OciTargetingResponseData implements ModelInterface, ArrayAccess, \JsonSeri
     protected static $openAPITypes = [
         'id' => 'string',
         'type' => 'string',
-        'attributes' => '\criteo\api\marketingsolutions\preview\Model\OciTargetingRule'
+        'attributes' => '\Criteo\Api\MarketingSolutions\Model\OciTargetingRule'
     ];
 
     /**
@@ -370,7 +370,7 @@ class OciTargetingResponseData implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets attributes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\OciTargetingRule
+     * @return \Criteo\Api\MarketingSolutions\Model\OciTargetingRule
      */
     public function getAttributes()
     {
@@ -380,7 +380,7 @@ class OciTargetingResponseData implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets attributes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\OciTargetingRule $attributes attributes
+     * @param \Criteo\Api\MarketingSolutions\Model\OciTargetingRule $attributes attributes
      *
      * @return self
      */

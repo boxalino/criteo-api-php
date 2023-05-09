@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * OciBrandSafetyResponseData Class Doc Comment
@@ -60,7 +60,7 @@ class OciBrandSafetyResponseData implements ModelInterface, ArrayAccess, \JsonSe
     protected static $openAPITypes = [
         'id' => 'string',
         'type' => 'string',
-        'attributes' => '\criteo\api\marketingsolutions\preview\Model\OciBrandSafetyRule'
+        'attributes' => '\Criteo\Api\MarketingSolutions\Model\OciBrandSafetyRule'
     ];
 
     /**
@@ -370,7 +370,7 @@ class OciBrandSafetyResponseData implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets attributes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\OciBrandSafetyRule
+     * @return \Criteo\Api\MarketingSolutions\Model\OciBrandSafetyRule
      */
     public function getAttributes()
     {
@@ -380,7 +380,7 @@ class OciBrandSafetyResponseData implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets attributes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\OciBrandSafetyRule $attributes attributes
+     * @param \Criteo\Api\MarketingSolutions\Model\OciBrandSafetyRule $attributes attributes
      *
      * @return self
      */

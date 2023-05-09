@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * AudienceUpdateEntityV1 Class Doc Comment
@@ -59,8 +59,8 @@ class AudienceUpdateEntityV1 implements ModelInterface, ArrayAccess, \JsonSerial
       */
     protected static $openAPITypes = [
         'name' => 'string',
-        'description' => '\criteo\api\marketingsolutions\preview\Model\NillableString',
-        'algebra' => '\criteo\api\marketingsolutions\preview\Model\AlgebraNodeV1'
+        'description' => '\Criteo\Api\MarketingSolutions\Model\NillableString',
+        'algebra' => '\Criteo\Api\MarketingSolutions\Model\AlgebraNodeV1'
     ];
 
     /**
@@ -334,7 +334,7 @@ class AudienceUpdateEntityV1 implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets description
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\NillableString|null
+     * @return \Criteo\Api\MarketingSolutions\Model\NillableString|null
      */
     public function getDescription()
     {
@@ -344,7 +344,7 @@ class AudienceUpdateEntityV1 implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets description
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\NillableString|null $description description
+     * @param \Criteo\Api\MarketingSolutions\Model\NillableString|null $description description
      *
      * @return self
      */
@@ -361,7 +361,7 @@ class AudienceUpdateEntityV1 implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets algebra
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\AlgebraNodeV1|null
+     * @return \Criteo\Api\MarketingSolutions\Model\AlgebraNodeV1|null
      */
     public function getAlgebra()
     {
@@ -371,7 +371,7 @@ class AudienceUpdateEntityV1 implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets algebra
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\AlgebraNodeV1|null $algebra algebra
+     * @param \Criteo\Api\MarketingSolutions\Model\AlgebraNodeV1|null $algebra algebra
      *
      * @return self
      */

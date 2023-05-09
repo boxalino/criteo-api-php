@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview\Model;
+namespace Criteo\Api\MarketingSolutions\Model;
 
 use \ArrayAccess;
-use \criteo\api\marketingsolutions\preview\ObjectSerializer;
+use \Criteo\Api\MarketingSolutions\ObjectSerializer;
 
 /**
  * ContactlistOperation Class Doc Comment
@@ -59,7 +59,7 @@ class ContactlistOperation implements ModelInterface, ArrayAccess, \JsonSerializ
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'attributes' => '\criteo\api\marketingsolutions\preview\Model\ContactlistOperationAttributes'
+        'attributes' => '\Criteo\Api\MarketingSolutions\Model\ContactlistOperationAttributes'
     ];
 
     /**
@@ -333,7 +333,7 @@ class ContactlistOperation implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets attributes
      *
-     * @return \criteo\api\marketingsolutions\preview\Model\ContactlistOperationAttributes
+     * @return \Criteo\Api\MarketingSolutions\Model\ContactlistOperationAttributes
      */
     public function getAttributes()
     {
@@ -343,7 +343,7 @@ class ContactlistOperation implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets attributes
      *
-     * @param \criteo\api\marketingsolutions\preview\Model\ContactlistOperationAttributes $attributes attributes
+     * @param \Criteo\Api\MarketingSolutions\Model\ContactlistOperationAttributes $attributes attributes
      *
      * @return self
      */
