@@ -1,5 +1,5 @@
 {
-    "name": "criteo/criteo-api-marketingsolutions-sdk",
+    "name": "boxalino/criteo-api-php",
     "description": "PHP SDK for Criteo API 0.0.230427 version",
     "keywords": [
         "criteo",
@@ -15,17 +15,21 @@
         {
             "name": "Criteo",
             "homepage": "https://github.com/criteo/criteo-api-marketingsolutions-php-sdk"
+        },
+        {
+            "name": "Boxalino AG",
+            "homepage": "https://www.winning-interactions.ai/"
         }
     ],
     "scripts": {
         "test": "phpunit test/Api"
     },
     "require": {
-        "php": ">=7.1",
+        "php": ">=8.1",
         "ext-curl": "*",
         "ext-json": "*",
         "ext-mbstring": "*",
-        "guzzlehttp/guzzle": "^6.2"
+        "guzzlehttp/guzzle": "^7.5"
     },
     "require-dev": {
         "phpunit/phpunit": ">=7.4 <10.0",
