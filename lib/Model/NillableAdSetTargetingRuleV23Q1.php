@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  criteo\api\marketingsolutions\preview
+ * @package  Criteo\Api\MarketingSolutions
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -36,7 +36,7 @@ use \Criteo\Api\MarketingSolutions\ObjectSerializer;
  *
  * @category Class
  * @description structure that encapsulates an object that have valid business null values. If the structure is provided (i.e. not null), then the value in it, even null, is provided.
- * @package  criteo\api\marketingsolutions\preview
+ * @package  Criteo\Api\MarketingSolutions
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>

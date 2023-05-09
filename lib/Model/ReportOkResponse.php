@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  criteo\api\marketingsolutions\preview
+ * @package  Criteo\Api\MarketingSolutions
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -36,7 +36,7 @@ use \Criteo\Api\MarketingSolutions\ObjectSerializer;
  *
  * @category Class
  * @description The report on a given operationToken is ready. The report is available for 4 days
- * @package  criteo\api\marketingsolutions\preview
+ * @package  Criteo\Api\MarketingSolutions
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>

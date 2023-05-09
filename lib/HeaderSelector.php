@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  criteo\api\marketingsolutions\preview
+ * @package  Criteo\Api\MarketingSolutions
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -31,7 +31,7 @@ namespace Criteo\Api\MarketingSolutions;
  * HeaderSelector Class Doc Comment
  *
  * @category Class
- * @package  criteo\api\marketingsolutions\preview
+ * @package  Criteo\Api\MarketingSolutions
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

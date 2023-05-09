@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  criteo\api\marketingsolutions\preview
+ * @package  Criteo\Api\MarketingSolutions
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -36,7 +36,7 @@ use \Criteo\Api\MarketingSolutions\ObjectSerializer;
  *
  * @category Class
  * @description Available filters to perform a search on audience segments. If present, the filters are AND&#39;ed together when applied.
- * @package  criteo\api\marketingsolutions\preview
+ * @package  Criteo\Api\MarketingSolutions
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>

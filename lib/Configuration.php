@@ -1,15 +1,5 @@
 <?php
 /**
- * Configuration
- * PHP version 7.4
- *
- * @category Class
- * @package  criteo\api\marketingsolutions\preview
- * @author   OpenAPI Generator team
- * @link     https://openapi-generator.tech
- */
-
-/**
  * Criteo API
  *
  * Criteo publicly exposed API
@@ -32,7 +22,7 @@ namespace Criteo\Api\MarketingSolutions;
  * PHP version 7.4
  *
  * @category Class
- * @package  criteo\api\marketingsolutions\preview
+ * @package  Criteo\Api\MarketingSolutions
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -429,7 +419,7 @@ class Configuration
      */
     public static function toDebugReport()
     {
-        $report  = 'PHP SDK (criteo\api\marketingsolutions\preview) Debug Report:' . PHP_EOL;
+        $report  = 'PHP SDK (Criteo\Api\MarketingSolutions) Debug Report:' . PHP_EOL;
         $report .= '    OS: ' . php_uname() . PHP_EOL;
         $report .= '    PHP Version: ' . PHP_VERSION . PHP_EOL;
         $report .= '    The version of the OpenAPI document: Preview' . PHP_EOL;
@@ -529,4 +519,6 @@ class Configuration
     {
         return self::getHostString($this->getHostSettings(), $index, $variables);
     }
+
+
 }

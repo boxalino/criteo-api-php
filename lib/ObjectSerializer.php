@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  criteo\api\marketingsolutions\preview
+ * @package  Criteo\Api\MarketingSolutions
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace criteo\api\marketingsolutions\preview;
+namespace Criteo\Api\MarketingSolutions;
 
 use GuzzleHttp\Psr7\Utils;
 use Criteo\Api\MarketingSolutions\Model\ModelInterface;
@@ -35,7 +35,7 @@ use Criteo\Api\MarketingSolutions\Model\ModelInterface;
  * ObjectSerializer Class Doc Comment
  *
  * @category Class
- * @package  criteo\api\marketingsolutions\preview
+ * @package  Criteo\Api\MarketingSolutions
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
