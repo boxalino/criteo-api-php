@@ -5,9 +5,6 @@ use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Psr7\Request;
 
-define("AUTHORIZATION", 'Authorization');
-define("GRANT_TYPE", 'client_credentials');
-
 class OAuthClient{
     /**
      * @var ClientInterface
